@@ -1,0 +1,998 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:axis2="http://calendar.ws.blackboard/" xmlns:ns2="http://calendar.ws.blackboard/xsd" xmlns:ns1="http://calendar.ws.blackboard" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:ns0="http://ws.platform.blackboard/xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://calendar.ws.blackboard/">
+    <wsdl:types>
+        <xs:schema xmlns:ax21="http://ws.platform.blackboard/xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://ws.platform.blackboard/xsd">
+            <xs:complexType name="VersionVO">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="version" type="xs:long"/>
+                </xs:sequence>
+            </xs:complexType>
+        </xs:schema>
+        <xs:schema xmlns:ns="http://calendar.ws.blackboard" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://calendar.ws.blackboard">
+            <xs:element name="getServerVersion">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="unused" nillable="true" type="ns0:VersionVO"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getServerVersionResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="return" nillable="true" type="ns0:VersionVO"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getCalendarItem">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="filter" nillable="true" type="ns2:CalendarItemFilter"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getCalendarItemResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs="unbounded" minOccurs="0" name="return" nillable="true" type="ns2:CalendarItemVO"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="initializeCalendarWS">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="ignore" type="xs:boolean"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="initializeCalendarWSResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="return" type="xs:boolean"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="canUpdateCourseCalendarItem">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="courseId" nillable="true" type="xs:string"/>
+                        <xs:element maxOccurs="unbounded" minOccurs="0" name="itemId" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="canUpdateCourseCalendarItemResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs="unbounded" minOccurs="0" name="return" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="canUpdateInstitutionCalendarItem">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs="unbounded" minOccurs="0" name="itemId" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="canUpdateInstitutionCalendarItemResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs="unbounded" minOccurs="0" name="return" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="canUpdatePersonalCalendarItem">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs="unbounded" minOccurs="0" name="itemId" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="canUpdatePersonalCalendarItemResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs="unbounded" minOccurs="0" name="return" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="createCourseCalendarItem">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="courseId" nillable="true" type="xs:string"/>
+                        <xs:element maxOccurs="unbounded" minOccurs="0" name="item" nillable="true" type="ns2:CalendarItemVO"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="createCourseCalendarItemResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs="unbounded" minOccurs="0" name="return" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="createInstitutionCalendarItem">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs="unbounded" minOccurs="0" name="item" nillable="true" type="ns2:CalendarItemVO"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="createInstitutionCalendarItemResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs="unbounded" minOccurs="0" name="return" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="createPersonalCalendarItem">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs="unbounded" minOccurs="0" name="item" nillable="true" type="ns2:CalendarItemVO"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="createPersonalCalendarItemResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs="unbounded" minOccurs="0" name="return" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="deleteCourseCalendarItem">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="courseId" nillable="true" type="xs:string"/>
+                        <xs:element maxOccurs="unbounded" minOccurs="0" name="itemId" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="deleteCourseCalendarItemResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs="unbounded" minOccurs="0" name="return" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="deleteInstitutionCalendarItem">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs="unbounded" minOccurs="0" name="itemId" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="deleteInstitutionCalendarItemResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs="unbounded" minOccurs="0" name="return" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="deletePersonalCalendarItem">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs="unbounded" minOccurs="0" name="itemId" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="deletePersonalCalendarItemResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs="unbounded" minOccurs="0" name="return" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="saveCourseCalendarItem">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="courseId" nillable="true" type="xs:string"/>
+                        <xs:element maxOccurs="unbounded" minOccurs="0" name="item" nillable="true" type="ns2:CalendarItemVO"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="saveCourseCalendarItemResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs="unbounded" minOccurs="0" name="return" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="saveInstitutionCalendarItem">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs="unbounded" minOccurs="0" name="item" nillable="true" type="ns2:CalendarItemVO"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="saveInstitutionCalendarItemResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs="unbounded" minOccurs="0" name="return" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="savePersonalCalendarItem">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs="unbounded" minOccurs="0" name="item" nillable="true" type="ns2:CalendarItemVO"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="savePersonalCalendarItemResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs="unbounded" minOccurs="0" name="return" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="updateCourseCalendarItem">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="courseId" nillable="true" type="xs:string"/>
+                        <xs:element maxOccurs="unbounded" minOccurs="0" name="item" nillable="true" type="ns2:CalendarItemVO"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="updateCourseCalendarItemResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs="unbounded" minOccurs="0" name="return" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="updateInstitutionCalendarItem">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs="unbounded" minOccurs="0" name="item" nillable="true" type="ns2:CalendarItemVO"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="updateInstitutionCalendarItemResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs="unbounded" minOccurs="0" name="return" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="updatePersonalCalendarItem">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs="unbounded" minOccurs="0" name="item" nillable="true" type="ns2:CalendarItemVO"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="updatePersonalCalendarItemResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs="unbounded" minOccurs="0" name="return" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:schema>
+        <xs:schema xmlns:ax22="http://calendar.ws.blackboard/xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://calendar.ws.blackboard/xsd">
+            <xs:complexType name="CalendarItemFilter">
+                <xs:sequence>
+                    <xs:element maxOccurs="unbounded" minOccurs="0" name="courseBatchId" nillable="true" type="xs:string"/>
+                    <xs:element maxOccurs="unbounded" minOccurs="0" name="courseId" nillable="true" type="xs:string"/>
+                    <xs:element maxOccurs="unbounded" minOccurs="0" name="endDate" nillable="true" type="xs:long"/>
+                    <xs:element maxOccurs="unbounded" minOccurs="0" name="expansionData" nillable="true" type="xs:string"/>
+                    <xs:element minOccurs="0" name="filterType" type="xs:int"/>
+                    <xs:element maxOccurs="unbounded" minOccurs="0" name="id" nillable="true" type="xs:string"/>
+                    <xs:element maxOccurs="unbounded" minOccurs="0" name="startDate" nillable="true" type="xs:long"/>
+                    <xs:element maxOccurs="unbounded" minOccurs="0" name="type" nillable="true" type="xs:string"/>
+                    <xs:element maxOccurs="unbounded" minOccurs="0" name="userBatchId" nillable="true" type="xs:string"/>
+                    <xs:element maxOccurs="unbounded" minOccurs="0" name="userId" nillable="true" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="CalendarItemVO">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="body" nillable="true" type="xs:string"/>
+                    <xs:element minOccurs="0" name="bodyType" nillable="true" type="xs:string"/>
+                    <xs:element minOccurs="0" name="calendarItemType" nillable="true" type="xs:string"/>
+                    <xs:element minOccurs="0" name="courseId" nillable="true" type="xs:string"/>
+                    <xs:element minOccurs="0" name="creatorUserId" nillable="true" type="xs:string"/>
+                    <xs:element minOccurs="0" name="endDate" type="xs:long"/>
+                    <xs:element maxOccurs="unbounded" minOccurs="0" name="expansionData" nillable="true" type="xs:string"/>
+                    <xs:element minOccurs="0" name="id" nillable="true" type="xs:string"/>
+                    <xs:element minOccurs="0" name="startDate" type="xs:long"/>
+                    <xs:element minOccurs="0" name="title" nillable="true" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+        </xs:schema>
+    </wsdl:types>
+    <wsdl:message name="savePersonalCalendarItemRequest">
+        <wsdl:part name="parameters" element="ns1:savePersonalCalendarItem"/>
+    </wsdl:message>
+    <wsdl:message name="savePersonalCalendarItemResponse">
+        <wsdl:part name="parameters" element="ns1:savePersonalCalendarItemResponse"/>
+    </wsdl:message>
+    <wsdl:message name="getCalendarItemRequest">
+        <wsdl:part name="parameters" element="ns1:getCalendarItem"/>
+    </wsdl:message>
+    <wsdl:message name="getCalendarItemResponse">
+        <wsdl:part name="parameters" element="ns1:getCalendarItemResponse"/>
+    </wsdl:message>
+    <wsdl:message name="updateCourseCalendarItemRequest">
+        <wsdl:part name="parameters" element="ns1:updateCourseCalendarItem"/>
+    </wsdl:message>
+    <wsdl:message name="updateCourseCalendarItemResponse">
+        <wsdl:part name="parameters" element="ns1:updateCourseCalendarItemResponse"/>
+    </wsdl:message>
+    <wsdl:message name="saveCourseCalendarItemRequest">
+        <wsdl:part name="parameters" element="ns1:saveCourseCalendarItem"/>
+    </wsdl:message>
+    <wsdl:message name="saveCourseCalendarItemResponse">
+        <wsdl:part name="parameters" element="ns1:saveCourseCalendarItemResponse"/>
+    </wsdl:message>
+    <wsdl:message name="canUpdateCourseCalendarItemRequest">
+        <wsdl:part name="parameters" element="ns1:canUpdateCourseCalendarItem"/>
+    </wsdl:message>
+    <wsdl:message name="canUpdateCourseCalendarItemResponse">
+        <wsdl:part name="parameters" element="ns1:canUpdateCourseCalendarItemResponse"/>
+    </wsdl:message>
+    <wsdl:message name="deletePersonalCalendarItemRequest">
+        <wsdl:part name="parameters" element="ns1:deletePersonalCalendarItem"/>
+    </wsdl:message>
+    <wsdl:message name="deletePersonalCalendarItemResponse">
+        <wsdl:part name="parameters" element="ns1:deletePersonalCalendarItemResponse"/>
+    </wsdl:message>
+    <wsdl:message name="createInstitutionCalendarItemRequest">
+        <wsdl:part name="parameters" element="ns1:createInstitutionCalendarItem"/>
+    </wsdl:message>
+    <wsdl:message name="createInstitutionCalendarItemResponse">
+        <wsdl:part name="parameters" element="ns1:createInstitutionCalendarItemResponse"/>
+    </wsdl:message>
+    <wsdl:message name="updateInstitutionCalendarItemRequest">
+        <wsdl:part name="parameters" element="ns1:updateInstitutionCalendarItem"/>
+    </wsdl:message>
+    <wsdl:message name="updateInstitutionCalendarItemResponse">
+        <wsdl:part name="parameters" element="ns1:updateInstitutionCalendarItemResponse"/>
+    </wsdl:message>
+    <wsdl:message name="deleteCourseCalendarItemRequest">
+        <wsdl:part name="parameters" element="ns1:deleteCourseCalendarItem"/>
+    </wsdl:message>
+    <wsdl:message name="deleteCourseCalendarItemResponse">
+        <wsdl:part name="parameters" element="ns1:deleteCourseCalendarItemResponse"/>
+    </wsdl:message>
+    <wsdl:message name="createCourseCalendarItemRequest">
+        <wsdl:part name="parameters" element="ns1:createCourseCalendarItem"/>
+    </wsdl:message>
+    <wsdl:message name="createCourseCalendarItemResponse">
+        <wsdl:part name="parameters" element="ns1:createCourseCalendarItemResponse"/>
+    </wsdl:message>
+    <wsdl:message name="canUpdateInstitutionCalendarItemRequest">
+        <wsdl:part name="parameters" element="ns1:canUpdateInstitutionCalendarItem"/>
+    </wsdl:message>
+    <wsdl:message name="canUpdateInstitutionCalendarItemResponse">
+        <wsdl:part name="parameters" element="ns1:canUpdateInstitutionCalendarItemResponse"/>
+    </wsdl:message>
+    <wsdl:message name="saveInstitutionCalendarItemRequest">
+        <wsdl:part name="parameters" element="ns1:saveInstitutionCalendarItem"/>
+    </wsdl:message>
+    <wsdl:message name="saveInstitutionCalendarItemResponse">
+        <wsdl:part name="parameters" element="ns1:saveInstitutionCalendarItemResponse"/>
+    </wsdl:message>
+    <wsdl:message name="deleteInstitutionCalendarItemRequest">
+        <wsdl:part name="parameters" element="ns1:deleteInstitutionCalendarItem"/>
+    </wsdl:message>
+    <wsdl:message name="deleteInstitutionCalendarItemResponse">
+        <wsdl:part name="parameters" element="ns1:deleteInstitutionCalendarItemResponse"/>
+    </wsdl:message>
+    <wsdl:message name="canUpdatePersonalCalendarItemRequest">
+        <wsdl:part name="parameters" element="ns1:canUpdatePersonalCalendarItem"/>
+    </wsdl:message>
+    <wsdl:message name="canUpdatePersonalCalendarItemResponse">
+        <wsdl:part name="parameters" element="ns1:canUpdatePersonalCalendarItemResponse"/>
+    </wsdl:message>
+    <wsdl:message name="getServerVersionRequest">
+        <wsdl:part name="parameters" element="ns1:getServerVersion"/>
+    </wsdl:message>
+    <wsdl:message name="getServerVersionResponse">
+        <wsdl:part name="parameters" element="ns1:getServerVersionResponse"/>
+    </wsdl:message>
+    <wsdl:message name="initializeCalendarWSRequest">
+        <wsdl:part name="parameters" element="ns1:initializeCalendarWS"/>
+    </wsdl:message>
+    <wsdl:message name="initializeCalendarWSResponse">
+        <wsdl:part name="parameters" element="ns1:initializeCalendarWSResponse"/>
+    </wsdl:message>
+    <wsdl:message name="createPersonalCalendarItemRequest">
+        <wsdl:part name="parameters" element="ns1:createPersonalCalendarItem"/>
+    </wsdl:message>
+    <wsdl:message name="createPersonalCalendarItemResponse">
+        <wsdl:part name="parameters" element="ns1:createPersonalCalendarItemResponse"/>
+    </wsdl:message>
+    <wsdl:message name="updatePersonalCalendarItemRequest">
+        <wsdl:part name="parameters" element="ns1:updatePersonalCalendarItem"/>
+    </wsdl:message>
+    <wsdl:message name="updatePersonalCalendarItemResponse">
+        <wsdl:part name="parameters" element="ns1:updatePersonalCalendarItemResponse"/>
+    </wsdl:message>
+    <wsdl:portType name="Calendar.WSPortType">
+        <wsdl:operation name="savePersonalCalendarItem">
+            <wsdl:input message="axis2:savePersonalCalendarItemRequest" wsaw:Action="savePersonalCalendarItem"/>
+            <wsdl:output message="axis2:savePersonalCalendarItemResponse" wsaw:Action="http://calendar.ws.blackboard/Calendar/savePersonalCalendarItemResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="getCalendarItem">
+            <wsdl:input message="axis2:getCalendarItemRequest" wsaw:Action="getCalendarItem"/>
+            <wsdl:output message="axis2:getCalendarItemResponse" wsaw:Action="http://calendar.ws.blackboard/Calendar/getCalendarItemResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="updateCourseCalendarItem">
+            <wsdl:input message="axis2:updateCourseCalendarItemRequest" wsaw:Action="updateCourseCalendarItem"/>
+            <wsdl:output message="axis2:updateCourseCalendarItemResponse" wsaw:Action="http://calendar.ws.blackboard/Calendar/updateCourseCalendarItemResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="saveCourseCalendarItem">
+            <wsdl:input message="axis2:saveCourseCalendarItemRequest" wsaw:Action="saveCourseCalendarItem"/>
+            <wsdl:output message="axis2:saveCourseCalendarItemResponse" wsaw:Action="http://calendar.ws.blackboard/Calendar/saveCourseCalendarItemResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="canUpdateCourseCalendarItem">
+            <wsdl:input message="axis2:canUpdateCourseCalendarItemRequest" wsaw:Action="canUpdateCourseCalendarItem"/>
+            <wsdl:output message="axis2:canUpdateCourseCalendarItemResponse" wsaw:Action="http://calendar.ws.blackboard/Calendar/canUpdateCourseCalendarItemResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="deletePersonalCalendarItem">
+            <wsdl:input message="axis2:deletePersonalCalendarItemRequest" wsaw:Action="deletePersonalCalendarItem"/>
+            <wsdl:output message="axis2:deletePersonalCalendarItemResponse" wsaw:Action="http://calendar.ws.blackboard/Calendar/deletePersonalCalendarItemResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="createInstitutionCalendarItem">
+            <wsdl:input message="axis2:createInstitutionCalendarItemRequest" wsaw:Action="createInstitutionCalendarItem"/>
+            <wsdl:output message="axis2:createInstitutionCalendarItemResponse" wsaw:Action="http://calendar.ws.blackboard/Calendar/createInstitutionCalendarItemResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="updateInstitutionCalendarItem">
+            <wsdl:input message="axis2:updateInstitutionCalendarItemRequest" wsaw:Action="updateInstitutionCalendarItem"/>
+            <wsdl:output message="axis2:updateInstitutionCalendarItemResponse" wsaw:Action="http://calendar.ws.blackboard/Calendar/updateInstitutionCalendarItemResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="deleteCourseCalendarItem">
+            <wsdl:input message="axis2:deleteCourseCalendarItemRequest" wsaw:Action="deleteCourseCalendarItem"/>
+            <wsdl:output message="axis2:deleteCourseCalendarItemResponse" wsaw:Action="http://calendar.ws.blackboard/Calendar/deleteCourseCalendarItemResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="createCourseCalendarItem">
+            <wsdl:input message="axis2:createCourseCalendarItemRequest" wsaw:Action="createCourseCalendarItem"/>
+            <wsdl:output message="axis2:createCourseCalendarItemResponse" wsaw:Action="http://calendar.ws.blackboard/Calendar/createCourseCalendarItemResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="canUpdateInstitutionCalendarItem">
+            <wsdl:input message="axis2:canUpdateInstitutionCalendarItemRequest" wsaw:Action="canUpdateInstitutionCalendarItem"/>
+            <wsdl:output message="axis2:canUpdateInstitutionCalendarItemResponse" wsaw:Action="http://calendar.ws.blackboard/Calendar/canUpdateInstitutionCalendarItemResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="saveInstitutionCalendarItem">
+            <wsdl:input message="axis2:saveInstitutionCalendarItemRequest" wsaw:Action="saveInstitutionCalendarItem"/>
+            <wsdl:output message="axis2:saveInstitutionCalendarItemResponse" wsaw:Action="http://calendar.ws.blackboard/Calendar/saveInstitutionCalendarItemResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="deleteInstitutionCalendarItem">
+            <wsdl:input message="axis2:deleteInstitutionCalendarItemRequest" wsaw:Action="deleteInstitutionCalendarItem"/>
+            <wsdl:output message="axis2:deleteInstitutionCalendarItemResponse" wsaw:Action="http://calendar.ws.blackboard/Calendar/deleteInstitutionCalendarItemResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="canUpdatePersonalCalendarItem">
+            <wsdl:input message="axis2:canUpdatePersonalCalendarItemRequest" wsaw:Action="canUpdatePersonalCalendarItem"/>
+            <wsdl:output message="axis2:canUpdatePersonalCalendarItemResponse" wsaw:Action="http://calendar.ws.blackboard/Calendar/canUpdatePersonalCalendarItemResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="getServerVersion">
+            <wsdl:input message="axis2:getServerVersionRequest" wsaw:Action="getServerVersion"/>
+            <wsdl:output message="axis2:getServerVersionResponse" wsaw:Action="http://calendar.ws.blackboard/Calendar/getServerVersionResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="initializeCalendarWS">
+            <wsdl:input message="axis2:initializeCalendarWSRequest" wsaw:Action="initializeCalendarWS"/>
+            <wsdl:output message="axis2:initializeCalendarWSResponse" wsaw:Action="http://calendar.ws.blackboard/Calendar/initializeCalendarWSResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="createPersonalCalendarItem">
+            <wsdl:input message="axis2:createPersonalCalendarItemRequest" wsaw:Action="createPersonalCalendarItem"/>
+            <wsdl:output message="axis2:createPersonalCalendarItemResponse" wsaw:Action="http://calendar.ws.blackboard/Calendar/createPersonalCalendarItemResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="updatePersonalCalendarItem">
+            <wsdl:input message="axis2:updatePersonalCalendarItemRequest" wsaw:Action="updatePersonalCalendarItem"/>
+            <wsdl:output message="axis2:updatePersonalCalendarItemResponse" wsaw:Action="http://calendar.ws.blackboard/Calendar/updatePersonalCalendarItemResponse"/>
+        </wsdl:operation>
+    </wsdl:portType>
+    <wsdl:binding name="Calendar.WSSOAP11Binding" type="axis2:Calendar.WSPortType">
+        <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+        <wsdl:operation name="savePersonalCalendarItem">
+            <soap:operation soapAction="savePersonalCalendarItem" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getCalendarItem">
+            <soap:operation soapAction="getCalendarItem" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="updateCourseCalendarItem">
+            <soap:operation soapAction="updateCourseCalendarItem" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="saveCourseCalendarItem">
+            <soap:operation soapAction="saveCourseCalendarItem" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="canUpdateCourseCalendarItem">
+            <soap:operation soapAction="canUpdateCourseCalendarItem" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="deletePersonalCalendarItem">
+            <soap:operation soapAction="deletePersonalCalendarItem" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="createInstitutionCalendarItem">
+            <soap:operation soapAction="createInstitutionCalendarItem" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="updateInstitutionCalendarItem">
+            <soap:operation soapAction="updateInstitutionCalendarItem" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="deleteCourseCalendarItem">
+            <soap:operation soapAction="deleteCourseCalendarItem" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="createCourseCalendarItem">
+            <soap:operation soapAction="createCourseCalendarItem" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="canUpdateInstitutionCalendarItem">
+            <soap:operation soapAction="canUpdateInstitutionCalendarItem" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="saveInstitutionCalendarItem">
+            <soap:operation soapAction="saveInstitutionCalendarItem" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="deleteInstitutionCalendarItem">
+            <soap:operation soapAction="deleteInstitutionCalendarItem" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="canUpdatePersonalCalendarItem">
+            <soap:operation soapAction="canUpdatePersonalCalendarItem" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getServerVersion">
+            <soap:operation soapAction="getServerVersion" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="initializeCalendarWS">
+            <soap:operation soapAction="initializeCalendarWS" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="createPersonalCalendarItem">
+            <soap:operation soapAction="createPersonalCalendarItem" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="updatePersonalCalendarItem">
+            <soap:operation soapAction="updatePersonalCalendarItem" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:binding name="Calendar.WSSOAP12Binding" type="axis2:Calendar.WSPortType">
+        <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+        <wsdl:operation name="savePersonalCalendarItem">
+            <soap12:operation soapAction="savePersonalCalendarItem" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getCalendarItem">
+            <soap12:operation soapAction="getCalendarItem" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="updateCourseCalendarItem">
+            <soap12:operation soapAction="updateCourseCalendarItem" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="saveCourseCalendarItem">
+            <soap12:operation soapAction="saveCourseCalendarItem" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="canUpdateCourseCalendarItem">
+            <soap12:operation soapAction="canUpdateCourseCalendarItem" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="deletePersonalCalendarItem">
+            <soap12:operation soapAction="deletePersonalCalendarItem" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="createInstitutionCalendarItem">
+            <soap12:operation soapAction="createInstitutionCalendarItem" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="updateInstitutionCalendarItem">
+            <soap12:operation soapAction="updateInstitutionCalendarItem" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="deleteCourseCalendarItem">
+            <soap12:operation soapAction="deleteCourseCalendarItem" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="createCourseCalendarItem">
+            <soap12:operation soapAction="createCourseCalendarItem" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="canUpdateInstitutionCalendarItem">
+            <soap12:operation soapAction="canUpdateInstitutionCalendarItem" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="saveInstitutionCalendarItem">
+            <soap12:operation soapAction="saveInstitutionCalendarItem" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="deleteInstitutionCalendarItem">
+            <soap12:operation soapAction="deleteInstitutionCalendarItem" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="canUpdatePersonalCalendarItem">
+            <soap12:operation soapAction="canUpdatePersonalCalendarItem" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getServerVersion">
+            <soap12:operation soapAction="getServerVersion" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="initializeCalendarWS">
+            <soap12:operation soapAction="initializeCalendarWS" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="createPersonalCalendarItem">
+            <soap12:operation soapAction="createPersonalCalendarItem" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="updatePersonalCalendarItem">
+            <soap12:operation soapAction="updatePersonalCalendarItem" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:binding name="Calendar.WSHttpBinding" type="axis2:Calendar.WSPortType">
+        <http:binding verb="POST"/>
+        <wsdl:operation name="savePersonalCalendarItem">
+            <http:operation location="Calendar.WS/savePersonalCalendarItem"/>
+            <wsdl:input>
+                <mime:content type="text/xml" part="savePersonalCalendarItem"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="text/xml" part="savePersonalCalendarItem"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getCalendarItem">
+            <http:operation location="Calendar.WS/getCalendarItem"/>
+            <wsdl:input>
+                <mime:content type="text/xml" part="getCalendarItem"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="text/xml" part="getCalendarItem"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="updateCourseCalendarItem">
+            <http:operation location="Calendar.WS/updateCourseCalendarItem"/>
+            <wsdl:input>
+                <mime:content type="text/xml" part="updateCourseCalendarItem"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="text/xml" part="updateCourseCalendarItem"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="saveCourseCalendarItem">
+            <http:operation location="Calendar.WS/saveCourseCalendarItem"/>
+            <wsdl:input>
+                <mime:content type="text/xml" part="saveCourseCalendarItem"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="text/xml" part="saveCourseCalendarItem"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="canUpdateCourseCalendarItem">
+            <http:operation location="Calendar.WS/canUpdateCourseCalendarItem"/>
+            <wsdl:input>
+                <mime:content type="text/xml" part="canUpdateCourseCalendarItem"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="text/xml" part="canUpdateCourseCalendarItem"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="deletePersonalCalendarItem">
+            <http:operation location="Calendar.WS/deletePersonalCalendarItem"/>
+            <wsdl:input>
+                <mime:content type="text/xml" part="deletePersonalCalendarItem"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="text/xml" part="deletePersonalCalendarItem"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="createInstitutionCalendarItem">
+            <http:operation location="Calendar.WS/createInstitutionCalendarItem"/>
+            <wsdl:input>
+                <mime:content type="text/xml" part="createInstitutionCalendarItem"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="text/xml" part="createInstitutionCalendarItem"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="updateInstitutionCalendarItem">
+            <http:operation location="Calendar.WS/updateInstitutionCalendarItem"/>
+            <wsdl:input>
+                <mime:content type="text/xml" part="updateInstitutionCalendarItem"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="text/xml" part="updateInstitutionCalendarItem"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="deleteCourseCalendarItem">
+            <http:operation location="Calendar.WS/deleteCourseCalendarItem"/>
+            <wsdl:input>
+                <mime:content type="text/xml" part="deleteCourseCalendarItem"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="text/xml" part="deleteCourseCalendarItem"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="createCourseCalendarItem">
+            <http:operation location="Calendar.WS/createCourseCalendarItem"/>
+            <wsdl:input>
+                <mime:content type="text/xml" part="createCourseCalendarItem"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="text/xml" part="createCourseCalendarItem"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="canUpdateInstitutionCalendarItem">
+            <http:operation location="Calendar.WS/canUpdateInstitutionCalendarItem"/>
+            <wsdl:input>
+                <mime:content type="text/xml" part="canUpdateInstitutionCalendarItem"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="text/xml" part="canUpdateInstitutionCalendarItem"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="saveInstitutionCalendarItem">
+            <http:operation location="Calendar.WS/saveInstitutionCalendarItem"/>
+            <wsdl:input>
+                <mime:content type="text/xml" part="saveInstitutionCalendarItem"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="text/xml" part="saveInstitutionCalendarItem"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="deleteInstitutionCalendarItem">
+            <http:operation location="Calendar.WS/deleteInstitutionCalendarItem"/>
+            <wsdl:input>
+                <mime:content type="text/xml" part="deleteInstitutionCalendarItem"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="text/xml" part="deleteInstitutionCalendarItem"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="canUpdatePersonalCalendarItem">
+            <http:operation location="Calendar.WS/canUpdatePersonalCalendarItem"/>
+            <wsdl:input>
+                <mime:content type="text/xml" part="canUpdatePersonalCalendarItem"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="text/xml" part="canUpdatePersonalCalendarItem"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getServerVersion">
+            <http:operation location="Calendar.WS/getServerVersion"/>
+            <wsdl:input>
+                <mime:content type="text/xml" part="getServerVersion"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="text/xml" part="getServerVersion"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="initializeCalendarWS">
+            <http:operation location="Calendar.WS/initializeCalendarWS"/>
+            <wsdl:input>
+                <mime:content type="text/xml" part="initializeCalendarWS"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="text/xml" part="initializeCalendarWS"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="createPersonalCalendarItem">
+            <http:operation location="Calendar.WS/createPersonalCalendarItem"/>
+            <wsdl:input>
+                <mime:content type="text/xml" part="createPersonalCalendarItem"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="text/xml" part="createPersonalCalendarItem"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="updatePersonalCalendarItem">
+            <http:operation location="Calendar.WS/updatePersonalCalendarItem"/>
+            <wsdl:input>
+                <mime:content type="text/xml" part="updatePersonalCalendarItem"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="text/xml" part="updatePersonalCalendarItem"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:service name="Calendar.WS">
+        <wsdl:port name="Calendar.WSSOAP11port_https" binding="axis2:Calendar.WSSOAP11Binding">
+            <soap:address location="https://50.173.89.101:443/webapps/ws/services/Calendar.WS"/>
+        </wsdl:port>
+        <wsdl:port name="Calendar.WSSOAP11port_http1" binding="axis2:Calendar.WSSOAP11Binding">
+            <soap:address location="http://50.173.89.101:8080/webapps/ws/services/Calendar.WS"/>
+        </wsdl:port>
+        <wsdl:port name="Calendar.WSSOAP12port_https" binding="axis2:Calendar.WSSOAP12Binding">
+            <soap12:address location="https://50.173.89.101:443/webapps/ws/services/Calendar.WS"/>
+        </wsdl:port>
+        <wsdl:port name="Calendar.WSSOAP12port_http1" binding="axis2:Calendar.WSSOAP12Binding">
+            <soap12:address location="http://50.173.89.101:8080/webapps/ws/services/Calendar.WS"/>
+        </wsdl:port>
+        <wsdl:port name="Calendar.WSHttpport" binding="axis2:Calendar.WSHttpBinding">
+            <http:address location="https://50.173.89.101:443/webapps/ws/services/Calendar.WS"/>
+        </wsdl:port>
+        <wsdl:port name="Calendar.WSHttpport1" binding="axis2:Calendar.WSHttpBinding">
+            <http:address location="http://50.173.89.101:8080/webapps/ws/services/Calendar.WS"/>
+        </wsdl:port>
+    </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:axis2="http://notificationdistributoroperations.ws.blackboard/" xmlns:ns2="http://notificationdistributoroperations.ws.blackboard/xsd" xmlns:ns1="http://notificationdistributoroperations.ws.blackboard" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:ns0="http://ws.platform.blackboard/xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://notificationdistributoroperations.ws.blackboard/">
+    <wsdl:types>
+        <xs:schema xmlns:ax25="http://ws.platform.blackboard/xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://ws.platform.blackboard/xsd">
+            <xs:complexType name="VersionVO">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="version" type="xs:long"/>
+                </xs:sequence>
+            </xs:complexType>
+        </xs:schema>
+        <xs:schema xmlns:ns="http://notificationdistributoroperations.ws.blackboard" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://notificationdistributoroperations.ws.blackboard">
+            <xs:element name="getServerVersion">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="unused" nillable="true" type="ns0:VersionVO"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getServerVersionResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="return" nillable="true" type="ns0:VersionVO"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="setDistributorAvailabilityForUser">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="distributorKey" nillable="true" type="xs:string"/>
+                        <xs:element minOccurs="0" name="map" nillable="true" type="xs:string"/>
+                        <xs:element minOccurs="0" name="userKey" nillable="true" type="xs:string"/>
+                        <xs:element minOccurs="0" name="enable" type="xs:boolean"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="setDistributorAvailabilityForUserResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="return" nillable="true" type="ns2:DistributorAvailabilityResultVO"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="initializeNotificationDistributorOperationsWS">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="ignore" type="xs:boolean"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="initializeNotificationDistributorOperationsWSResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="return" type="xs:boolean"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="registerDistributorResults">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="distributorKey" nillable="true" type="xs:string"/>
+                        <xs:element minOccurs="0" name="results" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="registerDistributorResultsResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="return" type="xs:boolean"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:schema>
+        <xs:schema xmlns:ax26="http://notificationdistributoroperations.ws.blackboard/xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://notificationdistributoroperations.ws.blackboard/xsd">
+            <xs:complexType name="DistributorAvailabilityResultVO">
+                <xs:sequence>
+                    <xs:element maxOccurs="unbounded" minOccurs="0" name="failureErrors" nillable="true" type="xs:string"/>
+                    <xs:element minOccurs="0" name="status" type="xs:boolean"/>
+                </xs:sequence>
+            </xs:complexType>
+        </xs:schema>
+    </wsdl:types>
+    <wsdl:message name="setDistributorAvailabilityForUserRequest">
+        <wsdl:part name="parameters" element="ns1:setDistributorAvailabilityForUser"/>
+    </wsdl:message>
+    <wsdl:message name="setDistributorAvailabilityForUserResponse">
+        <wsdl:part name="parameters" element="ns1:setDistributorAvailabilityForUserResponse"/>
+    </wsdl:message>
+    <wsdl:message name="initializeNotificationDistributorOperationsWSRequest">
+        <wsdl:part name="parameters" element="ns1:initializeNotificationDistributorOperationsWS"/>
+    </wsdl:message>
+    <wsdl:message name="initializeNotificationDistributorOperationsWSResponse">
+        <wsdl:part name="parameters" element="ns1:initializeNotificationDistributorOperationsWSResponse"/>
+    </wsdl:message>
+    <wsdl:message name="getServerVersionRequest">
+        <wsdl:part name="parameters" element="ns1:getServerVersion"/>
+    </wsdl:message>
+    <wsdl:message name="getServerVersionResponse">
+        <wsdl:part name="parameters" element="ns1:getServerVersionResponse"/>
+    </wsdl:message>
+    <wsdl:message name="registerDistributorResultsRequest">
+        <wsdl:part name="parameters" element="ns1:registerDistributorResults"/>
+    </wsdl:message>
+    <wsdl:message name="registerDistributorResultsResponse">
+        <wsdl:part name="parameters" element="ns1:registerDistributorResultsResponse"/>
+    </wsdl:message>
+    <wsdl:portType name="NotificationDistributorOperations.WSPortType">
+        <wsdl:operation name="setDistributorAvailabilityForUser">
+            <wsdl:input message="axis2:setDistributorAvailabilityForUserRequest" wsaw:Action="setDistributorAvailabilityForUser"/>
+            <wsdl:output message="axis2:setDistributorAvailabilityForUserResponse" wsaw:Action="http://notificationdistributoroperations.ws.blackboard/NotificationDistributorOperations/setDistributorAvailabilityForUserResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="initializeNotificationDistributorOperationsWS">
+            <wsdl:input message="axis2:initializeNotificationDistributorOperationsWSRequest" wsaw:Action="initializeNotificationDistributorOperationsWS"/>
+            <wsdl:output message="axis2:initializeNotificationDistributorOperationsWSResponse" wsaw:Action="http://notificationdistributoroperations.ws.blackboard/NotificationDistributorOperations/initializeNotificationDistributorOperationsWSResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="getServerVersion">
+            <wsdl:input message="axis2:getServerVersionRequest" wsaw:Action="getServerVersion"/>
+            <wsdl:output message="axis2:getServerVersionResponse" wsaw:Action="http://notificationdistributoroperations.ws.blackboard/NotificationDistributorOperations/getServerVersionResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="registerDistributorResults">
+            <wsdl:input message="axis2:registerDistributorResultsRequest" wsaw:Action="registerDistributorResults"/>
+            <wsdl:output message="axis2:registerDistributorResultsResponse" wsaw:Action="http://notificationdistributoroperations.ws.blackboard/NotificationDistributorOperations/registerDistributorResultsResponse"/>
+        </wsdl:operation>
+    </wsdl:portType>
+    <wsdl:binding name="NotificationDistributorOperations.WSSOAP11Binding" type="axis2:NotificationDistributorOperations.WSPortType">
+        <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+        <wsdl:operation name="setDistributorAvailabilityForUser">
+            <soap:operation soapAction="setDistributorAvailabilityForUser" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="initializeNotificationDistributorOperationsWS">
+            <soap:operation soapAction="initializeNotificationDistributorOperationsWS" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getServerVersion">
+            <soap:operation soapAction="getServerVersion" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="registerDistributorResults">
+            <soap:operation soapAction="registerDistributorResults" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:binding name="NotificationDistributorOperations.WSSOAP12Binding" type="axis2:NotificationDistributorOperations.WSPortType">
+        <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+        <wsdl:operation name="setDistributorAvailabilityForUser">
+            <soap12:operation soapAction="setDistributorAvailabilityForUser" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="initializeNotificationDistributorOperationsWS">
+            <soap12:operation soapAction="initializeNotificationDistributorOperationsWS" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getServerVersion">
+            <soap12:operation soapAction="getServerVersion" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="registerDistributorResults">
+            <soap12:operation soapAction="registerDistributorResults" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:binding name="NotificationDistributorOperations.WSHttpBinding" type="axis2:NotificationDistributorOperations.WSPortType">
+        <http:binding verb="POST"/>
+        <wsdl:operation name="setDistributorAvailabilityForUser">
+            <http:operation location="NotificationDistributorOperations.WS/setDistributorAvailabilityForUser"/>
+            <wsdl:input>
+                <mime:content type="text/xml" part="setDistributorAvailabilityForUser"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="text/xml" part="setDistributorAvailabilityForUser"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="initializeNotificationDistributorOperationsWS">
+            <http:operation location="NotificationDistributorOperations.WS/initializeNotificationDistributorOperationsWS"/>
+            <wsdl:input>
+                <mime:content type="text/xml" part="initializeNotificationDistributorOperationsWS"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="text/xml" part="initializeNotificationDistributorOperationsWS"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getServerVersion">
+            <http:operation location="NotificationDistributorOperations.WS/getServerVersion"/>
+            <wsdl:input>
+                <mime:content type="text/xml" part="getServerVersion"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="text/xml" part="getServerVersion"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="registerDistributorResults">
+            <http:operation location="NotificationDistributorOperations.WS/registerDistributorResults"/>
+            <wsdl:input>
+                <mime:content type="text/xml" part="registerDistributorResults"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="text/xml" part="registerDistributorResults"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:service name="NotificationDistributorOperations.WS">
+        <wsdl:port name="NotificationDistributorOperations.WSSOAP11port_https" binding="axis2:NotificationDistributorOperations.WSSOAP11Binding">
+            <soap:address location="https://50.173.89.101:443/webapps/ws/services/NotificationDistributorOperations.WS"/>
+        </wsdl:port>
+        <wsdl:port name="NotificationDistributorOperations.WSSOAP11port_http1" binding="axis2:NotificationDistributorOperations.WSSOAP11Binding">
+            <soap:address location="http://50.173.89.101:8080/webapps/ws/services/NotificationDistributorOperations.WS"/>
+        </wsdl:port>
+        <wsdl:port name="NotificationDistributorOperations.WSSOAP12port_https" binding="axis2:NotificationDistributorOperations.WSSOAP12Binding">
+            <soap12:address location="https://50.173.89.101:443/webapps/ws/services/NotificationDistributorOperations.WS"/>
+        </wsdl:port>
+        <wsdl:port name="NotificationDistributorOperations.WSSOAP12port_http1" binding="axis2:NotificationDistributorOperations.WSSOAP12Binding">
+            <soap12:address location="http://50.173.89.101:8080/webapps/ws/services/NotificationDistributorOperations.WS"/>
+        </wsdl:port>
+        <wsdl:port name="NotificationDistributorOperations.WSHttpport" binding="axis2:NotificationDistributorOperations.WSHttpBinding">
+            <http:address location="https://50.173.89.101:443/webapps/ws/services/NotificationDistributorOperations.WS"/>
+        </wsdl:port>
+        <wsdl:port name="NotificationDistributorOperations.WSHttpport1" binding="axis2:NotificationDistributorOperations.WSHttpBinding">
+            <http:address location="http://50.173.89.101:8080/webapps/ws/services/NotificationDistributorOperations.WS"/>
+        </wsdl:port>
+    </wsdl:service>
+</wsdl:definitions>

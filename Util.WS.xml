@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:axis2="http://util.ws.blackboard/" xmlns:ns2="http://util.ws.blackboard" xmlns:ns1="http://util.ws.blackboard/xsd" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:ns0="http://ws.platform.blackboard/xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://util.ws.blackboard/">
+    <wsdl:types>
+        <xs:schema xmlns:ax27="http://ws.platform.blackboard/xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://ws.platform.blackboard/xsd">
+            <xs:complexType name="VersionVO">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="version" type="xs:long"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="CourseIdVO">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="externalId" nillable="true" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+        </xs:schema>
+        <xs:schema xmlns:ax28="http://util.ws.blackboard/xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://util.ws.blackboard/xsd">
+            <xs:complexType name="DataSourceVO">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="batchUid" nillable="true" type="xs:string"/>
+                    <xs:element minOccurs="0" name="description" nillable="true" type="xs:string"/>
+                    <xs:element minOccurs="0" name="id" nillable="true" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+        </xs:schema>
+        <xs:schema xmlns:ns="http://util.ws.blackboard" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://util.ws.blackboard">
+            <xs:element name="getServerVersion">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="unused" nillable="true" type="ns0:VersionVO"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getServerVersionResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="return" nillable="true" type="ns0:VersionVO"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getDataSources">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs="unbounded" minOccurs="0" name="ids" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getDataSourcesResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs="unbounded" minOccurs="0" name="return" nillable="true" type="ns1:DataSourceVO"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="checkEntitlement">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="course" nillable="true" type="ns0:CourseIdVO"/>
+                        <xs:element minOccurs="0" name="entitlement" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="checkEntitlementResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="return" type="xs:boolean"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="deleteSetting">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="scope" type="xs:int"/>
+                        <xs:element minOccurs="0" name="id" nillable="true" type="xs:string"/>
+                        <xs:element minOccurs="0" name="key" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="deleteSettingResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="return" type="xs:boolean"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="initializeUtilWS">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="ignore" type="xs:boolean"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="initializeUtilWSResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="return" type="xs:boolean"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="saveSetting">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="scope" type="xs:int"/>
+                        <xs:element minOccurs="0" name="id" nillable="true" type="xs:string"/>
+                        <xs:element minOccurs="0" name="key" nillable="true" type="xs:string"/>
+                        <xs:element minOccurs="0" name="value" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="saveSettingResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="return" type="xs:boolean"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="loadSetting">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="scope" type="xs:int"/>
+                        <xs:element minOccurs="0" name="id" nillable="true" type="xs:string"/>
+                        <xs:element minOccurs="0" name="key" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="loadSettingResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="return" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getRequiredEntitlements">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="method" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getRequiredEntitlementsResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs="unbounded" minOccurs="0" name="return" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:schema>
+    </wsdl:types>
+    <wsdl:message name="checkEntitlementRequest">
+        <wsdl:part name="parameters" element="ns2:checkEntitlement"/>
+    </wsdl:message>
+    <wsdl:message name="checkEntitlementResponse">
+        <wsdl:part name="parameters" element="ns2:checkEntitlementResponse"/>
+    </wsdl:message>
+    <wsdl:message name="getRequiredEntitlementsRequest">
+        <wsdl:part name="parameters" element="ns2:getRequiredEntitlements"/>
+    </wsdl:message>
+    <wsdl:message name="getRequiredEntitlementsResponse">
+        <wsdl:part name="parameters" element="ns2:getRequiredEntitlementsResponse"/>
+    </wsdl:message>
+    <wsdl:message name="getDataSourcesRequest">
+        <wsdl:part name="parameters" element="ns2:getDataSources"/>
+    </wsdl:message>
+    <wsdl:message name="getDataSourcesResponse">
+        <wsdl:part name="parameters" element="ns2:getDataSourcesResponse"/>
+    </wsdl:message>
+    <wsdl:message name="saveSettingRequest">
+        <wsdl:part name="parameters" element="ns2:saveSetting"/>
+    </wsdl:message>
+    <wsdl:message name="saveSettingResponse">
+        <wsdl:part name="parameters" element="ns2:saveSettingResponse"/>
+    </wsdl:message>
+    <wsdl:message name="loadSettingRequest">
+        <wsdl:part name="parameters" element="ns2:loadSetting"/>
+    </wsdl:message>
+    <wsdl:message name="loadSettingResponse">
+        <wsdl:part name="parameters" element="ns2:loadSettingResponse"/>
+    </wsdl:message>
+    <wsdl:message name="initializeUtilWSRequest">
+        <wsdl:part name="parameters" element="ns2:initializeUtilWS"/>
+    </wsdl:message>
+    <wsdl:message name="initializeUtilWSResponse">
+        <wsdl:part name="parameters" element="ns2:initializeUtilWSResponse"/>
+    </wsdl:message>
+    <wsdl:message name="getServerVersionRequest">
+        <wsdl:part name="parameters" element="ns2:getServerVersion"/>
+    </wsdl:message>
+    <wsdl:message name="getServerVersionResponse">
+        <wsdl:part name="parameters" element="ns2:getServerVersionResponse"/>
+    </wsdl:message>
+    <wsdl:message name="deleteSettingRequest">
+        <wsdl:part name="parameters" element="ns2:deleteSetting"/>
+    </wsdl:message>
+    <wsdl:message name="deleteSettingResponse">
+        <wsdl:part name="parameters" element="ns2:deleteSettingResponse"/>
+    </wsdl:message>
+    <wsdl:portType name="Util.WSPortType">
+        <wsdl:operation name="checkEntitlement">
+            <wsdl:input message="axis2:checkEntitlementRequest" wsaw:Action="checkEntitlement"/>
+            <wsdl:output message="axis2:checkEntitlementResponse" wsaw:Action="http://util.ws.blackboard/Util/checkEntitlementResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="getRequiredEntitlements">
+            <wsdl:input message="axis2:getRequiredEntitlementsRequest" wsaw:Action="getRequiredEntitlements"/>
+            <wsdl:output message="axis2:getRequiredEntitlementsResponse" wsaw:Action="http://util.ws.blackboard/Util/getRequiredEntitlementsResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="getDataSources">
+            <wsdl:input message="axis2:getDataSourcesRequest" wsaw:Action="getDataSources"/>
+            <wsdl:output message="axis2:getDataSourcesResponse" wsaw:Action="http://util.ws.blackboard/Util/getDataSourcesResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="saveSetting">
+            <wsdl:input message="axis2:saveSettingRequest" wsaw:Action="saveSetting"/>
+            <wsdl:output message="axis2:saveSettingResponse" wsaw:Action="http://util.ws.blackboard/Util/saveSettingResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="loadSetting">
+            <wsdl:input message="axis2:loadSettingRequest" wsaw:Action="loadSetting"/>
+            <wsdl:output message="axis2:loadSettingResponse" wsaw:Action="http://util.ws.blackboard/Util/loadSettingResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="initializeUtilWS">
+            <wsdl:input message="axis2:initializeUtilWSRequest" wsaw:Action="initializeUtilWS"/>
+            <wsdl:output message="axis2:initializeUtilWSResponse" wsaw:Action="http://util.ws.blackboard/Util/initializeUtilWSResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="getServerVersion">
+            <wsdl:input message="axis2:getServerVersionRequest" wsaw:Action="getServerVersion"/>
+            <wsdl:output message="axis2:getServerVersionResponse" wsaw:Action="http://util.ws.blackboard/Util/getServerVersionResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="deleteSetting">
+            <wsdl:input message="axis2:deleteSettingRequest" wsaw:Action="deleteSetting"/>
+            <wsdl:output message="axis2:deleteSettingResponse" wsaw:Action="http://util.ws.blackboard/Util/deleteSettingResponse"/>
+        </wsdl:operation>
+    </wsdl:portType>
+    <wsdl:binding name="Util.WSSOAP11Binding" type="axis2:Util.WSPortType">
+        <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+        <wsdl:operation name="checkEntitlement">
+            <soap:operation soapAction="checkEntitlement" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getRequiredEntitlements">
+            <soap:operation soapAction="getRequiredEntitlements" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getDataSources">
+            <soap:operation soapAction="getDataSources" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="saveSetting">
+            <soap:operation soapAction="saveSetting" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="loadSetting">
+            <soap:operation soapAction="loadSetting" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="initializeUtilWS">
+            <soap:operation soapAction="initializeUtilWS" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getServerVersion">
+            <soap:operation soapAction="getServerVersion" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="deleteSetting">
+            <soap:operation soapAction="deleteSetting" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:binding name="Util.WSSOAP12Binding" type="axis2:Util.WSPortType">
+        <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+        <wsdl:operation name="checkEntitlement">
+            <soap12:operation soapAction="checkEntitlement" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getRequiredEntitlements">
+            <soap12:operation soapAction="getRequiredEntitlements" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getDataSources">
+            <soap12:operation soapAction="getDataSources" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="saveSetting">
+            <soap12:operation soapAction="saveSetting" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="loadSetting">
+            <soap12:operation soapAction="loadSetting" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="initializeUtilWS">
+            <soap12:operation soapAction="initializeUtilWS" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getServerVersion">
+            <soap12:operation soapAction="getServerVersion" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="deleteSetting">
+            <soap12:operation soapAction="deleteSetting" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:binding name="Util.WSHttpBinding" type="axis2:Util.WSPortType">
+        <http:binding verb="POST"/>
+        <wsdl:operation name="checkEntitlement">
+            <http:operation location="Util.WS/checkEntitlement"/>
+            <wsdl:input>
+                <mime:content type="text/xml" part="checkEntitlement"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="text/xml" part="checkEntitlement"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getRequiredEntitlements">
+            <http:operation location="Util.WS/getRequiredEntitlements"/>
+            <wsdl:input>
+                <mime:content type="text/xml" part="getRequiredEntitlements"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="text/xml" part="getRequiredEntitlements"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getDataSources">
+            <http:operation location="Util.WS/getDataSources"/>
+            <wsdl:input>
+                <mime:content type="text/xml" part="getDataSources"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="text/xml" part="getDataSources"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="saveSetting">
+            <http:operation location="Util.WS/saveSetting"/>
+            <wsdl:input>
+                <mime:content type="text/xml" part="saveSetting"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="text/xml" part="saveSetting"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="loadSetting">
+            <http:operation location="Util.WS/loadSetting"/>
+            <wsdl:input>
+                <mime:content type="text/xml" part="loadSetting"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="text/xml" part="loadSetting"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="initializeUtilWS">
+            <http:operation location="Util.WS/initializeUtilWS"/>
+            <wsdl:input>
+                <mime:content type="text/xml" part="initializeUtilWS"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="text/xml" part="initializeUtilWS"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getServerVersion">
+            <http:operation location="Util.WS/getServerVersion"/>
+            <wsdl:input>
+                <mime:content type="text/xml" part="getServerVersion"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="text/xml" part="getServerVersion"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="deleteSetting">
+            <http:operation location="Util.WS/deleteSetting"/>
+            <wsdl:input>
+                <mime:content type="text/xml" part="deleteSetting"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="text/xml" part="deleteSetting"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:service name="Util.WS">
+        <wsdl:port name="Util.WSSOAP11port_https" binding="axis2:Util.WSSOAP11Binding">
+            <soap:address location="https://50.173.89.101:443/webapps/ws/services/Util.WS"/>
+        </wsdl:port>
+        <wsdl:port name="Util.WSSOAP11port_http1" binding="axis2:Util.WSSOAP11Binding">
+            <soap:address location="http://50.173.89.101:8080/webapps/ws/services/Util.WS"/>
+        </wsdl:port>
+        <wsdl:port name="Util.WSSOAP12port_https" binding="axis2:Util.WSSOAP12Binding">
+            <soap12:address location="https://50.173.89.101:443/webapps/ws/services/Util.WS"/>
+        </wsdl:port>
+        <wsdl:port name="Util.WSSOAP12port_http1" binding="axis2:Util.WSSOAP12Binding">
+            <soap12:address location="http://50.173.89.101:8080/webapps/ws/services/Util.WS"/>
+        </wsdl:port>
+        <wsdl:port name="Util.WSHttpport" binding="axis2:Util.WSHttpBinding">
+            <http:address location="https://50.173.89.101:443/webapps/ws/services/Util.WS"/>
+        </wsdl:port>
+        <wsdl:port name="Util.WSHttpport1" binding="axis2:Util.WSHttpBinding">
+            <http:address location="http://50.173.89.101:8080/webapps/ws/services/Util.WS"/>
+        </wsdl:port>
+    </wsdl:service>
+</wsdl:definitions>

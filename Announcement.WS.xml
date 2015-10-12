@@ -1,0 +1,798 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:axis2="http://announcement.ws.blackboard/" xmlns:ns2="http://announcement.ws.blackboard/xsd" xmlns:ns1="http://announcement.ws.blackboard" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:ns0="http://ws.platform.blackboard/xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://announcement.ws.blackboard/">
+    <wsdl:types>
+        <xs:schema xmlns:ax223="http://ws.platform.blackboard/xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://ws.platform.blackboard/xsd">
+            <xs:complexType name="VersionVO">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="version" type="xs:long"/>
+                </xs:sequence>
+            </xs:complexType>
+        </xs:schema>
+        <xs:schema xmlns:ns="http://announcement.ws.blackboard" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://announcement.ws.blackboard">
+            <xs:element name="getServerVersion">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="unused" nillable="true" type="ns0:VersionVO"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getServerVersionResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="return" nillable="true" type="ns0:VersionVO"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getCourseAnnouncements">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="courseId" nillable="true" type="xs:string"/>
+                        <xs:element minOccurs="0" name="filter" nillable="true" type="ns2:AnnouncementAttributeFilter"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getCourseAnnouncementsResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs="unbounded" minOccurs="0" name="return" nillable="true" type="ns2:AnnouncementVO"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getOrgAnnouncements">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="orgId" nillable="true" type="xs:string"/>
+                        <xs:element minOccurs="0" name="filter" nillable="true" type="ns2:AnnouncementAttributeFilter"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getOrgAnnouncementsResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs="unbounded" minOccurs="0" name="return" nillable="true" type="ns2:AnnouncementVO"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getSystemAnnouncements">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="filter" nillable="true" type="ns2:AnnouncementAttributeFilter"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getSystemAnnouncementsResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs="unbounded" minOccurs="0" name="return" nillable="true" type="ns2:AnnouncementVO"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="initializeAnnouncementWS">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="ignore" type="xs:boolean"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="initializeAnnouncementWSResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="return" type="xs:boolean"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="createCourseAnnouncements">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="courseId" nillable="true" type="xs:string"/>
+                        <xs:element maxOccurs="unbounded" minOccurs="0" name="announcements" nillable="true" type="ns2:AnnouncementVO"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="createCourseAnnouncementsResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs="unbounded" minOccurs="0" name="return" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="createOrgAnnouncements">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="courseId" nillable="true" type="xs:string"/>
+                        <xs:element maxOccurs="unbounded" minOccurs="0" name="announcements" nillable="true" type="ns2:AnnouncementVO"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="createOrgAnnouncementsResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs="unbounded" minOccurs="0" name="return" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="createSystemAnnouncements">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs="unbounded" minOccurs="0" name="announcements" nillable="true" type="ns2:AnnouncementVO"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="createSystemAnnouncementsResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs="unbounded" minOccurs="0" name="return" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="deleteCourseAnnouncements">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="courseId" nillable="true" type="xs:string"/>
+                        <xs:element maxOccurs="unbounded" minOccurs="0" name="announcementIds" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="deleteCourseAnnouncementsResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs="unbounded" minOccurs="0" name="return" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="deleteOrgAnnouncements">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="courseId" nillable="true" type="xs:string"/>
+                        <xs:element maxOccurs="unbounded" minOccurs="0" name="announcementIds" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="deleteOrgAnnouncementsResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs="unbounded" minOccurs="0" name="return" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="deleteSystemAnnouncements">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs="unbounded" minOccurs="0" name="announcementIds" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="deleteSystemAnnouncementsResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs="unbounded" minOccurs="0" name="return" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="updateCourseAnnouncements">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="courseId" nillable="true" type="xs:string"/>
+                        <xs:element maxOccurs="unbounded" minOccurs="0" name="announcements" nillable="true" type="ns2:AnnouncementVO"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="updateCourseAnnouncementsResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs="unbounded" minOccurs="0" name="return" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="updateOrgAnnouncements">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="courseId" nillable="true" type="xs:string"/>
+                        <xs:element maxOccurs="unbounded" minOccurs="0" name="announcements" nillable="true" type="ns2:AnnouncementVO"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="updateOrgAnnouncementsResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs="unbounded" minOccurs="0" name="return" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="updateSystemAnnouncements">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs="unbounded" minOccurs="0" name="announcements" nillable="true" type="ns2:AnnouncementVO"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="updateSystemAnnouncementsResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs="unbounded" minOccurs="0" name="return" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:schema>
+        <xs:schema xmlns:ax224="http://announcement.ws.blackboard/xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://announcement.ws.blackboard/xsd">
+            <xs:complexType name="AnnouncementAttributeFilter">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="endDate" type="xs:long"/>
+                    <xs:element maxOccurs="unbounded" minOccurs="0" name="expansionData" nillable="true" type="xs:string"/>
+                    <xs:element minOccurs="0" name="filterType" type="xs:int"/>
+                    <xs:element maxOccurs="unbounded" minOccurs="0" name="ids" nillable="true" type="xs:string"/>
+                    <xs:element minOccurs="0" name="startDate" type="xs:long"/>
+                    <xs:element minOccurs="0" name="userId" nillable="true" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="AnnouncementVO">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="body" nillable="true" type="xs:string"/>
+                    <xs:element minOccurs="0" name="courseId" nillable="true" type="xs:string"/>
+                    <xs:element minOccurs="0" name="creatorUserId" nillable="true" type="xs:string"/>
+                    <xs:element maxOccurs="unbounded" minOccurs="0" name="expansionData" nillable="true" type="xs:string"/>
+                    <xs:element minOccurs="0" name="id" nillable="true" type="xs:string"/>
+                    <xs:element minOccurs="0" name="permanent" type="xs:boolean"/>
+                    <xs:element minOccurs="0" name="position" type="xs:int"/>
+                    <xs:element minOccurs="0" name="pushNotify" type="xs:boolean"/>
+                    <xs:element minOccurs="0" name="restrictionEndDate" type="xs:long"/>
+                    <xs:element minOccurs="0" name="restrictionStartDate" type="xs:long"/>
+                    <xs:element minOccurs="0" name="showOnCourses" type="xs:boolean"/>
+                    <xs:element minOccurs="0" name="showOnLogin" type="xs:boolean"/>
+                    <xs:element minOccurs="0" name="title" nillable="true" type="xs:string"/>
+                    <xs:element minOccurs="0" name="titleColor" nillable="true" type="xs:string"/>
+                    <xs:element minOccurs="0" name="type" nillable="true" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+        </xs:schema>
+    </wsdl:types>
+    <wsdl:message name="createCourseAnnouncementsRequest">
+        <wsdl:part name="parameters" element="ns1:createCourseAnnouncements"/>
+    </wsdl:message>
+    <wsdl:message name="createCourseAnnouncementsResponse">
+        <wsdl:part name="parameters" element="ns1:createCourseAnnouncementsResponse"/>
+    </wsdl:message>
+    <wsdl:message name="deleteOrgAnnouncementsRequest">
+        <wsdl:part name="parameters" element="ns1:deleteOrgAnnouncements"/>
+    </wsdl:message>
+    <wsdl:message name="deleteOrgAnnouncementsResponse">
+        <wsdl:part name="parameters" element="ns1:deleteOrgAnnouncementsResponse"/>
+    </wsdl:message>
+    <wsdl:message name="initializeAnnouncementWSRequest">
+        <wsdl:part name="parameters" element="ns1:initializeAnnouncementWS"/>
+    </wsdl:message>
+    <wsdl:message name="initializeAnnouncementWSResponse">
+        <wsdl:part name="parameters" element="ns1:initializeAnnouncementWSResponse"/>
+    </wsdl:message>
+    <wsdl:message name="deleteSystemAnnouncementsRequest">
+        <wsdl:part name="parameters" element="ns1:deleteSystemAnnouncements"/>
+    </wsdl:message>
+    <wsdl:message name="deleteSystemAnnouncementsResponse">
+        <wsdl:part name="parameters" element="ns1:deleteSystemAnnouncementsResponse"/>
+    </wsdl:message>
+    <wsdl:message name="getCourseAnnouncementsRequest">
+        <wsdl:part name="parameters" element="ns1:getCourseAnnouncements"/>
+    </wsdl:message>
+    <wsdl:message name="getCourseAnnouncementsResponse">
+        <wsdl:part name="parameters" element="ns1:getCourseAnnouncementsResponse"/>
+    </wsdl:message>
+    <wsdl:message name="updateCourseAnnouncementsRequest">
+        <wsdl:part name="parameters" element="ns1:updateCourseAnnouncements"/>
+    </wsdl:message>
+    <wsdl:message name="updateCourseAnnouncementsResponse">
+        <wsdl:part name="parameters" element="ns1:updateCourseAnnouncementsResponse"/>
+    </wsdl:message>
+    <wsdl:message name="createOrgAnnouncementsRequest">
+        <wsdl:part name="parameters" element="ns1:createOrgAnnouncements"/>
+    </wsdl:message>
+    <wsdl:message name="createOrgAnnouncementsResponse">
+        <wsdl:part name="parameters" element="ns1:createOrgAnnouncementsResponse"/>
+    </wsdl:message>
+    <wsdl:message name="updateOrgAnnouncementsRequest">
+        <wsdl:part name="parameters" element="ns1:updateOrgAnnouncements"/>
+    </wsdl:message>
+    <wsdl:message name="updateOrgAnnouncementsResponse">
+        <wsdl:part name="parameters" element="ns1:updateOrgAnnouncementsResponse"/>
+    </wsdl:message>
+    <wsdl:message name="createSystemAnnouncementsRequest">
+        <wsdl:part name="parameters" element="ns1:createSystemAnnouncements"/>
+    </wsdl:message>
+    <wsdl:message name="createSystemAnnouncementsResponse">
+        <wsdl:part name="parameters" element="ns1:createSystemAnnouncementsResponse"/>
+    </wsdl:message>
+    <wsdl:message name="getSystemAnnouncementsRequest">
+        <wsdl:part name="parameters" element="ns1:getSystemAnnouncements"/>
+    </wsdl:message>
+    <wsdl:message name="getSystemAnnouncementsResponse">
+        <wsdl:part name="parameters" element="ns1:getSystemAnnouncementsResponse"/>
+    </wsdl:message>
+    <wsdl:message name="getServerVersionRequest">
+        <wsdl:part name="parameters" element="ns1:getServerVersion"/>
+    </wsdl:message>
+    <wsdl:message name="getServerVersionResponse">
+        <wsdl:part name="parameters" element="ns1:getServerVersionResponse"/>
+    </wsdl:message>
+    <wsdl:message name="getOrgAnnouncementsRequest">
+        <wsdl:part name="parameters" element="ns1:getOrgAnnouncements"/>
+    </wsdl:message>
+    <wsdl:message name="getOrgAnnouncementsResponse">
+        <wsdl:part name="parameters" element="ns1:getOrgAnnouncementsResponse"/>
+    </wsdl:message>
+    <wsdl:message name="updateSystemAnnouncementsRequest">
+        <wsdl:part name="parameters" element="ns1:updateSystemAnnouncements"/>
+    </wsdl:message>
+    <wsdl:message name="updateSystemAnnouncementsResponse">
+        <wsdl:part name="parameters" element="ns1:updateSystemAnnouncementsResponse"/>
+    </wsdl:message>
+    <wsdl:message name="deleteCourseAnnouncementsRequest">
+        <wsdl:part name="parameters" element="ns1:deleteCourseAnnouncements"/>
+    </wsdl:message>
+    <wsdl:message name="deleteCourseAnnouncementsResponse">
+        <wsdl:part name="parameters" element="ns1:deleteCourseAnnouncementsResponse"/>
+    </wsdl:message>
+    <wsdl:portType name="Announcement.WSPortType">
+        <wsdl:operation name="createCourseAnnouncements">
+            <wsdl:input message="axis2:createCourseAnnouncementsRequest" wsaw:Action="createCourseAnnouncements"/>
+            <wsdl:output message="axis2:createCourseAnnouncementsResponse" wsaw:Action="http://announcement.ws.blackboard/Announcement/createCourseAnnouncementsResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="deleteOrgAnnouncements">
+            <wsdl:input message="axis2:deleteOrgAnnouncementsRequest" wsaw:Action="deleteOrgAnnouncements"/>
+            <wsdl:output message="axis2:deleteOrgAnnouncementsResponse" wsaw:Action="http://announcement.ws.blackboard/Announcement/deleteOrgAnnouncementsResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="initializeAnnouncementWS">
+            <wsdl:input message="axis2:initializeAnnouncementWSRequest" wsaw:Action="initializeAnnouncementWS"/>
+            <wsdl:output message="axis2:initializeAnnouncementWSResponse" wsaw:Action="http://announcement.ws.blackboard/Announcement/initializeAnnouncementWSResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="deleteSystemAnnouncements">
+            <wsdl:input message="axis2:deleteSystemAnnouncementsRequest" wsaw:Action="deleteSystemAnnouncements"/>
+            <wsdl:output message="axis2:deleteSystemAnnouncementsResponse" wsaw:Action="http://announcement.ws.blackboard/Announcement/deleteSystemAnnouncementsResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="getCourseAnnouncements">
+            <wsdl:input message="axis2:getCourseAnnouncementsRequest" wsaw:Action="getCourseAnnouncements"/>
+            <wsdl:output message="axis2:getCourseAnnouncementsResponse" wsaw:Action="http://announcement.ws.blackboard/Announcement/getCourseAnnouncementsResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="updateCourseAnnouncements">
+            <wsdl:input message="axis2:updateCourseAnnouncementsRequest" wsaw:Action="updateCourseAnnouncements"/>
+            <wsdl:output message="axis2:updateCourseAnnouncementsResponse" wsaw:Action="http://announcement.ws.blackboard/Announcement/updateCourseAnnouncementsResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="createOrgAnnouncements">
+            <wsdl:input message="axis2:createOrgAnnouncementsRequest" wsaw:Action="createOrgAnnouncements"/>
+            <wsdl:output message="axis2:createOrgAnnouncementsResponse" wsaw:Action="http://announcement.ws.blackboard/Announcement/createOrgAnnouncementsResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="updateOrgAnnouncements">
+            <wsdl:input message="axis2:updateOrgAnnouncementsRequest" wsaw:Action="updateOrgAnnouncements"/>
+            <wsdl:output message="axis2:updateOrgAnnouncementsResponse" wsaw:Action="http://announcement.ws.blackboard/Announcement/updateOrgAnnouncementsResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="createSystemAnnouncements">
+            <wsdl:input message="axis2:createSystemAnnouncementsRequest" wsaw:Action="createSystemAnnouncements"/>
+            <wsdl:output message="axis2:createSystemAnnouncementsResponse" wsaw:Action="http://announcement.ws.blackboard/Announcement/createSystemAnnouncementsResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="getSystemAnnouncements">
+            <wsdl:input message="axis2:getSystemAnnouncementsRequest" wsaw:Action="getSystemAnnouncements"/>
+            <wsdl:output message="axis2:getSystemAnnouncementsResponse" wsaw:Action="http://announcement.ws.blackboard/Announcement/getSystemAnnouncementsResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="getServerVersion">
+            <wsdl:input message="axis2:getServerVersionRequest" wsaw:Action="getServerVersion"/>
+            <wsdl:output message="axis2:getServerVersionResponse" wsaw:Action="http://announcement.ws.blackboard/Announcement/getServerVersionResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="getOrgAnnouncements">
+            <wsdl:input message="axis2:getOrgAnnouncementsRequest" wsaw:Action="getOrgAnnouncements"/>
+            <wsdl:output message="axis2:getOrgAnnouncementsResponse" wsaw:Action="http://announcement.ws.blackboard/Announcement/getOrgAnnouncementsResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="updateSystemAnnouncements">
+            <wsdl:input message="axis2:updateSystemAnnouncementsRequest" wsaw:Action="updateSystemAnnouncements"/>
+            <wsdl:output message="axis2:updateSystemAnnouncementsResponse" wsaw:Action="http://announcement.ws.blackboard/Announcement/updateSystemAnnouncementsResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="deleteCourseAnnouncements">
+            <wsdl:input message="axis2:deleteCourseAnnouncementsRequest" wsaw:Action="deleteCourseAnnouncements"/>
+            <wsdl:output message="axis2:deleteCourseAnnouncementsResponse" wsaw:Action="http://announcement.ws.blackboard/Announcement/deleteCourseAnnouncementsResponse"/>
+        </wsdl:operation>
+    </wsdl:portType>
+    <wsdl:binding name="Announcement.WSSOAP11Binding" type="axis2:Announcement.WSPortType">
+        <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+        <wsdl:operation name="createCourseAnnouncements">
+            <soap:operation soapAction="createCourseAnnouncements" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="deleteOrgAnnouncements">
+            <soap:operation soapAction="deleteOrgAnnouncements" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="initializeAnnouncementWS">
+            <soap:operation soapAction="initializeAnnouncementWS" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="deleteSystemAnnouncements">
+            <soap:operation soapAction="deleteSystemAnnouncements" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getCourseAnnouncements">
+            <soap:operation soapAction="getCourseAnnouncements" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="updateCourseAnnouncements">
+            <soap:operation soapAction="updateCourseAnnouncements" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="createOrgAnnouncements">
+            <soap:operation soapAction="createOrgAnnouncements" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="updateOrgAnnouncements">
+            <soap:operation soapAction="updateOrgAnnouncements" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="createSystemAnnouncements">
+            <soap:operation soapAction="createSystemAnnouncements" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getSystemAnnouncements">
+            <soap:operation soapAction="getSystemAnnouncements" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getServerVersion">
+            <soap:operation soapAction="getServerVersion" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getOrgAnnouncements">
+            <soap:operation soapAction="getOrgAnnouncements" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="updateSystemAnnouncements">
+            <soap:operation soapAction="updateSystemAnnouncements" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="deleteCourseAnnouncements">
+            <soap:operation soapAction="deleteCourseAnnouncements" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:binding name="Announcement.WSSOAP12Binding" type="axis2:Announcement.WSPortType">
+        <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+        <wsdl:operation name="createCourseAnnouncements">
+            <soap12:operation soapAction="createCourseAnnouncements" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="deleteOrgAnnouncements">
+            <soap12:operation soapAction="deleteOrgAnnouncements" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="initializeAnnouncementWS">
+            <soap12:operation soapAction="initializeAnnouncementWS" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="deleteSystemAnnouncements">
+            <soap12:operation soapAction="deleteSystemAnnouncements" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getCourseAnnouncements">
+            <soap12:operation soapAction="getCourseAnnouncements" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="updateCourseAnnouncements">
+            <soap12:operation soapAction="updateCourseAnnouncements" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="createOrgAnnouncements">
+            <soap12:operation soapAction="createOrgAnnouncements" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="updateOrgAnnouncements">
+            <soap12:operation soapAction="updateOrgAnnouncements" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="createSystemAnnouncements">
+            <soap12:operation soapAction="createSystemAnnouncements" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getSystemAnnouncements">
+            <soap12:operation soapAction="getSystemAnnouncements" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getServerVersion">
+            <soap12:operation soapAction="getServerVersion" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getOrgAnnouncements">
+            <soap12:operation soapAction="getOrgAnnouncements" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="updateSystemAnnouncements">
+            <soap12:operation soapAction="updateSystemAnnouncements" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="deleteCourseAnnouncements">
+            <soap12:operation soapAction="deleteCourseAnnouncements" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:binding name="Announcement.WSHttpBinding" type="axis2:Announcement.WSPortType">
+        <http:binding verb="POST"/>
+        <wsdl:operation name="createCourseAnnouncements">
+            <http:operation location="Announcement.WS/createCourseAnnouncements"/>
+            <wsdl:input>
+                <mime:content type="text/xml" part="createCourseAnnouncements"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="text/xml" part="createCourseAnnouncements"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="deleteOrgAnnouncements">
+            <http:operation location="Announcement.WS/deleteOrgAnnouncements"/>
+            <wsdl:input>
+                <mime:content type="text/xml" part="deleteOrgAnnouncements"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="text/xml" part="deleteOrgAnnouncements"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="initializeAnnouncementWS">
+            <http:operation location="Announcement.WS/initializeAnnouncementWS"/>
+            <wsdl:input>
+                <mime:content type="text/xml" part="initializeAnnouncementWS"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="text/xml" part="initializeAnnouncementWS"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="deleteSystemAnnouncements">
+            <http:operation location="Announcement.WS/deleteSystemAnnouncements"/>
+            <wsdl:input>
+                <mime:content type="text/xml" part="deleteSystemAnnouncements"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="text/xml" part="deleteSystemAnnouncements"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getCourseAnnouncements">
+            <http:operation location="Announcement.WS/getCourseAnnouncements"/>
+            <wsdl:input>
+                <mime:content type="text/xml" part="getCourseAnnouncements"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="text/xml" part="getCourseAnnouncements"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="updateCourseAnnouncements">
+            <http:operation location="Announcement.WS/updateCourseAnnouncements"/>
+            <wsdl:input>
+                <mime:content type="text/xml" part="updateCourseAnnouncements"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="text/xml" part="updateCourseAnnouncements"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="createOrgAnnouncements">
+            <http:operation location="Announcement.WS/createOrgAnnouncements"/>
+            <wsdl:input>
+                <mime:content type="text/xml" part="createOrgAnnouncements"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="text/xml" part="createOrgAnnouncements"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="updateOrgAnnouncements">
+            <http:operation location="Announcement.WS/updateOrgAnnouncements"/>
+            <wsdl:input>
+                <mime:content type="text/xml" part="updateOrgAnnouncements"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="text/xml" part="updateOrgAnnouncements"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="createSystemAnnouncements">
+            <http:operation location="Announcement.WS/createSystemAnnouncements"/>
+            <wsdl:input>
+                <mime:content type="text/xml" part="createSystemAnnouncements"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="text/xml" part="createSystemAnnouncements"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getSystemAnnouncements">
+            <http:operation location="Announcement.WS/getSystemAnnouncements"/>
+            <wsdl:input>
+                <mime:content type="text/xml" part="getSystemAnnouncements"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="text/xml" part="getSystemAnnouncements"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getServerVersion">
+            <http:operation location="Announcement.WS/getServerVersion"/>
+            <wsdl:input>
+                <mime:content type="text/xml" part="getServerVersion"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="text/xml" part="getServerVersion"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getOrgAnnouncements">
+            <http:operation location="Announcement.WS/getOrgAnnouncements"/>
+            <wsdl:input>
+                <mime:content type="text/xml" part="getOrgAnnouncements"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="text/xml" part="getOrgAnnouncements"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="updateSystemAnnouncements">
+            <http:operation location="Announcement.WS/updateSystemAnnouncements"/>
+            <wsdl:input>
+                <mime:content type="text/xml" part="updateSystemAnnouncements"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="text/xml" part="updateSystemAnnouncements"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="deleteCourseAnnouncements">
+            <http:operation location="Announcement.WS/deleteCourseAnnouncements"/>
+            <wsdl:input>
+                <mime:content type="text/xml" part="deleteCourseAnnouncements"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="text/xml" part="deleteCourseAnnouncements"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:service name="Announcement.WS">
+        <wsdl:port name="Announcement.WSSOAP11port_https" binding="axis2:Announcement.WSSOAP11Binding">
+            <soap:address location="https://50.173.89.101:443/webapps/ws/services/Announcement.WS"/>
+        </wsdl:port>
+        <wsdl:port name="Announcement.WSSOAP11port_http1" binding="axis2:Announcement.WSSOAP11Binding">
+            <soap:address location="http://50.173.89.101:8080/webapps/ws/services/Announcement.WS"/>
+        </wsdl:port>
+        <wsdl:port name="Announcement.WSSOAP12port_https" binding="axis2:Announcement.WSSOAP12Binding">
+            <soap12:address location="https://50.173.89.101:443/webapps/ws/services/Announcement.WS"/>
+        </wsdl:port>
+        <wsdl:port name="Announcement.WSSOAP12port_http1" binding="axis2:Announcement.WSSOAP12Binding">
+            <soap12:address location="http://50.173.89.101:8080/webapps/ws/services/Announcement.WS"/>
+        </wsdl:port>
+        <wsdl:port name="Announcement.WSHttpport" binding="axis2:Announcement.WSHttpBinding">
+            <http:address location="https://50.173.89.101:443/webapps/ws/services/Announcement.WS"/>
+        </wsdl:port>
+        <wsdl:port name="Announcement.WSHttpport1" binding="axis2:Announcement.WSHttpBinding">
+            <http:address location="http://50.173.89.101:8080/webapps/ws/services/Announcement.WS"/>
+        </wsdl:port>
+    </wsdl:service>
+</wsdl:definitions>
