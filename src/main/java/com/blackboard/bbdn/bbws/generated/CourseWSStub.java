@@ -4,7 +4,7 @@
  * This file was auto-generated from WSDL
  * by the Apache Axis2 version: 1.3  Built on : Aug 10, 2007 (04:45:47 LKT)
  */
-package com.blackboard.bbdn.bbcoursews.generated;
+package com.blackboard.bbdn.bbws.generated;
 
 
 /*
@@ -489,11 +489,11 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#getCategories
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#getCategories
      * @param getCategories0
      */
-    public com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetCategoriesResponse getCategories(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetCategories getCategories0)
+    public com.blackboard.bbdn.bbws.generated.CourseWSStub.GetCategoriesResponse getCategories(
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.GetCategories getCategories0)
         throws java.rmi.RemoteException {
         try {
             org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[0].getName());
@@ -533,12 +533,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
             java.lang.Object object = fromOM(_returnEnv.getBody()
                                                        .getFirstElement(),
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetCategoriesResponse.class,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.GetCategoriesResponse.class,
                     getEnvelopeNamespaces(_returnEnv));
             _messageContext.getTransportOut().getSender()
                            .cleanup(_messageContext);
 
-            return (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetCategoriesResponse) object;
+            return (com.blackboard.bbdn.bbws.generated.CourseWSStub.GetCategoriesResponse) object;
         } catch (org.apache.axis2.AxisFault f) {
             org.apache.axiom.om.OMElement faultElt = f.getDetail();
 
@@ -590,12 +590,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature for Asynchronous Invocations
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#startgetCategories
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#startgetCategories
      * @param getCategories0
      */
     public void startgetCategories(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetCategories getCategories0,
-        final com.blackboard.bbdn.bbcoursews.generated.CourseWSCallbackHandler callback)
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.GetCategories getCategories0,
+        final com.blackboard.bbdn.bbws.generated.CourseWSCallbackHandler callback)
         throws java.rmi.RemoteException {
         org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[0].getName());
         _operationClient.getOptions().setAction("getCategories");
@@ -633,9 +633,9 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
                         java.lang.Object object = fromOM(resultEnv.getBody()
                                                                   .getFirstElement(),
-                                com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetCategoriesResponse.class,
+                                com.blackboard.bbdn.bbws.generated.CourseWSStub.GetCategoriesResponse.class,
                                 getEnvelopeNamespaces(resultEnv));
-                        callback.receiveResultgetCategories((com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetCategoriesResponse) object);
+                        callback.receiveResultgetCategories((com.blackboard.bbdn.bbws.generated.CourseWSStub.GetCategoriesResponse) object);
                     } catch (org.apache.axis2.AxisFault e) {
                         callback.receiveErrorgetCategories(e);
                     }
@@ -725,11 +725,11 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#getCourse
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#getCourse
      * @param getCourse2
      */
-    public com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetCourseResponse getCourse(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetCourse getCourse2)
+    public com.blackboard.bbdn.bbws.generated.CourseWSStub.GetCourseResponse getCourse(
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.GetCourse getCourse2)
         throws java.rmi.RemoteException {
         try {
             org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[1].getName());
@@ -769,12 +769,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
             java.lang.Object object = fromOM(_returnEnv.getBody()
                                                        .getFirstElement(),
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetCourseResponse.class,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.GetCourseResponse.class,
                     getEnvelopeNamespaces(_returnEnv));
             _messageContext.getTransportOut().getSender()
                            .cleanup(_messageContext);
 
-            return (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetCourseResponse) object;
+            return (com.blackboard.bbdn.bbws.generated.CourseWSStub.GetCourseResponse) object;
         } catch (org.apache.axis2.AxisFault f) {
             org.apache.axiom.om.OMElement faultElt = f.getDetail();
 
@@ -826,12 +826,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature for Asynchronous Invocations
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#startgetCourse
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#startgetCourse
      * @param getCourse2
      */
     public void startgetCourse(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetCourse getCourse2,
-        final com.blackboard.bbdn.bbcoursews.generated.CourseWSCallbackHandler callback)
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.GetCourse getCourse2,
+        final com.blackboard.bbdn.bbws.generated.CourseWSCallbackHandler callback)
         throws java.rmi.RemoteException {
         org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[1].getName());
         _operationClient.getOptions().setAction("loadCourse");
@@ -869,9 +869,9 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
                         java.lang.Object object = fromOM(resultEnv.getBody()
                                                                   .getFirstElement(),
-                                com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetCourseResponse.class,
+                                com.blackboard.bbdn.bbws.generated.CourseWSStub.GetCourseResponse.class,
                                 getEnvelopeNamespaces(resultEnv));
-                        callback.receiveResultgetCourse((com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetCourseResponse) object);
+                        callback.receiveResultgetCourse((com.blackboard.bbdn.bbws.generated.CourseWSStub.GetCourseResponse) object);
                     } catch (org.apache.axis2.AxisFault e) {
                         callback.receiveErrorgetCourse(e);
                     }
@@ -961,11 +961,11 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#createCourse
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#createCourse
      * @param createCourse4
      */
-    public com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.CreateCourseResponse createCourse(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.CreateCourse createCourse4)
+    public com.blackboard.bbdn.bbws.generated.CourseWSStub.CreateCourseResponse createCourse(
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.CreateCourse createCourse4)
         throws java.rmi.RemoteException {
         try {
             org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[2].getName());
@@ -1005,12 +1005,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
             java.lang.Object object = fromOM(_returnEnv.getBody()
                                                        .getFirstElement(),
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.CreateCourseResponse.class,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.CreateCourseResponse.class,
                     getEnvelopeNamespaces(_returnEnv));
             _messageContext.getTransportOut().getSender()
                            .cleanup(_messageContext);
 
-            return (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.CreateCourseResponse) object;
+            return (com.blackboard.bbdn.bbws.generated.CourseWSStub.CreateCourseResponse) object;
         } catch (org.apache.axis2.AxisFault f) {
             org.apache.axiom.om.OMElement faultElt = f.getDetail();
 
@@ -1062,12 +1062,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature for Asynchronous Invocations
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#startcreateCourse
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#startcreateCourse
      * @param createCourse4
      */
     public void startcreateCourse(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.CreateCourse createCourse4,
-        final com.blackboard.bbdn.bbcoursews.generated.CourseWSCallbackHandler callback)
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.CreateCourse createCourse4,
+        final com.blackboard.bbdn.bbws.generated.CourseWSCallbackHandler callback)
         throws java.rmi.RemoteException {
         org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[2].getName());
         _operationClient.getOptions().setAction("createCourse");
@@ -1105,9 +1105,9 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
                         java.lang.Object object = fromOM(resultEnv.getBody()
                                                                   .getFirstElement(),
-                                com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.CreateCourseResponse.class,
+                                com.blackboard.bbdn.bbws.generated.CourseWSStub.CreateCourseResponse.class,
                                 getEnvelopeNamespaces(resultEnv));
-                        callback.receiveResultcreateCourse((com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.CreateCourseResponse) object);
+                        callback.receiveResultcreateCourse((com.blackboard.bbdn.bbws.generated.CourseWSStub.CreateCourseResponse) object);
                     } catch (org.apache.axis2.AxisFault e) {
                         callback.receiveErrorcreateCourse(e);
                     }
@@ -1197,11 +1197,11 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#changeOrgBatchUid
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#changeOrgBatchUid
      * @param changeOrgBatchUid6
      */
-    public com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeOrgBatchUidResponse changeOrgBatchUid(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeOrgBatchUid changeOrgBatchUid6)
+    public com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeOrgBatchUidResponse changeOrgBatchUid(
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeOrgBatchUid changeOrgBatchUid6)
         throws java.rmi.RemoteException {
         try {
             org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[3].getName());
@@ -1241,12 +1241,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
             java.lang.Object object = fromOM(_returnEnv.getBody()
                                                        .getFirstElement(),
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeOrgBatchUidResponse.class,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeOrgBatchUidResponse.class,
                     getEnvelopeNamespaces(_returnEnv));
             _messageContext.getTransportOut().getSender()
                            .cleanup(_messageContext);
 
-            return (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeOrgBatchUidResponse) object;
+            return (com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeOrgBatchUidResponse) object;
         } catch (org.apache.axis2.AxisFault f) {
             org.apache.axiom.om.OMElement faultElt = f.getDetail();
 
@@ -1298,12 +1298,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature for Asynchronous Invocations
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#startchangeOrgBatchUid
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#startchangeOrgBatchUid
      * @param changeOrgBatchUid6
      */
     public void startchangeOrgBatchUid(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeOrgBatchUid changeOrgBatchUid6,
-        final com.blackboard.bbdn.bbcoursews.generated.CourseWSCallbackHandler callback)
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeOrgBatchUid changeOrgBatchUid6,
+        final com.blackboard.bbdn.bbws.generated.CourseWSCallbackHandler callback)
         throws java.rmi.RemoteException {
         org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[3].getName());
         _operationClient.getOptions().setAction("changeOrgBatchUid");
@@ -1341,9 +1341,9 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
                         java.lang.Object object = fromOM(resultEnv.getBody()
                                                                   .getFirstElement(),
-                                com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeOrgBatchUidResponse.class,
+                                com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeOrgBatchUidResponse.class,
                                 getEnvelopeNamespaces(resultEnv));
-                        callback.receiveResultchangeOrgBatchUid((com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeOrgBatchUidResponse) object);
+                        callback.receiveResultchangeOrgBatchUid((com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeOrgBatchUidResponse) object);
                     } catch (org.apache.axis2.AxisFault e) {
                         callback.receiveErrorchangeOrgBatchUid(e);
                     }
@@ -1433,11 +1433,11 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#deleteOrg
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#deleteOrg
      * @param deleteOrg8
      */
-    public com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteOrgResponse deleteOrg(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteOrg deleteOrg8)
+    public com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteOrgResponse deleteOrg(
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteOrg deleteOrg8)
         throws java.rmi.RemoteException {
         try {
             org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[4].getName());
@@ -1477,12 +1477,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
             java.lang.Object object = fromOM(_returnEnv.getBody()
                                                        .getFirstElement(),
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteOrgResponse.class,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteOrgResponse.class,
                     getEnvelopeNamespaces(_returnEnv));
             _messageContext.getTransportOut().getSender()
                            .cleanup(_messageContext);
 
-            return (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteOrgResponse) object;
+            return (com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteOrgResponse) object;
         } catch (org.apache.axis2.AxisFault f) {
             org.apache.axiom.om.OMElement faultElt = f.getDetail();
 
@@ -1534,12 +1534,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature for Asynchronous Invocations
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#startdeleteOrg
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#startdeleteOrg
      * @param deleteOrg8
      */
     public void startdeleteOrg(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteOrg deleteOrg8,
-        final com.blackboard.bbdn.bbcoursews.generated.CourseWSCallbackHandler callback)
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteOrg deleteOrg8,
+        final com.blackboard.bbdn.bbws.generated.CourseWSCallbackHandler callback)
         throws java.rmi.RemoteException {
         org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[4].getName());
         _operationClient.getOptions().setAction("deleteOrg");
@@ -1577,9 +1577,9 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
                         java.lang.Object object = fromOM(resultEnv.getBody()
                                                                   .getFirstElement(),
-                                com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteOrgResponse.class,
+                                com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteOrgResponse.class,
                                 getEnvelopeNamespaces(resultEnv));
-                        callback.receiveResultdeleteOrg((com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteOrgResponse) object);
+                        callback.receiveResultdeleteOrg((com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteOrgResponse) object);
                     } catch (org.apache.axis2.AxisFault e) {
                         callback.receiveErrordeleteOrg(e);
                     }
@@ -1669,11 +1669,11 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#saveCourseCategory
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#saveCourseCategory
      * @param saveCourseCategory10
      */
-    public com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveCourseCategoryResponse saveCourseCategory(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveCourseCategory saveCourseCategory10)
+    public com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveCourseCategoryResponse saveCourseCategory(
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveCourseCategory saveCourseCategory10)
         throws java.rmi.RemoteException {
         try {
             org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[5].getName());
@@ -1713,12 +1713,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
             java.lang.Object object = fromOM(_returnEnv.getBody()
                                                        .getFirstElement(),
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveCourseCategoryResponse.class,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveCourseCategoryResponse.class,
                     getEnvelopeNamespaces(_returnEnv));
             _messageContext.getTransportOut().getSender()
                            .cleanup(_messageContext);
 
-            return (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveCourseCategoryResponse) object;
+            return (com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveCourseCategoryResponse) object;
         } catch (org.apache.axis2.AxisFault f) {
             org.apache.axiom.om.OMElement faultElt = f.getDetail();
 
@@ -1770,12 +1770,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature for Asynchronous Invocations
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#startsaveCourseCategory
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#startsaveCourseCategory
      * @param saveCourseCategory10
      */
     public void startsaveCourseCategory(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveCourseCategory saveCourseCategory10,
-        final com.blackboard.bbdn.bbcoursews.generated.CourseWSCallbackHandler callback)
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveCourseCategory saveCourseCategory10,
+        final com.blackboard.bbdn.bbws.generated.CourseWSCallbackHandler callback)
         throws java.rmi.RemoteException {
         org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[5].getName());
         _operationClient.getOptions().setAction("saveCourseCategory");
@@ -1813,9 +1813,9 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
                         java.lang.Object object = fromOM(resultEnv.getBody()
                                                                   .getFirstElement(),
-                                com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveCourseCategoryResponse.class,
+                                com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveCourseCategoryResponse.class,
                                 getEnvelopeNamespaces(resultEnv));
-                        callback.receiveResultsaveCourseCategory((com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveCourseCategoryResponse) object);
+                        callback.receiveResultsaveCourseCategory((com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveCourseCategoryResponse) object);
                     } catch (org.apache.axis2.AxisFault e) {
                         callback.receiveErrorsaveCourseCategory(e);
                     }
@@ -1905,11 +1905,11 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#saveGroup
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#saveGroup
      * @param saveGroup12
      */
-    public com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveGroupResponse saveGroup(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveGroup saveGroup12)
+    public com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveGroupResponse saveGroup(
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveGroup saveGroup12)
         throws java.rmi.RemoteException {
         try {
             org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[6].getName());
@@ -1949,12 +1949,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
             java.lang.Object object = fromOM(_returnEnv.getBody()
                                                        .getFirstElement(),
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveGroupResponse.class,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveGroupResponse.class,
                     getEnvelopeNamespaces(_returnEnv));
             _messageContext.getTransportOut().getSender()
                            .cleanup(_messageContext);
 
-            return (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveGroupResponse) object;
+            return (com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveGroupResponse) object;
         } catch (org.apache.axis2.AxisFault f) {
             org.apache.axiom.om.OMElement faultElt = f.getDetail();
 
@@ -2006,12 +2006,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature for Asynchronous Invocations
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#startsaveGroup
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#startsaveGroup
      * @param saveGroup12
      */
     public void startsaveGroup(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveGroup saveGroup12,
-        final com.blackboard.bbdn.bbcoursews.generated.CourseWSCallbackHandler callback)
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveGroup saveGroup12,
+        final com.blackboard.bbdn.bbws.generated.CourseWSCallbackHandler callback)
         throws java.rmi.RemoteException {
         org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[6].getName());
         _operationClient.getOptions().setAction("saveGroup");
@@ -2049,9 +2049,9 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
                         java.lang.Object object = fromOM(resultEnv.getBody()
                                                                   .getFirstElement(),
-                                com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveGroupResponse.class,
+                                com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveGroupResponse.class,
                                 getEnvelopeNamespaces(resultEnv));
-                        callback.receiveResultsaveGroup((com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveGroupResponse) object);
+                        callback.receiveResultsaveGroup((com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveGroupResponse) object);
                     } catch (org.apache.axis2.AxisFault e) {
                         callback.receiveErrorsaveGroup(e);
                     }
@@ -2141,11 +2141,11 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#removeCourseFromTerm
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#removeCourseFromTerm
      * @param removeCourseFromTerm14
      */
-    public com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.RemoveCourseFromTermResponse removeCourseFromTerm(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.RemoveCourseFromTerm removeCourseFromTerm14)
+    public com.blackboard.bbdn.bbws.generated.CourseWSStub.RemoveCourseFromTermResponse removeCourseFromTerm(
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.RemoveCourseFromTerm removeCourseFromTerm14)
         throws java.rmi.RemoteException {
         try {
             org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[7].getName());
@@ -2186,12 +2186,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
             java.lang.Object object = fromOM(_returnEnv.getBody()
                                                        .getFirstElement(),
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.RemoveCourseFromTermResponse.class,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.RemoveCourseFromTermResponse.class,
                     getEnvelopeNamespaces(_returnEnv));
             _messageContext.getTransportOut().getSender()
                            .cleanup(_messageContext);
 
-            return (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.RemoveCourseFromTermResponse) object;
+            return (com.blackboard.bbdn.bbws.generated.CourseWSStub.RemoveCourseFromTermResponse) object;
         } catch (org.apache.axis2.AxisFault f) {
             org.apache.axiom.om.OMElement faultElt = f.getDetail();
 
@@ -2243,12 +2243,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature for Asynchronous Invocations
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#startremoveCourseFromTerm
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#startremoveCourseFromTerm
      * @param removeCourseFromTerm14
      */
     public void startremoveCourseFromTerm(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.RemoveCourseFromTerm removeCourseFromTerm14,
-        final com.blackboard.bbdn.bbcoursews.generated.CourseWSCallbackHandler callback)
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.RemoveCourseFromTerm removeCourseFromTerm14,
+        final com.blackboard.bbdn.bbws.generated.CourseWSCallbackHandler callback)
         throws java.rmi.RemoteException {
         org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[7].getName());
         _operationClient.getOptions().setAction("removeCourseFromTerm");
@@ -2286,9 +2286,9 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
                         java.lang.Object object = fromOM(resultEnv.getBody()
                                                                   .getFirstElement(),
-                                com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.RemoveCourseFromTermResponse.class,
+                                com.blackboard.bbdn.bbws.generated.CourseWSStub.RemoveCourseFromTermResponse.class,
                                 getEnvelopeNamespaces(resultEnv));
-                        callback.receiveResultremoveCourseFromTerm((com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.RemoveCourseFromTermResponse) object);
+                        callback.receiveResultremoveCourseFromTerm((com.blackboard.bbdn.bbws.generated.CourseWSStub.RemoveCourseFromTermResponse) object);
                     } catch (org.apache.axis2.AxisFault e) {
                         callback.receiveErrorremoveCourseFromTerm(e);
                     }
@@ -2378,11 +2378,11 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#loadTermsByName
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#loadTermsByName
      * @param loadTermsByName16
      */
-    public com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadTermsByNameResponse loadTermsByName(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadTermsByName loadTermsByName16)
+    public com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadTermsByNameResponse loadTermsByName(
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadTermsByName loadTermsByName16)
         throws java.rmi.RemoteException {
         try {
             org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[8].getName());
@@ -2422,12 +2422,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
             java.lang.Object object = fromOM(_returnEnv.getBody()
                                                        .getFirstElement(),
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadTermsByNameResponse.class,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadTermsByNameResponse.class,
                     getEnvelopeNamespaces(_returnEnv));
             _messageContext.getTransportOut().getSender()
                            .cleanup(_messageContext);
 
-            return (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadTermsByNameResponse) object;
+            return (com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadTermsByNameResponse) object;
         } catch (org.apache.axis2.AxisFault f) {
             org.apache.axiom.om.OMElement faultElt = f.getDetail();
 
@@ -2479,12 +2479,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature for Asynchronous Invocations
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#startloadTermsByName
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#startloadTermsByName
      * @param loadTermsByName16
      */
     public void startloadTermsByName(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadTermsByName loadTermsByName16,
-        final com.blackboard.bbdn.bbcoursews.generated.CourseWSCallbackHandler callback)
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadTermsByName loadTermsByName16,
+        final com.blackboard.bbdn.bbws.generated.CourseWSCallbackHandler callback)
         throws java.rmi.RemoteException {
         org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[8].getName());
         _operationClient.getOptions().setAction("loadTermsByName");
@@ -2522,9 +2522,9 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
                         java.lang.Object object = fromOM(resultEnv.getBody()
                                                                   .getFirstElement(),
-                                com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadTermsByNameResponse.class,
+                                com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadTermsByNameResponse.class,
                                 getEnvelopeNamespaces(resultEnv));
-                        callback.receiveResultloadTermsByName((com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadTermsByNameResponse) object);
+                        callback.receiveResultloadTermsByName((com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadTermsByNameResponse) object);
                     } catch (org.apache.axis2.AxisFault e) {
                         callback.receiveErrorloadTermsByName(e);
                     }
@@ -2614,11 +2614,11 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#getGroup
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#getGroup
      * @param getGroup18
      */
-    public com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetGroupResponse getGroup(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetGroup getGroup18)
+    public com.blackboard.bbdn.bbws.generated.CourseWSStub.GetGroupResponse getGroup(
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.GetGroup getGroup18)
         throws java.rmi.RemoteException {
         try {
             org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[9].getName());
@@ -2658,12 +2658,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
             java.lang.Object object = fromOM(_returnEnv.getBody()
                                                        .getFirstElement(),
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetGroupResponse.class,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.GetGroupResponse.class,
                     getEnvelopeNamespaces(_returnEnv));
             _messageContext.getTransportOut().getSender()
                            .cleanup(_messageContext);
 
-            return (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetGroupResponse) object;
+            return (com.blackboard.bbdn.bbws.generated.CourseWSStub.GetGroupResponse) object;
         } catch (org.apache.axis2.AxisFault f) {
             org.apache.axiom.om.OMElement faultElt = f.getDetail();
 
@@ -2715,12 +2715,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature for Asynchronous Invocations
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#startgetGroup
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#startgetGroup
      * @param getGroup18
      */
     public void startgetGroup(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetGroup getGroup18,
-        final com.blackboard.bbdn.bbcoursews.generated.CourseWSCallbackHandler callback)
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.GetGroup getGroup18,
+        final com.blackboard.bbdn.bbws.generated.CourseWSCallbackHandler callback)
         throws java.rmi.RemoteException {
         org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[9].getName());
         _operationClient.getOptions().setAction("getGroup");
@@ -2758,9 +2758,9 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
                         java.lang.Object object = fromOM(resultEnv.getBody()
                                                                   .getFirstElement(),
-                                com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetGroupResponse.class,
+                                com.blackboard.bbdn.bbws.generated.CourseWSStub.GetGroupResponse.class,
                                 getEnvelopeNamespaces(resultEnv));
-                        callback.receiveResultgetGroup((com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetGroupResponse) object);
+                        callback.receiveResultgetGroup((com.blackboard.bbdn.bbws.generated.CourseWSStub.GetGroupResponse) object);
                     } catch (org.apache.axis2.AxisFault e) {
                         callback.receiveErrorgetGroup(e);
                     }
@@ -2850,11 +2850,11 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#deleteCourseCategoryMembership
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#deleteCourseCategoryMembership
      * @param deleteCourseCategoryMembership20
      */
-    public com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteCourseCategoryMembershipResponse deleteCourseCategoryMembership(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteCourseCategoryMembership deleteCourseCategoryMembership20)
+    public com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteCourseCategoryMembershipResponse deleteCourseCategoryMembership(
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteCourseCategoryMembership deleteCourseCategoryMembership20)
         throws java.rmi.RemoteException {
         try {
             org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[10].getName());
@@ -2896,12 +2896,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
             java.lang.Object object = fromOM(_returnEnv.getBody()
                                                        .getFirstElement(),
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteCourseCategoryMembershipResponse.class,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteCourseCategoryMembershipResponse.class,
                     getEnvelopeNamespaces(_returnEnv));
             _messageContext.getTransportOut().getSender()
                            .cleanup(_messageContext);
 
-            return (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteCourseCategoryMembershipResponse) object;
+            return (com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteCourseCategoryMembershipResponse) object;
         } catch (org.apache.axis2.AxisFault f) {
             org.apache.axiom.om.OMElement faultElt = f.getDetail();
 
@@ -2953,12 +2953,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature for Asynchronous Invocations
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#startdeleteCourseCategoryMembership
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#startdeleteCourseCategoryMembership
      * @param deleteCourseCategoryMembership20
      */
     public void startdeleteCourseCategoryMembership(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteCourseCategoryMembership deleteCourseCategoryMembership20,
-        final com.blackboard.bbdn.bbcoursews.generated.CourseWSCallbackHandler callback)
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteCourseCategoryMembership deleteCourseCategoryMembership20,
+        final com.blackboard.bbdn.bbws.generated.CourseWSCallbackHandler callback)
         throws java.rmi.RemoteException {
         org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[10].getName());
         _operationClient.getOptions().setAction("deleteCourseCategoryMembership");
@@ -2997,9 +2997,9 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
                         java.lang.Object object = fromOM(resultEnv.getBody()
                                                                   .getFirstElement(),
-                                com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteCourseCategoryMembershipResponse.class,
+                                com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteCourseCategoryMembershipResponse.class,
                                 getEnvelopeNamespaces(resultEnv));
-                        callback.receiveResultdeleteCourseCategoryMembership((com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteCourseCategoryMembershipResponse) object);
+                        callback.receiveResultdeleteCourseCategoryMembership((com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteCourseCategoryMembershipResponse) object);
                     } catch (org.apache.axis2.AxisFault e) {
                         callback.receiveErrordeleteCourseCategoryMembership(e);
                     }
@@ -3089,11 +3089,11 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#saveTerm
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#saveTerm
      * @param saveTerm22
      */
-    public com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveTermResponse saveTerm(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveTerm saveTerm22)
+    public com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveTermResponse saveTerm(
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveTerm saveTerm22)
         throws java.rmi.RemoteException {
         try {
             org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[11].getName());
@@ -3133,12 +3133,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
             java.lang.Object object = fromOM(_returnEnv.getBody()
                                                        .getFirstElement(),
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveTermResponse.class,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveTermResponse.class,
                     getEnvelopeNamespaces(_returnEnv));
             _messageContext.getTransportOut().getSender()
                            .cleanup(_messageContext);
 
-            return (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveTermResponse) object;
+            return (com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveTermResponse) object;
         } catch (org.apache.axis2.AxisFault f) {
             org.apache.axiom.om.OMElement faultElt = f.getDetail();
 
@@ -3190,12 +3190,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature for Asynchronous Invocations
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#startsaveTerm
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#startsaveTerm
      * @param saveTerm22
      */
     public void startsaveTerm(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveTerm saveTerm22,
-        final com.blackboard.bbdn.bbcoursews.generated.CourseWSCallbackHandler callback)
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveTerm saveTerm22,
+        final com.blackboard.bbdn.bbws.generated.CourseWSCallbackHandler callback)
         throws java.rmi.RemoteException {
         org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[11].getName());
         _operationClient.getOptions().setAction("saveTerm");
@@ -3233,9 +3233,9 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
                         java.lang.Object object = fromOM(resultEnv.getBody()
                                                                   .getFirstElement(),
-                                com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveTermResponse.class,
+                                com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveTermResponse.class,
                                 getEnvelopeNamespaces(resultEnv));
-                        callback.receiveResultsaveTerm((com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveTermResponse) object);
+                        callback.receiveResultsaveTerm((com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveTermResponse) object);
                     } catch (org.apache.axis2.AxisFault e) {
                         callback.receiveErrorsaveTerm(e);
                     }
@@ -3325,11 +3325,11 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#loadCoursesInTerm
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#loadCoursesInTerm
      * @param loadCoursesInTerm24
      */
-    public com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadCoursesInTermResponse loadCoursesInTerm(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadCoursesInTerm loadCoursesInTerm24)
+    public com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadCoursesInTermResponse loadCoursesInTerm(
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadCoursesInTerm loadCoursesInTerm24)
         throws java.rmi.RemoteException {
         try {
             org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[12].getName());
@@ -3369,12 +3369,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
             java.lang.Object object = fromOM(_returnEnv.getBody()
                                                        .getFirstElement(),
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadCoursesInTermResponse.class,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadCoursesInTermResponse.class,
                     getEnvelopeNamespaces(_returnEnv));
             _messageContext.getTransportOut().getSender()
                            .cleanup(_messageContext);
 
-            return (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadCoursesInTermResponse) object;
+            return (com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadCoursesInTermResponse) object;
         } catch (org.apache.axis2.AxisFault f) {
             org.apache.axiom.om.OMElement faultElt = f.getDetail();
 
@@ -3426,12 +3426,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature for Asynchronous Invocations
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#startloadCoursesInTerm
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#startloadCoursesInTerm
      * @param loadCoursesInTerm24
      */
     public void startloadCoursesInTerm(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadCoursesInTerm loadCoursesInTerm24,
-        final com.blackboard.bbdn.bbcoursews.generated.CourseWSCallbackHandler callback)
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadCoursesInTerm loadCoursesInTerm24,
+        final com.blackboard.bbdn.bbws.generated.CourseWSCallbackHandler callback)
         throws java.rmi.RemoteException {
         org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[12].getName());
         _operationClient.getOptions().setAction("loadCoursesInTerm");
@@ -3469,9 +3469,9 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
                         java.lang.Object object = fromOM(resultEnv.getBody()
                                                                   .getFirstElement(),
-                                com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadCoursesInTermResponse.class,
+                                com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadCoursesInTermResponse.class,
                                 getEnvelopeNamespaces(resultEnv));
-                        callback.receiveResultloadCoursesInTerm((com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadCoursesInTermResponse) object);
+                        callback.receiveResultloadCoursesInTerm((com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadCoursesInTermResponse) object);
                     } catch (org.apache.axis2.AxisFault e) {
                         callback.receiveErrorloadCoursesInTerm(e);
                     }
@@ -3561,11 +3561,11 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#deleteCourse
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#deleteCourse
      * @param deleteCourse26
      */
-    public com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteCourseResponse deleteCourse(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteCourse deleteCourse26)
+    public com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteCourseResponse deleteCourse(
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteCourse deleteCourse26)
         throws java.rmi.RemoteException {
         try {
             org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[13].getName());
@@ -3605,12 +3605,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
             java.lang.Object object = fromOM(_returnEnv.getBody()
                                                        .getFirstElement(),
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteCourseResponse.class,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteCourseResponse.class,
                     getEnvelopeNamespaces(_returnEnv));
             _messageContext.getTransportOut().getSender()
                            .cleanup(_messageContext);
 
-            return (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteCourseResponse) object;
+            return (com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteCourseResponse) object;
         } catch (org.apache.axis2.AxisFault f) {
             org.apache.axiom.om.OMElement faultElt = f.getDetail();
 
@@ -3662,12 +3662,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature for Asynchronous Invocations
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#startdeleteCourse
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#startdeleteCourse
      * @param deleteCourse26
      */
     public void startdeleteCourse(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteCourse deleteCourse26,
-        final com.blackboard.bbdn.bbcoursews.generated.CourseWSCallbackHandler callback)
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteCourse deleteCourse26,
+        final com.blackboard.bbdn.bbws.generated.CourseWSCallbackHandler callback)
         throws java.rmi.RemoteException {
         org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[13].getName());
         _operationClient.getOptions().setAction("deleteCourse");
@@ -3705,9 +3705,9 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
                         java.lang.Object object = fromOM(resultEnv.getBody()
                                                                   .getFirstElement(),
-                                com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteCourseResponse.class,
+                                com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteCourseResponse.class,
                                 getEnvelopeNamespaces(resultEnv));
-                        callback.receiveResultdeleteCourse((com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteCourseResponse) object);
+                        callback.receiveResultdeleteCourse((com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteCourseResponse) object);
                     } catch (org.apache.axis2.AxisFault e) {
                         callback.receiveErrordeleteCourse(e);
                     }
@@ -3797,11 +3797,11 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#createOrg
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#createOrg
      * @param createOrg28
      */
-    public com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.CreateOrgResponse createOrg(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.CreateOrg createOrg28)
+    public com.blackboard.bbdn.bbws.generated.CourseWSStub.CreateOrgResponse createOrg(
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.CreateOrg createOrg28)
         throws java.rmi.RemoteException {
         try {
             org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[14].getName());
@@ -3841,12 +3841,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
             java.lang.Object object = fromOM(_returnEnv.getBody()
                                                        .getFirstElement(),
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.CreateOrgResponse.class,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.CreateOrgResponse.class,
                     getEnvelopeNamespaces(_returnEnv));
             _messageContext.getTransportOut().getSender()
                            .cleanup(_messageContext);
 
-            return (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.CreateOrgResponse) object;
+            return (com.blackboard.bbdn.bbws.generated.CourseWSStub.CreateOrgResponse) object;
         } catch (org.apache.axis2.AxisFault f) {
             org.apache.axiom.om.OMElement faultElt = f.getDetail();
 
@@ -3898,12 +3898,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature for Asynchronous Invocations
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#startcreateOrg
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#startcreateOrg
      * @param createOrg28
      */
     public void startcreateOrg(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.CreateOrg createOrg28,
-        final com.blackboard.bbdn.bbcoursews.generated.CourseWSCallbackHandler callback)
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.CreateOrg createOrg28,
+        final com.blackboard.bbdn.bbws.generated.CourseWSCallbackHandler callback)
         throws java.rmi.RemoteException {
         org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[14].getName());
         _operationClient.getOptions().setAction("createOrg");
@@ -3941,9 +3941,9 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
                         java.lang.Object object = fromOM(resultEnv.getBody()
                                                                   .getFirstElement(),
-                                com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.CreateOrgResponse.class,
+                                com.blackboard.bbdn.bbws.generated.CourseWSStub.CreateOrgResponse.class,
                                 getEnvelopeNamespaces(resultEnv));
-                        callback.receiveResultcreateOrg((com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.CreateOrgResponse) object);
+                        callback.receiveResultcreateOrg((com.blackboard.bbdn.bbws.generated.CourseWSStub.CreateOrgResponse) object);
                     } catch (org.apache.axis2.AxisFault e) {
                         callback.receiveErrorcreateOrg(e);
                     }
@@ -4033,11 +4033,11 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#changeOrgCategoryBatchUid
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#changeOrgCategoryBatchUid
      * @param changeOrgCategoryBatchUid30
      */
-    public com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeOrgCategoryBatchUidResponse changeOrgCategoryBatchUid(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeOrgCategoryBatchUid changeOrgCategoryBatchUid30)
+    public com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeOrgCategoryBatchUidResponse changeOrgCategoryBatchUid(
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeOrgCategoryBatchUid changeOrgCategoryBatchUid30)
         throws java.rmi.RemoteException {
         try {
             org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[15].getName());
@@ -4078,12 +4078,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
             java.lang.Object object = fromOM(_returnEnv.getBody()
                                                        .getFirstElement(),
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeOrgCategoryBatchUidResponse.class,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeOrgCategoryBatchUidResponse.class,
                     getEnvelopeNamespaces(_returnEnv));
             _messageContext.getTransportOut().getSender()
                            .cleanup(_messageContext);
 
-            return (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeOrgCategoryBatchUidResponse) object;
+            return (com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeOrgCategoryBatchUidResponse) object;
         } catch (org.apache.axis2.AxisFault f) {
             org.apache.axiom.om.OMElement faultElt = f.getDetail();
 
@@ -4135,12 +4135,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature for Asynchronous Invocations
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#startchangeOrgCategoryBatchUid
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#startchangeOrgCategoryBatchUid
      * @param changeOrgCategoryBatchUid30
      */
     public void startchangeOrgCategoryBatchUid(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeOrgCategoryBatchUid changeOrgCategoryBatchUid30,
-        final com.blackboard.bbdn.bbcoursews.generated.CourseWSCallbackHandler callback)
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeOrgCategoryBatchUid changeOrgCategoryBatchUid30,
+        final com.blackboard.bbdn.bbws.generated.CourseWSCallbackHandler callback)
         throws java.rmi.RemoteException {
         org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[15].getName());
         _operationClient.getOptions().setAction("changeOrgCategoryBatchUid");
@@ -4179,9 +4179,9 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
                         java.lang.Object object = fromOM(resultEnv.getBody()
                                                                   .getFirstElement(),
-                                com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeOrgCategoryBatchUidResponse.class,
+                                com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeOrgCategoryBatchUidResponse.class,
                                 getEnvelopeNamespaces(resultEnv));
-                        callback.receiveResultchangeOrgCategoryBatchUid((com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeOrgCategoryBatchUidResponse) object);
+                        callback.receiveResultchangeOrgCategoryBatchUid((com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeOrgCategoryBatchUidResponse) object);
                     } catch (org.apache.axis2.AxisFault e) {
                         callback.receiveErrorchangeOrgCategoryBatchUid(e);
                     }
@@ -4271,11 +4271,11 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#deleteOrgCategoryMembership
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#deleteOrgCategoryMembership
      * @param deleteOrgCategoryMembership32
      */
-    public com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteOrgCategoryMembershipResponse deleteOrgCategoryMembership(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteOrgCategoryMembership deleteOrgCategoryMembership32)
+    public com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteOrgCategoryMembershipResponse deleteOrgCategoryMembership(
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteOrgCategoryMembership deleteOrgCategoryMembership32)
         throws java.rmi.RemoteException {
         try {
             org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[16].getName());
@@ -4317,12 +4317,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
             java.lang.Object object = fromOM(_returnEnv.getBody()
                                                        .getFirstElement(),
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteOrgCategoryMembershipResponse.class,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteOrgCategoryMembershipResponse.class,
                     getEnvelopeNamespaces(_returnEnv));
             _messageContext.getTransportOut().getSender()
                            .cleanup(_messageContext);
 
-            return (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteOrgCategoryMembershipResponse) object;
+            return (com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteOrgCategoryMembershipResponse) object;
         } catch (org.apache.axis2.AxisFault f) {
             org.apache.axiom.om.OMElement faultElt = f.getDetail();
 
@@ -4374,12 +4374,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature for Asynchronous Invocations
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#startdeleteOrgCategoryMembership
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#startdeleteOrgCategoryMembership
      * @param deleteOrgCategoryMembership32
      */
     public void startdeleteOrgCategoryMembership(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteOrgCategoryMembership deleteOrgCategoryMembership32,
-        final com.blackboard.bbdn.bbcoursews.generated.CourseWSCallbackHandler callback)
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteOrgCategoryMembership deleteOrgCategoryMembership32,
+        final com.blackboard.bbdn.bbws.generated.CourseWSCallbackHandler callback)
         throws java.rmi.RemoteException {
         org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[16].getName());
         _operationClient.getOptions().setAction("deleteOrgCategoryMembership");
@@ -4418,9 +4418,9 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
                         java.lang.Object object = fromOM(resultEnv.getBody()
                                                                   .getFirstElement(),
-                                com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteOrgCategoryMembershipResponse.class,
+                                com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteOrgCategoryMembershipResponse.class,
                                 getEnvelopeNamespaces(resultEnv));
-                        callback.receiveResultdeleteOrgCategoryMembership((com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteOrgCategoryMembershipResponse) object);
+                        callback.receiveResultdeleteOrgCategoryMembership((com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteOrgCategoryMembershipResponse) object);
                     } catch (org.apache.axis2.AxisFault e) {
                         callback.receiveErrordeleteOrgCategoryMembership(e);
                     }
@@ -4510,11 +4510,11 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#getClassifications
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#getClassifications
      * @param getClassifications34
      */
-    public com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetClassificationsResponse getClassifications(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetClassifications getClassifications34)
+    public com.blackboard.bbdn.bbws.generated.CourseWSStub.GetClassificationsResponse getClassifications(
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.GetClassifications getClassifications34)
         throws java.rmi.RemoteException {
         try {
             org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[17].getName());
@@ -4554,12 +4554,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
             java.lang.Object object = fromOM(_returnEnv.getBody()
                                                        .getFirstElement(),
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetClassificationsResponse.class,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.GetClassificationsResponse.class,
                     getEnvelopeNamespaces(_returnEnv));
             _messageContext.getTransportOut().getSender()
                            .cleanup(_messageContext);
 
-            return (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetClassificationsResponse) object;
+            return (com.blackboard.bbdn.bbws.generated.CourseWSStub.GetClassificationsResponse) object;
         } catch (org.apache.axis2.AxisFault f) {
             org.apache.axiom.om.OMElement faultElt = f.getDetail();
 
@@ -4611,12 +4611,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature for Asynchronous Invocations
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#startgetClassifications
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#startgetClassifications
      * @param getClassifications34
      */
     public void startgetClassifications(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetClassifications getClassifications34,
-        final com.blackboard.bbdn.bbcoursews.generated.CourseWSCallbackHandler callback)
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.GetClassifications getClassifications34,
+        final com.blackboard.bbdn.bbws.generated.CourseWSCallbackHandler callback)
         throws java.rmi.RemoteException {
         org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[17].getName());
         _operationClient.getOptions().setAction("getClassifications");
@@ -4654,9 +4654,9 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
                         java.lang.Object object = fromOM(resultEnv.getBody()
                                                                   .getFirstElement(),
-                                com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetClassificationsResponse.class,
+                                com.blackboard.bbdn.bbws.generated.CourseWSStub.GetClassificationsResponse.class,
                                 getEnvelopeNamespaces(resultEnv));
-                        callback.receiveResultgetClassifications((com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetClassificationsResponse) object);
+                        callback.receiveResultgetClassifications((com.blackboard.bbdn.bbws.generated.CourseWSStub.GetClassificationsResponse) object);
                     } catch (org.apache.axis2.AxisFault e) {
                         callback.receiveErrorgetClassifications(e);
                     }
@@ -4746,11 +4746,11 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#getOrg
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#getOrg
      * @param getOrg36
      */
-    public com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetOrgResponse getOrg(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetOrg getOrg36)
+    public com.blackboard.bbdn.bbws.generated.CourseWSStub.GetOrgResponse getOrg(
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.GetOrg getOrg36)
         throws java.rmi.RemoteException {
         try {
             org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[18].getName());
@@ -4790,12 +4790,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
             java.lang.Object object = fromOM(_returnEnv.getBody()
                                                        .getFirstElement(),
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetOrgResponse.class,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.GetOrgResponse.class,
                     getEnvelopeNamespaces(_returnEnv));
             _messageContext.getTransportOut().getSender()
                            .cleanup(_messageContext);
 
-            return (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetOrgResponse) object;
+            return (com.blackboard.bbdn.bbws.generated.CourseWSStub.GetOrgResponse) object;
         } catch (org.apache.axis2.AxisFault f) {
             org.apache.axiom.om.OMElement faultElt = f.getDetail();
 
@@ -4847,12 +4847,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature for Asynchronous Invocations
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#startgetOrg
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#startgetOrg
      * @param getOrg36
      */
     public void startgetOrg(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetOrg getOrg36,
-        final com.blackboard.bbdn.bbcoursews.generated.CourseWSCallbackHandler callback)
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.GetOrg getOrg36,
+        final com.blackboard.bbdn.bbws.generated.CourseWSCallbackHandler callback)
         throws java.rmi.RemoteException {
         org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[18].getName());
         _operationClient.getOptions().setAction("loadOrg");
@@ -4890,9 +4890,9 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
                         java.lang.Object object = fromOM(resultEnv.getBody()
                                                                   .getFirstElement(),
-                                com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetOrgResponse.class,
+                                com.blackboard.bbdn.bbws.generated.CourseWSStub.GetOrgResponse.class,
                                 getEnvelopeNamespaces(resultEnv));
-                        callback.receiveResultgetOrg((com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetOrgResponse) object);
+                        callback.receiveResultgetOrg((com.blackboard.bbdn.bbws.generated.CourseWSStub.GetOrgResponse) object);
                     } catch (org.apache.axis2.AxisFault e) {
                         callback.receiveErrorgetOrg(e);
                     }
@@ -4982,11 +4982,11 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#updateOrg
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#updateOrg
      * @param updateOrg38
      */
-    public com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.UpdateOrgResponse updateOrg(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.UpdateOrg updateOrg38)
+    public com.blackboard.bbdn.bbws.generated.CourseWSStub.UpdateOrgResponse updateOrg(
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.UpdateOrg updateOrg38)
         throws java.rmi.RemoteException {
         try {
             org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[19].getName());
@@ -5026,12 +5026,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
             java.lang.Object object = fromOM(_returnEnv.getBody()
                                                        .getFirstElement(),
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.UpdateOrgResponse.class,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.UpdateOrgResponse.class,
                     getEnvelopeNamespaces(_returnEnv));
             _messageContext.getTransportOut().getSender()
                            .cleanup(_messageContext);
 
-            return (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.UpdateOrgResponse) object;
+            return (com.blackboard.bbdn.bbws.generated.CourseWSStub.UpdateOrgResponse) object;
         } catch (org.apache.axis2.AxisFault f) {
             org.apache.axiom.om.OMElement faultElt = f.getDetail();
 
@@ -5083,12 +5083,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature for Asynchronous Invocations
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#startupdateOrg
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#startupdateOrg
      * @param updateOrg38
      */
     public void startupdateOrg(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.UpdateOrg updateOrg38,
-        final com.blackboard.bbdn.bbcoursews.generated.CourseWSCallbackHandler callback)
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.UpdateOrg updateOrg38,
+        final com.blackboard.bbdn.bbws.generated.CourseWSCallbackHandler callback)
         throws java.rmi.RemoteException {
         org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[19].getName());
         _operationClient.getOptions().setAction("updateOrg");
@@ -5126,9 +5126,9 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
                         java.lang.Object object = fromOM(resultEnv.getBody()
                                                                   .getFirstElement(),
-                                com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.UpdateOrgResponse.class,
+                                com.blackboard.bbdn.bbws.generated.CourseWSStub.UpdateOrgResponse.class,
                                 getEnvelopeNamespaces(resultEnv));
-                        callback.receiveResultupdateOrg((com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.UpdateOrgResponse) object);
+                        callback.receiveResultupdateOrg((com.blackboard.bbdn.bbws.generated.CourseWSStub.UpdateOrgResponse) object);
                     } catch (org.apache.axis2.AxisFault e) {
                         callback.receiveErrorupdateOrg(e);
                     }
@@ -5218,11 +5218,11 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#getOrgCategoryMembership
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#getOrgCategoryMembership
      * @param getOrgCategoryMembership40
      */
-    public com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetOrgCategoryMembershipResponse getOrgCategoryMembership(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetOrgCategoryMembership getOrgCategoryMembership40)
+    public com.blackboard.bbdn.bbws.generated.CourseWSStub.GetOrgCategoryMembershipResponse getOrgCategoryMembership(
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.GetOrgCategoryMembership getOrgCategoryMembership40)
         throws java.rmi.RemoteException {
         try {
             org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[20].getName());
@@ -5263,12 +5263,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
             java.lang.Object object = fromOM(_returnEnv.getBody()
                                                        .getFirstElement(),
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetOrgCategoryMembershipResponse.class,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.GetOrgCategoryMembershipResponse.class,
                     getEnvelopeNamespaces(_returnEnv));
             _messageContext.getTransportOut().getSender()
                            .cleanup(_messageContext);
 
-            return (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetOrgCategoryMembershipResponse) object;
+            return (com.blackboard.bbdn.bbws.generated.CourseWSStub.GetOrgCategoryMembershipResponse) object;
         } catch (org.apache.axis2.AxisFault f) {
             org.apache.axiom.om.OMElement faultElt = f.getDetail();
 
@@ -5320,12 +5320,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature for Asynchronous Invocations
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#startgetOrgCategoryMembership
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#startgetOrgCategoryMembership
      * @param getOrgCategoryMembership40
      */
     public void startgetOrgCategoryMembership(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetOrgCategoryMembership getOrgCategoryMembership40,
-        final com.blackboard.bbdn.bbcoursews.generated.CourseWSCallbackHandler callback)
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.GetOrgCategoryMembership getOrgCategoryMembership40,
+        final com.blackboard.bbdn.bbws.generated.CourseWSCallbackHandler callback)
         throws java.rmi.RemoteException {
         org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[20].getName());
         _operationClient.getOptions().setAction("getOrgCategoryMembership");
@@ -5364,9 +5364,9 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
                         java.lang.Object object = fromOM(resultEnv.getBody()
                                                                   .getFirstElement(),
-                                com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetOrgCategoryMembershipResponse.class,
+                                com.blackboard.bbdn.bbws.generated.CourseWSStub.GetOrgCategoryMembershipResponse.class,
                                 getEnvelopeNamespaces(resultEnv));
-                        callback.receiveResultgetOrgCategoryMembership((com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetOrgCategoryMembershipResponse) object);
+                        callback.receiveResultgetOrgCategoryMembership((com.blackboard.bbdn.bbws.generated.CourseWSStub.GetOrgCategoryMembershipResponse) object);
                     } catch (org.apache.axis2.AxisFault e) {
                         callback.receiveErrorgetOrgCategoryMembership(e);
                     }
@@ -5456,11 +5456,11 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#deleteOrgCategory
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#deleteOrgCategory
      * @param deleteOrgCategory42
      */
-    public com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteOrgCategoryResponse deleteOrgCategory(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteOrgCategory deleteOrgCategory42)
+    public com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteOrgCategoryResponse deleteOrgCategory(
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteOrgCategory deleteOrgCategory42)
         throws java.rmi.RemoteException {
         try {
             org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[21].getName());
@@ -5500,12 +5500,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
             java.lang.Object object = fromOM(_returnEnv.getBody()
                                                        .getFirstElement(),
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteOrgCategoryResponse.class,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteOrgCategoryResponse.class,
                     getEnvelopeNamespaces(_returnEnv));
             _messageContext.getTransportOut().getSender()
                            .cleanup(_messageContext);
 
-            return (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteOrgCategoryResponse) object;
+            return (com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteOrgCategoryResponse) object;
         } catch (org.apache.axis2.AxisFault f) {
             org.apache.axiom.om.OMElement faultElt = f.getDetail();
 
@@ -5557,12 +5557,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature for Asynchronous Invocations
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#startdeleteOrgCategory
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#startdeleteOrgCategory
      * @param deleteOrgCategory42
      */
     public void startdeleteOrgCategory(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteOrgCategory deleteOrgCategory42,
-        final com.blackboard.bbdn.bbcoursews.generated.CourseWSCallbackHandler callback)
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteOrgCategory deleteOrgCategory42,
+        final com.blackboard.bbdn.bbws.generated.CourseWSCallbackHandler callback)
         throws java.rmi.RemoteException {
         org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[21].getName());
         _operationClient.getOptions().setAction("deleteOrgCategory");
@@ -5600,9 +5600,9 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
                         java.lang.Object object = fromOM(resultEnv.getBody()
                                                                   .getFirstElement(),
-                                com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteOrgCategoryResponse.class,
+                                com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteOrgCategoryResponse.class,
                                 getEnvelopeNamespaces(resultEnv));
-                        callback.receiveResultdeleteOrgCategory((com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteOrgCategoryResponse) object);
+                        callback.receiveResultdeleteOrgCategory((com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteOrgCategoryResponse) object);
                     } catch (org.apache.axis2.AxisFault e) {
                         callback.receiveErrordeleteOrgCategory(e);
                     }
@@ -5692,11 +5692,11 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#changeCourseCategoryBatchUid
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#changeCourseCategoryBatchUid
      * @param changeCourseCategoryBatchUid44
      */
-    public com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeCourseCategoryBatchUidResponse changeCourseCategoryBatchUid(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeCourseCategoryBatchUid changeCourseCategoryBatchUid44)
+    public com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeCourseCategoryBatchUidResponse changeCourseCategoryBatchUid(
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeCourseCategoryBatchUid changeCourseCategoryBatchUid44)
         throws java.rmi.RemoteException {
         try {
             org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[22].getName());
@@ -5738,12 +5738,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
             java.lang.Object object = fromOM(_returnEnv.getBody()
                                                        .getFirstElement(),
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeCourseCategoryBatchUidResponse.class,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeCourseCategoryBatchUidResponse.class,
                     getEnvelopeNamespaces(_returnEnv));
             _messageContext.getTransportOut().getSender()
                            .cleanup(_messageContext);
 
-            return (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeCourseCategoryBatchUidResponse) object;
+            return (com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeCourseCategoryBatchUidResponse) object;
         } catch (org.apache.axis2.AxisFault f) {
             org.apache.axiom.om.OMElement faultElt = f.getDetail();
 
@@ -5795,12 +5795,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature for Asynchronous Invocations
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#startchangeCourseCategoryBatchUid
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#startchangeCourseCategoryBatchUid
      * @param changeCourseCategoryBatchUid44
      */
     public void startchangeCourseCategoryBatchUid(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeCourseCategoryBatchUid changeCourseCategoryBatchUid44,
-        final com.blackboard.bbdn.bbcoursews.generated.CourseWSCallbackHandler callback)
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeCourseCategoryBatchUid changeCourseCategoryBatchUid44,
+        final com.blackboard.bbdn.bbws.generated.CourseWSCallbackHandler callback)
         throws java.rmi.RemoteException {
         org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[22].getName());
         _operationClient.getOptions().setAction("changeCourseCategoryBatchUid");
@@ -5839,9 +5839,9 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
                         java.lang.Object object = fromOM(resultEnv.getBody()
                                                                   .getFirstElement(),
-                                com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeCourseCategoryBatchUidResponse.class,
+                                com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeCourseCategoryBatchUidResponse.class,
                                 getEnvelopeNamespaces(resultEnv));
-                        callback.receiveResultchangeCourseCategoryBatchUid((com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeCourseCategoryBatchUidResponse) object);
+                        callback.receiveResultchangeCourseCategoryBatchUid((com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeCourseCategoryBatchUidResponse) object);
                     } catch (org.apache.axis2.AxisFault e) {
                         callback.receiveErrorchangeCourseCategoryBatchUid(e);
                     }
@@ -5931,11 +5931,11 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#setCourseBannerImage
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#setCourseBannerImage
      * @param setCourseBannerImage46
      */
-    public com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SetCourseBannerImageResponse setCourseBannerImage(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SetCourseBannerImage setCourseBannerImage46)
+    public com.blackboard.bbdn.bbws.generated.CourseWSStub.SetCourseBannerImageResponse setCourseBannerImage(
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.SetCourseBannerImage setCourseBannerImage46)
         throws java.rmi.RemoteException {
         try {
             org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[23].getName());
@@ -5976,12 +5976,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
             java.lang.Object object = fromOM(_returnEnv.getBody()
                                                        .getFirstElement(),
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SetCourseBannerImageResponse.class,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.SetCourseBannerImageResponse.class,
                     getEnvelopeNamespaces(_returnEnv));
             _messageContext.getTransportOut().getSender()
                            .cleanup(_messageContext);
 
-            return (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SetCourseBannerImageResponse) object;
+            return (com.blackboard.bbdn.bbws.generated.CourseWSStub.SetCourseBannerImageResponse) object;
         } catch (org.apache.axis2.AxisFault f) {
             org.apache.axiom.om.OMElement faultElt = f.getDetail();
 
@@ -6033,12 +6033,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature for Asynchronous Invocations
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#startsetCourseBannerImage
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#startsetCourseBannerImage
      * @param setCourseBannerImage46
      */
     public void startsetCourseBannerImage(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SetCourseBannerImage setCourseBannerImage46,
-        final com.blackboard.bbdn.bbcoursews.generated.CourseWSCallbackHandler callback)
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.SetCourseBannerImage setCourseBannerImage46,
+        final com.blackboard.bbdn.bbws.generated.CourseWSCallbackHandler callback)
         throws java.rmi.RemoteException {
         org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[23].getName());
         _operationClient.getOptions().setAction("setCourseBannerImage");
@@ -6076,9 +6076,9 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
                         java.lang.Object object = fromOM(resultEnv.getBody()
                                                                   .getFirstElement(),
-                                com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SetCourseBannerImageResponse.class,
+                                com.blackboard.bbdn.bbws.generated.CourseWSStub.SetCourseBannerImageResponse.class,
                                 getEnvelopeNamespaces(resultEnv));
-                        callback.receiveResultsetCourseBannerImage((com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SetCourseBannerImageResponse) object);
+                        callback.receiveResultsetCourseBannerImage((com.blackboard.bbdn.bbws.generated.CourseWSStub.SetCourseBannerImageResponse) object);
                     } catch (org.apache.axis2.AxisFault e) {
                         callback.receiveErrorsetCourseBannerImage(e);
                     }
@@ -6168,11 +6168,11 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#getCartridge
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#getCartridge
      * @param getCartridge48
      */
-    public com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetCartridgeResponse getCartridge(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetCartridge getCartridge48)
+    public com.blackboard.bbdn.bbws.generated.CourseWSStub.GetCartridgeResponse getCartridge(
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.GetCartridge getCartridge48)
         throws java.rmi.RemoteException {
         try {
             org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[24].getName());
@@ -6212,12 +6212,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
             java.lang.Object object = fromOM(_returnEnv.getBody()
                                                        .getFirstElement(),
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetCartridgeResponse.class,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.GetCartridgeResponse.class,
                     getEnvelopeNamespaces(_returnEnv));
             _messageContext.getTransportOut().getSender()
                            .cleanup(_messageContext);
 
-            return (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetCartridgeResponse) object;
+            return (com.blackboard.bbdn.bbws.generated.CourseWSStub.GetCartridgeResponse) object;
         } catch (org.apache.axis2.AxisFault f) {
             org.apache.axiom.om.OMElement faultElt = f.getDetail();
 
@@ -6269,12 +6269,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature for Asynchronous Invocations
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#startgetCartridge
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#startgetCartridge
      * @param getCartridge48
      */
     public void startgetCartridge(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetCartridge getCartridge48,
-        final com.blackboard.bbdn.bbcoursews.generated.CourseWSCallbackHandler callback)
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.GetCartridge getCartridge48,
+        final com.blackboard.bbdn.bbws.generated.CourseWSCallbackHandler callback)
         throws java.rmi.RemoteException {
         org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[24].getName());
         _operationClient.getOptions().setAction("getCartridge");
@@ -6312,9 +6312,9 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
                         java.lang.Object object = fromOM(resultEnv.getBody()
                                                                   .getFirstElement(),
-                                com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetCartridgeResponse.class,
+                                com.blackboard.bbdn.bbws.generated.CourseWSStub.GetCartridgeResponse.class,
                                 getEnvelopeNamespaces(resultEnv));
-                        callback.receiveResultgetCartridge((com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetCartridgeResponse) object);
+                        callback.receiveResultgetCartridge((com.blackboard.bbdn.bbws.generated.CourseWSStub.GetCartridgeResponse) object);
                     } catch (org.apache.axis2.AxisFault e) {
                         callback.receiveErrorgetCartridge(e);
                     }
@@ -6404,11 +6404,11 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#loadTerm
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#loadTerm
      * @param loadTerm50
      */
-    public com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadTermResponse loadTerm(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadTerm loadTerm50)
+    public com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadTermResponse loadTerm(
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadTerm loadTerm50)
         throws java.rmi.RemoteException {
         try {
             org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[25].getName());
@@ -6448,12 +6448,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
             java.lang.Object object = fromOM(_returnEnv.getBody()
                                                        .getFirstElement(),
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadTermResponse.class,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadTermResponse.class,
                     getEnvelopeNamespaces(_returnEnv));
             _messageContext.getTransportOut().getSender()
                            .cleanup(_messageContext);
 
-            return (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadTermResponse) object;
+            return (com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadTermResponse) object;
         } catch (org.apache.axis2.AxisFault f) {
             org.apache.axiom.om.OMElement faultElt = f.getDetail();
 
@@ -6505,12 +6505,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature for Asynchronous Invocations
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#startloadTerm
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#startloadTerm
      * @param loadTerm50
      */
     public void startloadTerm(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadTerm loadTerm50,
-        final com.blackboard.bbdn.bbcoursews.generated.CourseWSCallbackHandler callback)
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadTerm loadTerm50,
+        final com.blackboard.bbdn.bbws.generated.CourseWSCallbackHandler callback)
         throws java.rmi.RemoteException {
         org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[25].getName());
         _operationClient.getOptions().setAction("loadTerm");
@@ -6548,9 +6548,9 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
                         java.lang.Object object = fromOM(resultEnv.getBody()
                                                                   .getFirstElement(),
-                                com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadTermResponse.class,
+                                com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadTermResponse.class,
                                 getEnvelopeNamespaces(resultEnv));
-                        callback.receiveResultloadTerm((com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadTermResponse) object);
+                        callback.receiveResultloadTerm((com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadTermResponse) object);
                     } catch (org.apache.axis2.AxisFault e) {
                         callback.receiveErrorloadTerm(e);
                     }
@@ -6640,11 +6640,11 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#changeOrgDataSourceId
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#changeOrgDataSourceId
      * @param changeOrgDataSourceId52
      */
-    public com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeOrgDataSourceIdResponse changeOrgDataSourceId(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeOrgDataSourceId changeOrgDataSourceId52)
+    public com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeOrgDataSourceIdResponse changeOrgDataSourceId(
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeOrgDataSourceId changeOrgDataSourceId52)
         throws java.rmi.RemoteException {
         try {
             org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[26].getName());
@@ -6685,12 +6685,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
             java.lang.Object object = fromOM(_returnEnv.getBody()
                                                        .getFirstElement(),
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeOrgDataSourceIdResponse.class,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeOrgDataSourceIdResponse.class,
                     getEnvelopeNamespaces(_returnEnv));
             _messageContext.getTransportOut().getSender()
                            .cleanup(_messageContext);
 
-            return (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeOrgDataSourceIdResponse) object;
+            return (com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeOrgDataSourceIdResponse) object;
         } catch (org.apache.axis2.AxisFault f) {
             org.apache.axiom.om.OMElement faultElt = f.getDetail();
 
@@ -6742,12 +6742,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature for Asynchronous Invocations
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#startchangeOrgDataSourceId
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#startchangeOrgDataSourceId
      * @param changeOrgDataSourceId52
      */
     public void startchangeOrgDataSourceId(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeOrgDataSourceId changeOrgDataSourceId52,
-        final com.blackboard.bbdn.bbcoursews.generated.CourseWSCallbackHandler callback)
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeOrgDataSourceId changeOrgDataSourceId52,
+        final com.blackboard.bbdn.bbws.generated.CourseWSCallbackHandler callback)
         throws java.rmi.RemoteException {
         org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[26].getName());
         _operationClient.getOptions().setAction("changeOrgDataSourceId");
@@ -6785,9 +6785,9 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
                         java.lang.Object object = fromOM(resultEnv.getBody()
                                                                   .getFirstElement(),
-                                com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeOrgDataSourceIdResponse.class,
+                                com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeOrgDataSourceIdResponse.class,
                                 getEnvelopeNamespaces(resultEnv));
-                        callback.receiveResultchangeOrgDataSourceId((com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeOrgDataSourceIdResponse) object);
+                        callback.receiveResultchangeOrgDataSourceId((com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeOrgDataSourceIdResponse) object);
                     } catch (org.apache.axis2.AxisFault e) {
                         callback.receiveErrorchangeOrgDataSourceId(e);
                     }
@@ -6877,11 +6877,11 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#deleteCourseCategory
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#deleteCourseCategory
      * @param deleteCourseCategory54
      */
-    public com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteCourseCategoryResponse deleteCourseCategory(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteCourseCategory deleteCourseCategory54)
+    public com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteCourseCategoryResponse deleteCourseCategory(
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteCourseCategory deleteCourseCategory54)
         throws java.rmi.RemoteException {
         try {
             org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[27].getName());
@@ -6922,12 +6922,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
             java.lang.Object object = fromOM(_returnEnv.getBody()
                                                        .getFirstElement(),
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteCourseCategoryResponse.class,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteCourseCategoryResponse.class,
                     getEnvelopeNamespaces(_returnEnv));
             _messageContext.getTransportOut().getSender()
                            .cleanup(_messageContext);
 
-            return (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteCourseCategoryResponse) object;
+            return (com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteCourseCategoryResponse) object;
         } catch (org.apache.axis2.AxisFault f) {
             org.apache.axiom.om.OMElement faultElt = f.getDetail();
 
@@ -6979,12 +6979,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature for Asynchronous Invocations
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#startdeleteCourseCategory
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#startdeleteCourseCategory
      * @param deleteCourseCategory54
      */
     public void startdeleteCourseCategory(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteCourseCategory deleteCourseCategory54,
-        final com.blackboard.bbdn.bbcoursews.generated.CourseWSCallbackHandler callback)
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteCourseCategory deleteCourseCategory54,
+        final com.blackboard.bbdn.bbws.generated.CourseWSCallbackHandler callback)
         throws java.rmi.RemoteException {
         org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[27].getName());
         _operationClient.getOptions().setAction("deleteCourseCategory");
@@ -7022,9 +7022,9 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
                         java.lang.Object object = fromOM(resultEnv.getBody()
                                                                   .getFirstElement(),
-                                com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteCourseCategoryResponse.class,
+                                com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteCourseCategoryResponse.class,
                                 getEnvelopeNamespaces(resultEnv));
-                        callback.receiveResultdeleteCourseCategory((com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteCourseCategoryResponse) object);
+                        callback.receiveResultdeleteCourseCategory((com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteCourseCategoryResponse) object);
                     } catch (org.apache.axis2.AxisFault e) {
                         callback.receiveErrordeleteCourseCategory(e);
                     }
@@ -7114,11 +7114,11 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#initializeCourseWS
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#initializeCourseWS
      * @param initializeCourseWS56
      */
-    public com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.InitializeCourseWSResponse initializeCourseWS(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.InitializeCourseWS initializeCourseWS56)
+    public com.blackboard.bbdn.bbws.generated.CourseWSStub.InitializeCourseWSResponse initializeCourseWS(
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.InitializeCourseWS initializeCourseWS56)
         throws java.rmi.RemoteException {
         try {
             org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[28].getName());
@@ -7158,12 +7158,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
             java.lang.Object object = fromOM(_returnEnv.getBody()
                                                        .getFirstElement(),
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.InitializeCourseWSResponse.class,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.InitializeCourseWSResponse.class,
                     getEnvelopeNamespaces(_returnEnv));
             _messageContext.getTransportOut().getSender()
                            .cleanup(_messageContext);
 
-            return (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.InitializeCourseWSResponse) object;
+            return (com.blackboard.bbdn.bbws.generated.CourseWSStub.InitializeCourseWSResponse) object;
         } catch (org.apache.axis2.AxisFault f) {
             org.apache.axiom.om.OMElement faultElt = f.getDetail();
 
@@ -7215,12 +7215,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature for Asynchronous Invocations
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#startinitializeCourseWS
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#startinitializeCourseWS
      * @param initializeCourseWS56
      */
     public void startinitializeCourseWS(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.InitializeCourseWS initializeCourseWS56,
-        final com.blackboard.bbdn.bbcoursews.generated.CourseWSCallbackHandler callback)
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.InitializeCourseWS initializeCourseWS56,
+        final com.blackboard.bbdn.bbws.generated.CourseWSCallbackHandler callback)
         throws java.rmi.RemoteException {
         org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[28].getName());
         _operationClient.getOptions().setAction("initializeCourseWS");
@@ -7258,9 +7258,9 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
                         java.lang.Object object = fromOM(resultEnv.getBody()
                                                                   .getFirstElement(),
-                                com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.InitializeCourseWSResponse.class,
+                                com.blackboard.bbdn.bbws.generated.CourseWSStub.InitializeCourseWSResponse.class,
                                 getEnvelopeNamespaces(resultEnv));
-                        callback.receiveResultinitializeCourseWS((com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.InitializeCourseWSResponse) object);
+                        callback.receiveResultinitializeCourseWS((com.blackboard.bbdn.bbws.generated.CourseWSStub.InitializeCourseWSResponse) object);
                     } catch (org.apache.axis2.AxisFault e) {
                         callback.receiveErrorinitializeCourseWS(e);
                     }
@@ -7350,11 +7350,11 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#getCourseCategoryMembership
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#getCourseCategoryMembership
      * @param getCourseCategoryMembership58
      */
-    public com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetCourseCategoryMembershipResponse getCourseCategoryMembership(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetCourseCategoryMembership getCourseCategoryMembership58)
+    public com.blackboard.bbdn.bbws.generated.CourseWSStub.GetCourseCategoryMembershipResponse getCourseCategoryMembership(
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.GetCourseCategoryMembership getCourseCategoryMembership58)
         throws java.rmi.RemoteException {
         try {
             org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[29].getName());
@@ -7396,12 +7396,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
             java.lang.Object object = fromOM(_returnEnv.getBody()
                                                        .getFirstElement(),
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetCourseCategoryMembershipResponse.class,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.GetCourseCategoryMembershipResponse.class,
                     getEnvelopeNamespaces(_returnEnv));
             _messageContext.getTransportOut().getSender()
                            .cleanup(_messageContext);
 
-            return (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetCourseCategoryMembershipResponse) object;
+            return (com.blackboard.bbdn.bbws.generated.CourseWSStub.GetCourseCategoryMembershipResponse) object;
         } catch (org.apache.axis2.AxisFault f) {
             org.apache.axiom.om.OMElement faultElt = f.getDetail();
 
@@ -7453,12 +7453,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature for Asynchronous Invocations
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#startgetCourseCategoryMembership
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#startgetCourseCategoryMembership
      * @param getCourseCategoryMembership58
      */
     public void startgetCourseCategoryMembership(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetCourseCategoryMembership getCourseCategoryMembership58,
-        final com.blackboard.bbdn.bbcoursews.generated.CourseWSCallbackHandler callback)
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.GetCourseCategoryMembership getCourseCategoryMembership58,
+        final com.blackboard.bbdn.bbws.generated.CourseWSCallbackHandler callback)
         throws java.rmi.RemoteException {
         org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[29].getName());
         _operationClient.getOptions().setAction("getCourseCategoryMembership");
@@ -7497,9 +7497,9 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
                         java.lang.Object object = fromOM(resultEnv.getBody()
                                                                   .getFirstElement(),
-                                com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetCourseCategoryMembershipResponse.class,
+                                com.blackboard.bbdn.bbws.generated.CourseWSStub.GetCourseCategoryMembershipResponse.class,
                                 getEnvelopeNamespaces(resultEnv));
-                        callback.receiveResultgetCourseCategoryMembership((com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetCourseCategoryMembershipResponse) object);
+                        callback.receiveResultgetCourseCategoryMembership((com.blackboard.bbdn.bbws.generated.CourseWSStub.GetCourseCategoryMembershipResponse) object);
                     } catch (org.apache.axis2.AxisFault e) {
                         callback.receiveErrorgetCourseCategoryMembership(e);
                     }
@@ -7589,11 +7589,11 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#updateCourse
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#updateCourse
      * @param updateCourse60
      */
-    public com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.UpdateCourseResponse updateCourse(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.UpdateCourse updateCourse60)
+    public com.blackboard.bbdn.bbws.generated.CourseWSStub.UpdateCourseResponse updateCourse(
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.UpdateCourse updateCourse60)
         throws java.rmi.RemoteException {
         try {
             org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[30].getName());
@@ -7633,12 +7633,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
             java.lang.Object object = fromOM(_returnEnv.getBody()
                                                        .getFirstElement(),
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.UpdateCourseResponse.class,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.UpdateCourseResponse.class,
                     getEnvelopeNamespaces(_returnEnv));
             _messageContext.getTransportOut().getSender()
                            .cleanup(_messageContext);
 
-            return (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.UpdateCourseResponse) object;
+            return (com.blackboard.bbdn.bbws.generated.CourseWSStub.UpdateCourseResponse) object;
         } catch (org.apache.axis2.AxisFault f) {
             org.apache.axiom.om.OMElement faultElt = f.getDetail();
 
@@ -7690,12 +7690,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature for Asynchronous Invocations
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#startupdateCourse
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#startupdateCourse
      * @param updateCourse60
      */
     public void startupdateCourse(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.UpdateCourse updateCourse60,
-        final com.blackboard.bbdn.bbcoursews.generated.CourseWSCallbackHandler callback)
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.UpdateCourse updateCourse60,
+        final com.blackboard.bbdn.bbws.generated.CourseWSCallbackHandler callback)
         throws java.rmi.RemoteException {
         org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[30].getName());
         _operationClient.getOptions().setAction("updateCourse");
@@ -7733,9 +7733,9 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
                         java.lang.Object object = fromOM(resultEnv.getBody()
                                                                   .getFirstElement(),
-                                com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.UpdateCourseResponse.class,
+                                com.blackboard.bbdn.bbws.generated.CourseWSStub.UpdateCourseResponse.class,
                                 getEnvelopeNamespaces(resultEnv));
-                        callback.receiveResultupdateCourse((com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.UpdateCourseResponse) object);
+                        callback.receiveResultupdateCourse((com.blackboard.bbdn.bbws.generated.CourseWSStub.UpdateCourseResponse) object);
                     } catch (org.apache.axis2.AxisFault e) {
                         callback.receiveErrorupdateCourse(e);
                     }
@@ -7825,11 +7825,11 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#loadTermByCourseId
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#loadTermByCourseId
      * @param loadTermByCourseId62
      */
-    public com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadTermByCourseIdResponse loadTermByCourseId(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadTermByCourseId loadTermByCourseId62)
+    public com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadTermByCourseIdResponse loadTermByCourseId(
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadTermByCourseId loadTermByCourseId62)
         throws java.rmi.RemoteException {
         try {
             org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[31].getName());
@@ -7869,12 +7869,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
             java.lang.Object object = fromOM(_returnEnv.getBody()
                                                        .getFirstElement(),
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadTermByCourseIdResponse.class,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadTermByCourseIdResponse.class,
                     getEnvelopeNamespaces(_returnEnv));
             _messageContext.getTransportOut().getSender()
                            .cleanup(_messageContext);
 
-            return (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadTermByCourseIdResponse) object;
+            return (com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadTermByCourseIdResponse) object;
         } catch (org.apache.axis2.AxisFault f) {
             org.apache.axiom.om.OMElement faultElt = f.getDetail();
 
@@ -7926,12 +7926,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature for Asynchronous Invocations
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#startloadTermByCourseId
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#startloadTermByCourseId
      * @param loadTermByCourseId62
      */
     public void startloadTermByCourseId(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadTermByCourseId loadTermByCourseId62,
-        final com.blackboard.bbdn.bbcoursews.generated.CourseWSCallbackHandler callback)
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadTermByCourseId loadTermByCourseId62,
+        final com.blackboard.bbdn.bbws.generated.CourseWSCallbackHandler callback)
         throws java.rmi.RemoteException {
         org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[31].getName());
         _operationClient.getOptions().setAction("loadTermByCourseId");
@@ -7969,9 +7969,9 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
                         java.lang.Object object = fromOM(resultEnv.getBody()
                                                                   .getFirstElement(),
-                                com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadTermByCourseIdResponse.class,
+                                com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadTermByCourseIdResponse.class,
                                 getEnvelopeNamespaces(resultEnv));
-                        callback.receiveResultloadTermByCourseId((com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadTermByCourseIdResponse) object);
+                        callback.receiveResultloadTermByCourseId((com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadTermByCourseIdResponse) object);
                     } catch (org.apache.axis2.AxisFault e) {
                         callback.receiveErrorloadTermByCourseId(e);
                     }
@@ -8061,11 +8061,11 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#addCourseToTerm
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#addCourseToTerm
      * @param addCourseToTerm64
      */
-    public com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.AddCourseToTermResponse addCourseToTerm(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.AddCourseToTerm addCourseToTerm64)
+    public com.blackboard.bbdn.bbws.generated.CourseWSStub.AddCourseToTermResponse addCourseToTerm(
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.AddCourseToTerm addCourseToTerm64)
         throws java.rmi.RemoteException {
         try {
             org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[32].getName());
@@ -8105,12 +8105,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
             java.lang.Object object = fromOM(_returnEnv.getBody()
                                                        .getFirstElement(),
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.AddCourseToTermResponse.class,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.AddCourseToTermResponse.class,
                     getEnvelopeNamespaces(_returnEnv));
             _messageContext.getTransportOut().getSender()
                            .cleanup(_messageContext);
 
-            return (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.AddCourseToTermResponse) object;
+            return (com.blackboard.bbdn.bbws.generated.CourseWSStub.AddCourseToTermResponse) object;
         } catch (org.apache.axis2.AxisFault f) {
             org.apache.axiom.om.OMElement faultElt = f.getDetail();
 
@@ -8162,12 +8162,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature for Asynchronous Invocations
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#startaddCourseToTerm
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#startaddCourseToTerm
      * @param addCourseToTerm64
      */
     public void startaddCourseToTerm(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.AddCourseToTerm addCourseToTerm64,
-        final com.blackboard.bbdn.bbcoursews.generated.CourseWSCallbackHandler callback)
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.AddCourseToTerm addCourseToTerm64,
+        final com.blackboard.bbdn.bbws.generated.CourseWSCallbackHandler callback)
         throws java.rmi.RemoteException {
         org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[32].getName());
         _operationClient.getOptions().setAction("addCourseToTerm");
@@ -8205,9 +8205,9 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
                         java.lang.Object object = fromOM(resultEnv.getBody()
                                                                   .getFirstElement(),
-                                com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.AddCourseToTermResponse.class,
+                                com.blackboard.bbdn.bbws.generated.CourseWSStub.AddCourseToTermResponse.class,
                                 getEnvelopeNamespaces(resultEnv));
-                        callback.receiveResultaddCourseToTerm((com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.AddCourseToTermResponse) object);
+                        callback.receiveResultaddCourseToTerm((com.blackboard.bbdn.bbws.generated.CourseWSStub.AddCourseToTermResponse) object);
                     } catch (org.apache.axis2.AxisFault e) {
                         callback.receiveErroraddCourseToTerm(e);
                     }
@@ -8297,11 +8297,11 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#getAvailableGroupTools
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#getAvailableGroupTools
      * @param getAvailableGroupTools66
      */
-    public com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetAvailableGroupToolsResponse getAvailableGroupTools(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetAvailableGroupTools getAvailableGroupTools66)
+    public com.blackboard.bbdn.bbws.generated.CourseWSStub.GetAvailableGroupToolsResponse getAvailableGroupTools(
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.GetAvailableGroupTools getAvailableGroupTools66)
         throws java.rmi.RemoteException {
         try {
             org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[33].getName());
@@ -8342,12 +8342,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
             java.lang.Object object = fromOM(_returnEnv.getBody()
                                                        .getFirstElement(),
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetAvailableGroupToolsResponse.class,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.GetAvailableGroupToolsResponse.class,
                     getEnvelopeNamespaces(_returnEnv));
             _messageContext.getTransportOut().getSender()
                            .cleanup(_messageContext);
 
-            return (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetAvailableGroupToolsResponse) object;
+            return (com.blackboard.bbdn.bbws.generated.CourseWSStub.GetAvailableGroupToolsResponse) object;
         } catch (org.apache.axis2.AxisFault f) {
             org.apache.axiom.om.OMElement faultElt = f.getDetail();
 
@@ -8399,12 +8399,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature for Asynchronous Invocations
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#startgetAvailableGroupTools
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#startgetAvailableGroupTools
      * @param getAvailableGroupTools66
      */
     public void startgetAvailableGroupTools(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetAvailableGroupTools getAvailableGroupTools66,
-        final com.blackboard.bbdn.bbcoursews.generated.CourseWSCallbackHandler callback)
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.GetAvailableGroupTools getAvailableGroupTools66,
+        final com.blackboard.bbdn.bbws.generated.CourseWSCallbackHandler callback)
         throws java.rmi.RemoteException {
         org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[33].getName());
         _operationClient.getOptions().setAction("getAvailableGroupTools");
@@ -8442,9 +8442,9 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
                         java.lang.Object object = fromOM(resultEnv.getBody()
                                                                   .getFirstElement(),
-                                com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetAvailableGroupToolsResponse.class,
+                                com.blackboard.bbdn.bbws.generated.CourseWSStub.GetAvailableGroupToolsResponse.class,
                                 getEnvelopeNamespaces(resultEnv));
-                        callback.receiveResultgetAvailableGroupTools((com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetAvailableGroupToolsResponse) object);
+                        callback.receiveResultgetAvailableGroupTools((com.blackboard.bbdn.bbws.generated.CourseWSStub.GetAvailableGroupToolsResponse) object);
                     } catch (org.apache.axis2.AxisFault e) {
                         callback.receiveErrorgetAvailableGroupTools(e);
                     }
@@ -8534,11 +8534,11 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#deleteCartridge
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#deleteCartridge
      * @param deleteCartridge68
      */
-    public com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteCartridgeResponse deleteCartridge(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteCartridge deleteCartridge68)
+    public com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteCartridgeResponse deleteCartridge(
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteCartridge deleteCartridge68)
         throws java.rmi.RemoteException {
         try {
             org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[34].getName());
@@ -8578,12 +8578,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
             java.lang.Object object = fromOM(_returnEnv.getBody()
                                                        .getFirstElement(),
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteCartridgeResponse.class,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteCartridgeResponse.class,
                     getEnvelopeNamespaces(_returnEnv));
             _messageContext.getTransportOut().getSender()
                            .cleanup(_messageContext);
 
-            return (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteCartridgeResponse) object;
+            return (com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteCartridgeResponse) object;
         } catch (org.apache.axis2.AxisFault f) {
             org.apache.axiom.om.OMElement faultElt = f.getDetail();
 
@@ -8635,12 +8635,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature for Asynchronous Invocations
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#startdeleteCartridge
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#startdeleteCartridge
      * @param deleteCartridge68
      */
     public void startdeleteCartridge(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteCartridge deleteCartridge68,
-        final com.blackboard.bbdn.bbcoursews.generated.CourseWSCallbackHandler callback)
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteCartridge deleteCartridge68,
+        final com.blackboard.bbdn.bbws.generated.CourseWSCallbackHandler callback)
         throws java.rmi.RemoteException {
         org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[34].getName());
         _operationClient.getOptions().setAction("deleteCartridge");
@@ -8678,9 +8678,9 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
                         java.lang.Object object = fromOM(resultEnv.getBody()
                                                                   .getFirstElement(),
-                                com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteCartridgeResponse.class,
+                                com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteCartridgeResponse.class,
                                 getEnvelopeNamespaces(resultEnv));
-                        callback.receiveResultdeleteCartridge((com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteCartridgeResponse) object);
+                        callback.receiveResultdeleteCartridge((com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteCartridgeResponse) object);
                     } catch (org.apache.axis2.AxisFault e) {
                         callback.receiveErrordeleteCartridge(e);
                     }
@@ -8770,11 +8770,11 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#deleteStaffInfo
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#deleteStaffInfo
      * @param deleteStaffInfo70
      */
-    public com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteStaffInfoResponse deleteStaffInfo(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteStaffInfo deleteStaffInfo70)
+    public com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteStaffInfoResponse deleteStaffInfo(
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteStaffInfo deleteStaffInfo70)
         throws java.rmi.RemoteException {
         try {
             org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[35].getName());
@@ -8814,12 +8814,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
             java.lang.Object object = fromOM(_returnEnv.getBody()
                                                        .getFirstElement(),
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteStaffInfoResponse.class,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteStaffInfoResponse.class,
                     getEnvelopeNamespaces(_returnEnv));
             _messageContext.getTransportOut().getSender()
                            .cleanup(_messageContext);
 
-            return (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteStaffInfoResponse) object;
+            return (com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteStaffInfoResponse) object;
         } catch (org.apache.axis2.AxisFault f) {
             org.apache.axiom.om.OMElement faultElt = f.getDetail();
 
@@ -8871,12 +8871,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature for Asynchronous Invocations
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#startdeleteStaffInfo
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#startdeleteStaffInfo
      * @param deleteStaffInfo70
      */
     public void startdeleteStaffInfo(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteStaffInfo deleteStaffInfo70,
-        final com.blackboard.bbdn.bbcoursews.generated.CourseWSCallbackHandler callback)
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteStaffInfo deleteStaffInfo70,
+        final com.blackboard.bbdn.bbws.generated.CourseWSCallbackHandler callback)
         throws java.rmi.RemoteException {
         org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[35].getName());
         _operationClient.getOptions().setAction("deleteStaffInfo");
@@ -8914,9 +8914,9 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
                         java.lang.Object object = fromOM(resultEnv.getBody()
                                                                   .getFirstElement(),
-                                com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteStaffInfoResponse.class,
+                                com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteStaffInfoResponse.class,
                                 getEnvelopeNamespaces(resultEnv));
-                        callback.receiveResultdeleteStaffInfo((com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteStaffInfoResponse) object);
+                        callback.receiveResultdeleteStaffInfo((com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteStaffInfoResponse) object);
                     } catch (org.apache.axis2.AxisFault e) {
                         callback.receiveErrordeleteStaffInfo(e);
                     }
@@ -9006,11 +9006,11 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#saveStaffInfo
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#saveStaffInfo
      * @param saveStaffInfo72
      */
-    public com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveStaffInfoResponse saveStaffInfo(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveStaffInfo saveStaffInfo72)
+    public com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveStaffInfoResponse saveStaffInfo(
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveStaffInfo saveStaffInfo72)
         throws java.rmi.RemoteException {
         try {
             org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[36].getName());
@@ -9050,12 +9050,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
             java.lang.Object object = fromOM(_returnEnv.getBody()
                                                        .getFirstElement(),
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveStaffInfoResponse.class,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveStaffInfoResponse.class,
                     getEnvelopeNamespaces(_returnEnv));
             _messageContext.getTransportOut().getSender()
                            .cleanup(_messageContext);
 
-            return (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveStaffInfoResponse) object;
+            return (com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveStaffInfoResponse) object;
         } catch (org.apache.axis2.AxisFault f) {
             org.apache.axiom.om.OMElement faultElt = f.getDetail();
 
@@ -9107,12 +9107,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature for Asynchronous Invocations
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#startsaveStaffInfo
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#startsaveStaffInfo
      * @param saveStaffInfo72
      */
     public void startsaveStaffInfo(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveStaffInfo saveStaffInfo72,
-        final com.blackboard.bbdn.bbcoursews.generated.CourseWSCallbackHandler callback)
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveStaffInfo saveStaffInfo72,
+        final com.blackboard.bbdn.bbws.generated.CourseWSCallbackHandler callback)
         throws java.rmi.RemoteException {
         org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[36].getName());
         _operationClient.getOptions().setAction("saveStaffInfo");
@@ -9150,9 +9150,9 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
                         java.lang.Object object = fromOM(resultEnv.getBody()
                                                                   .getFirstElement(),
-                                com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveStaffInfoResponse.class,
+                                com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveStaffInfoResponse.class,
                                 getEnvelopeNamespaces(resultEnv));
-                        callback.receiveResultsaveStaffInfo((com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveStaffInfoResponse) object);
+                        callback.receiveResultsaveStaffInfo((com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveStaffInfoResponse) object);
                     } catch (org.apache.axis2.AxisFault e) {
                         callback.receiveErrorsaveStaffInfo(e);
                     }
@@ -9242,11 +9242,11 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#saveOrgCategory
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#saveOrgCategory
      * @param saveOrgCategory74
      */
-    public com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveOrgCategoryResponse saveOrgCategory(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveOrgCategory saveOrgCategory74)
+    public com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveOrgCategoryResponse saveOrgCategory(
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveOrgCategory saveOrgCategory74)
         throws java.rmi.RemoteException {
         try {
             org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[37].getName());
@@ -9286,12 +9286,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
             java.lang.Object object = fromOM(_returnEnv.getBody()
                                                        .getFirstElement(),
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveOrgCategoryResponse.class,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveOrgCategoryResponse.class,
                     getEnvelopeNamespaces(_returnEnv));
             _messageContext.getTransportOut().getSender()
                            .cleanup(_messageContext);
 
-            return (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveOrgCategoryResponse) object;
+            return (com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveOrgCategoryResponse) object;
         } catch (org.apache.axis2.AxisFault f) {
             org.apache.axiom.om.OMElement faultElt = f.getDetail();
 
@@ -9343,12 +9343,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature for Asynchronous Invocations
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#startsaveOrgCategory
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#startsaveOrgCategory
      * @param saveOrgCategory74
      */
     public void startsaveOrgCategory(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveOrgCategory saveOrgCategory74,
-        final com.blackboard.bbdn.bbcoursews.generated.CourseWSCallbackHandler callback)
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveOrgCategory saveOrgCategory74,
+        final com.blackboard.bbdn.bbws.generated.CourseWSCallbackHandler callback)
         throws java.rmi.RemoteException {
         org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[37].getName());
         _operationClient.getOptions().setAction("saveOrgCategory");
@@ -9386,9 +9386,9 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
                         java.lang.Object object = fromOM(resultEnv.getBody()
                                                                   .getFirstElement(),
-                                com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveOrgCategoryResponse.class,
+                                com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveOrgCategoryResponse.class,
                                 getEnvelopeNamespaces(resultEnv));
-                        callback.receiveResultsaveOrgCategory((com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveOrgCategoryResponse) object);
+                        callback.receiveResultsaveOrgCategory((com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveOrgCategoryResponse) object);
                     } catch (org.apache.axis2.AxisFault e) {
                         callback.receiveErrorsaveOrgCategory(e);
                     }
@@ -9478,11 +9478,11 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#deleteGroup
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#deleteGroup
      * @param deleteGroup76
      */
-    public com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteGroupResponse deleteGroup(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteGroup deleteGroup76)
+    public com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteGroupResponse deleteGroup(
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteGroup deleteGroup76)
         throws java.rmi.RemoteException {
         try {
             org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[38].getName());
@@ -9522,12 +9522,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
             java.lang.Object object = fromOM(_returnEnv.getBody()
                                                        .getFirstElement(),
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteGroupResponse.class,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteGroupResponse.class,
                     getEnvelopeNamespaces(_returnEnv));
             _messageContext.getTransportOut().getSender()
                            .cleanup(_messageContext);
 
-            return (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteGroupResponse) object;
+            return (com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteGroupResponse) object;
         } catch (org.apache.axis2.AxisFault f) {
             org.apache.axiom.om.OMElement faultElt = f.getDetail();
 
@@ -9579,12 +9579,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature for Asynchronous Invocations
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#startdeleteGroup
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#startdeleteGroup
      * @param deleteGroup76
      */
     public void startdeleteGroup(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteGroup deleteGroup76,
-        final com.blackboard.bbdn.bbcoursews.generated.CourseWSCallbackHandler callback)
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteGroup deleteGroup76,
+        final com.blackboard.bbdn.bbws.generated.CourseWSCallbackHandler callback)
         throws java.rmi.RemoteException {
         org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[38].getName());
         _operationClient.getOptions().setAction("deleteGroup");
@@ -9622,9 +9622,9 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
                         java.lang.Object object = fromOM(resultEnv.getBody()
                                                                   .getFirstElement(),
-                                com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteGroupResponse.class,
+                                com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteGroupResponse.class,
                                 getEnvelopeNamespaces(resultEnv));
-                        callback.receiveResultdeleteGroup((com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteGroupResponse) object);
+                        callback.receiveResultdeleteGroup((com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteGroupResponse) object);
                     } catch (org.apache.axis2.AxisFault e) {
                         callback.receiveErrordeleteGroup(e);
                     }
@@ -9714,11 +9714,11 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#getServerVersion
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#getServerVersion
      * @param getServerVersion78
      */
-    public com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetServerVersionResponse getServerVersion(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetServerVersion getServerVersion78)
+    public com.blackboard.bbdn.bbws.generated.CourseWSStub.GetServerVersionResponse getServerVersion(
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.GetServerVersion getServerVersion78)
         throws java.rmi.RemoteException {
         try {
             org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[39].getName());
@@ -9758,12 +9758,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
             java.lang.Object object = fromOM(_returnEnv.getBody()
                                                        .getFirstElement(),
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetServerVersionResponse.class,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.GetServerVersionResponse.class,
                     getEnvelopeNamespaces(_returnEnv));
             _messageContext.getTransportOut().getSender()
                            .cleanup(_messageContext);
 
-            return (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetServerVersionResponse) object;
+            return (com.blackboard.bbdn.bbws.generated.CourseWSStub.GetServerVersionResponse) object;
         } catch (org.apache.axis2.AxisFault f) {
             org.apache.axiom.om.OMElement faultElt = f.getDetail();
 
@@ -9815,12 +9815,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature for Asynchronous Invocations
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#startgetServerVersion
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#startgetServerVersion
      * @param getServerVersion78
      */
     public void startgetServerVersion(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetServerVersion getServerVersion78,
-        final com.blackboard.bbdn.bbcoursews.generated.CourseWSCallbackHandler callback)
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.GetServerVersion getServerVersion78,
+        final com.blackboard.bbdn.bbws.generated.CourseWSCallbackHandler callback)
         throws java.rmi.RemoteException {
         org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[39].getName());
         _operationClient.getOptions().setAction("getServerVersion");
@@ -9858,9 +9858,9 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
                         java.lang.Object object = fromOM(resultEnv.getBody()
                                                                   .getFirstElement(),
-                                com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetServerVersionResponse.class,
+                                com.blackboard.bbdn.bbws.generated.CourseWSStub.GetServerVersionResponse.class,
                                 getEnvelopeNamespaces(resultEnv));
-                        callback.receiveResultgetServerVersion((com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetServerVersionResponse) object);
+                        callback.receiveResultgetServerVersion((com.blackboard.bbdn.bbws.generated.CourseWSStub.GetServerVersionResponse) object);
                     } catch (org.apache.axis2.AxisFault e) {
                         callback.receiveErrorgetServerVersion(e);
                     }
@@ -9950,11 +9950,11 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#saveCourse
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#saveCourse
      * @param saveCourse80
      */
-    public com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveCourseResponse saveCourse(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveCourse saveCourse80)
+    public com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveCourseResponse saveCourse(
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveCourse saveCourse80)
         throws java.rmi.RemoteException {
         try {
             org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[40].getName());
@@ -9994,12 +9994,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
             java.lang.Object object = fromOM(_returnEnv.getBody()
                                                        .getFirstElement(),
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveCourseResponse.class,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveCourseResponse.class,
                     getEnvelopeNamespaces(_returnEnv));
             _messageContext.getTransportOut().getSender()
                            .cleanup(_messageContext);
 
-            return (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveCourseResponse) object;
+            return (com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveCourseResponse) object;
         } catch (org.apache.axis2.AxisFault f) {
             org.apache.axiom.om.OMElement faultElt = f.getDetail();
 
@@ -10051,12 +10051,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature for Asynchronous Invocations
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#startsaveCourse
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#startsaveCourse
      * @param saveCourse80
      */
     public void startsaveCourse(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveCourse saveCourse80,
-        final com.blackboard.bbdn.bbcoursews.generated.CourseWSCallbackHandler callback)
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveCourse saveCourse80,
+        final com.blackboard.bbdn.bbws.generated.CourseWSCallbackHandler callback)
         throws java.rmi.RemoteException {
         org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[40].getName());
         _operationClient.getOptions().setAction("saveCourse");
@@ -10094,9 +10094,9 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
                         java.lang.Object object = fromOM(resultEnv.getBody()
                                                                   .getFirstElement(),
-                                com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveCourseResponse.class,
+                                com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveCourseResponse.class,
                                 getEnvelopeNamespaces(resultEnv));
-                        callback.receiveResultsaveCourse((com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveCourseResponse) object);
+                        callback.receiveResultsaveCourse((com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveCourseResponse) object);
                     } catch (org.apache.axis2.AxisFault e) {
                         callback.receiveErrorsaveCourse(e);
                     }
@@ -10186,11 +10186,11 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#saveCartridge
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#saveCartridge
      * @param saveCartridge82
      */
-    public com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveCartridgeResponse saveCartridge(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveCartridge saveCartridge82)
+    public com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveCartridgeResponse saveCartridge(
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveCartridge saveCartridge82)
         throws java.rmi.RemoteException {
         try {
             org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[41].getName());
@@ -10230,12 +10230,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
             java.lang.Object object = fromOM(_returnEnv.getBody()
                                                        .getFirstElement(),
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveCartridgeResponse.class,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveCartridgeResponse.class,
                     getEnvelopeNamespaces(_returnEnv));
             _messageContext.getTransportOut().getSender()
                            .cleanup(_messageContext);
 
-            return (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveCartridgeResponse) object;
+            return (com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveCartridgeResponse) object;
         } catch (org.apache.axis2.AxisFault f) {
             org.apache.axiom.om.OMElement faultElt = f.getDetail();
 
@@ -10287,12 +10287,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature for Asynchronous Invocations
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#startsaveCartridge
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#startsaveCartridge
      * @param saveCartridge82
      */
     public void startsaveCartridge(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveCartridge saveCartridge82,
-        final com.blackboard.bbdn.bbcoursews.generated.CourseWSCallbackHandler callback)
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveCartridge saveCartridge82,
+        final com.blackboard.bbdn.bbws.generated.CourseWSCallbackHandler callback)
         throws java.rmi.RemoteException {
         org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[41].getName());
         _operationClient.getOptions().setAction("saveCartridge");
@@ -10330,9 +10330,9 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
                         java.lang.Object object = fromOM(resultEnv.getBody()
                                                                   .getFirstElement(),
-                                com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveCartridgeResponse.class,
+                                com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveCartridgeResponse.class,
                                 getEnvelopeNamespaces(resultEnv));
-                        callback.receiveResultsaveCartridge((com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveCartridgeResponse) object);
+                        callback.receiveResultsaveCartridge((com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveCartridgeResponse) object);
                     } catch (org.apache.axis2.AxisFault e) {
                         callback.receiveErrorsaveCartridge(e);
                     }
@@ -10422,11 +10422,11 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#saveOrgCategoryMembership
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#saveOrgCategoryMembership
      * @param saveOrgCategoryMembership84
      */
-    public com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveOrgCategoryMembershipResponse saveOrgCategoryMembership(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveOrgCategoryMembership saveOrgCategoryMembership84)
+    public com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveOrgCategoryMembershipResponse saveOrgCategoryMembership(
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveOrgCategoryMembership saveOrgCategoryMembership84)
         throws java.rmi.RemoteException {
         try {
             org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[42].getName());
@@ -10467,12 +10467,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
             java.lang.Object object = fromOM(_returnEnv.getBody()
                                                        .getFirstElement(),
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveOrgCategoryMembershipResponse.class,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveOrgCategoryMembershipResponse.class,
                     getEnvelopeNamespaces(_returnEnv));
             _messageContext.getTransportOut().getSender()
                            .cleanup(_messageContext);
 
-            return (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveOrgCategoryMembershipResponse) object;
+            return (com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveOrgCategoryMembershipResponse) object;
         } catch (org.apache.axis2.AxisFault f) {
             org.apache.axiom.om.OMElement faultElt = f.getDetail();
 
@@ -10524,12 +10524,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature for Asynchronous Invocations
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#startsaveOrgCategoryMembership
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#startsaveOrgCategoryMembership
      * @param saveOrgCategoryMembership84
      */
     public void startsaveOrgCategoryMembership(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveOrgCategoryMembership saveOrgCategoryMembership84,
-        final com.blackboard.bbdn.bbcoursews.generated.CourseWSCallbackHandler callback)
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveOrgCategoryMembership saveOrgCategoryMembership84,
+        final com.blackboard.bbdn.bbws.generated.CourseWSCallbackHandler callback)
         throws java.rmi.RemoteException {
         org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[42].getName());
         _operationClient.getOptions().setAction("saveOrgCategoryMembership");
@@ -10568,9 +10568,9 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
                         java.lang.Object object = fromOM(resultEnv.getBody()
                                                                   .getFirstElement(),
-                                com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveOrgCategoryMembershipResponse.class,
+                                com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveOrgCategoryMembershipResponse.class,
                                 getEnvelopeNamespaces(resultEnv));
-                        callback.receiveResultsaveOrgCategoryMembership((com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveOrgCategoryMembershipResponse) object);
+                        callback.receiveResultsaveOrgCategoryMembership((com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveOrgCategoryMembershipResponse) object);
                     } catch (org.apache.axis2.AxisFault e) {
                         callback.receiveErrorsaveOrgCategoryMembership(e);
                     }
@@ -10660,11 +10660,11 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#getStaffInfo
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#getStaffInfo
      * @param getStaffInfo86
      */
-    public com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetStaffInfoResponse getStaffInfo(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetStaffInfo getStaffInfo86)
+    public com.blackboard.bbdn.bbws.generated.CourseWSStub.GetStaffInfoResponse getStaffInfo(
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.GetStaffInfo getStaffInfo86)
         throws java.rmi.RemoteException {
         try {
             org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[43].getName());
@@ -10704,12 +10704,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
             java.lang.Object object = fromOM(_returnEnv.getBody()
                                                        .getFirstElement(),
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetStaffInfoResponse.class,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.GetStaffInfoResponse.class,
                     getEnvelopeNamespaces(_returnEnv));
             _messageContext.getTransportOut().getSender()
                            .cleanup(_messageContext);
 
-            return (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetStaffInfoResponse) object;
+            return (com.blackboard.bbdn.bbws.generated.CourseWSStub.GetStaffInfoResponse) object;
         } catch (org.apache.axis2.AxisFault f) {
             org.apache.axiom.om.OMElement faultElt = f.getDetail();
 
@@ -10761,12 +10761,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature for Asynchronous Invocations
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#startgetStaffInfo
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#startgetStaffInfo
      * @param getStaffInfo86
      */
     public void startgetStaffInfo(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetStaffInfo getStaffInfo86,
-        final com.blackboard.bbdn.bbcoursews.generated.CourseWSCallbackHandler callback)
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.GetStaffInfo getStaffInfo86,
+        final com.blackboard.bbdn.bbws.generated.CourseWSCallbackHandler callback)
         throws java.rmi.RemoteException {
         org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[43].getName());
         _operationClient.getOptions().setAction("getStaffInfo");
@@ -10804,9 +10804,9 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
                         java.lang.Object object = fromOM(resultEnv.getBody()
                                                                   .getFirstElement(),
-                                com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetStaffInfoResponse.class,
+                                com.blackboard.bbdn.bbws.generated.CourseWSStub.GetStaffInfoResponse.class,
                                 getEnvelopeNamespaces(resultEnv));
-                        callback.receiveResultgetStaffInfo((com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetStaffInfoResponse) object);
+                        callback.receiveResultgetStaffInfo((com.blackboard.bbdn.bbws.generated.CourseWSStub.GetStaffInfoResponse) object);
                     } catch (org.apache.axis2.AxisFault e) {
                         callback.receiveErrorgetStaffInfo(e);
                     }
@@ -10896,11 +10896,11 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#saveCourseCategoryMembership
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#saveCourseCategoryMembership
      * @param saveCourseCategoryMembership88
      */
-    public com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveCourseCategoryMembershipResponse saveCourseCategoryMembership(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveCourseCategoryMembership saveCourseCategoryMembership88)
+    public com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveCourseCategoryMembershipResponse saveCourseCategoryMembership(
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveCourseCategoryMembership saveCourseCategoryMembership88)
         throws java.rmi.RemoteException {
         try {
             org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[44].getName());
@@ -10942,12 +10942,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
             java.lang.Object object = fromOM(_returnEnv.getBody()
                                                        .getFirstElement(),
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveCourseCategoryMembershipResponse.class,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveCourseCategoryMembershipResponse.class,
                     getEnvelopeNamespaces(_returnEnv));
             _messageContext.getTransportOut().getSender()
                            .cleanup(_messageContext);
 
-            return (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveCourseCategoryMembershipResponse) object;
+            return (com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveCourseCategoryMembershipResponse) object;
         } catch (org.apache.axis2.AxisFault f) {
             org.apache.axiom.om.OMElement faultElt = f.getDetail();
 
@@ -10999,12 +10999,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature for Asynchronous Invocations
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#startsaveCourseCategoryMembership
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#startsaveCourseCategoryMembership
      * @param saveCourseCategoryMembership88
      */
     public void startsaveCourseCategoryMembership(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveCourseCategoryMembership saveCourseCategoryMembership88,
-        final com.blackboard.bbdn.bbcoursews.generated.CourseWSCallbackHandler callback)
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveCourseCategoryMembership saveCourseCategoryMembership88,
+        final com.blackboard.bbdn.bbws.generated.CourseWSCallbackHandler callback)
         throws java.rmi.RemoteException {
         org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[44].getName());
         _operationClient.getOptions().setAction("saveCourseCategoryMembership");
@@ -11043,9 +11043,9 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
                         java.lang.Object object = fromOM(resultEnv.getBody()
                                                                   .getFirstElement(),
-                                com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveCourseCategoryMembershipResponse.class,
+                                com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveCourseCategoryMembershipResponse.class,
                                 getEnvelopeNamespaces(resultEnv));
-                        callback.receiveResultsaveCourseCategoryMembership((com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveCourseCategoryMembershipResponse) object);
+                        callback.receiveResultsaveCourseCategoryMembership((com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveCourseCategoryMembershipResponse) object);
                     } catch (org.apache.axis2.AxisFault e) {
                         callback.receiveErrorsaveCourseCategoryMembership(e);
                     }
@@ -11135,11 +11135,11 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#changeCourseBatchUid
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#changeCourseBatchUid
      * @param changeCourseBatchUid90
      */
-    public com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeCourseBatchUidResponse changeCourseBatchUid(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeCourseBatchUid changeCourseBatchUid90)
+    public com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeCourseBatchUidResponse changeCourseBatchUid(
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeCourseBatchUid changeCourseBatchUid90)
         throws java.rmi.RemoteException {
         try {
             org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[45].getName());
@@ -11180,12 +11180,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
             java.lang.Object object = fromOM(_returnEnv.getBody()
                                                        .getFirstElement(),
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeCourseBatchUidResponse.class,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeCourseBatchUidResponse.class,
                     getEnvelopeNamespaces(_returnEnv));
             _messageContext.getTransportOut().getSender()
                            .cleanup(_messageContext);
 
-            return (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeCourseBatchUidResponse) object;
+            return (com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeCourseBatchUidResponse) object;
         } catch (org.apache.axis2.AxisFault f) {
             org.apache.axiom.om.OMElement faultElt = f.getDetail();
 
@@ -11237,12 +11237,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature for Asynchronous Invocations
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#startchangeCourseBatchUid
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#startchangeCourseBatchUid
      * @param changeCourseBatchUid90
      */
     public void startchangeCourseBatchUid(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeCourseBatchUid changeCourseBatchUid90,
-        final com.blackboard.bbdn.bbcoursews.generated.CourseWSCallbackHandler callback)
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeCourseBatchUid changeCourseBatchUid90,
+        final com.blackboard.bbdn.bbws.generated.CourseWSCallbackHandler callback)
         throws java.rmi.RemoteException {
         org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[45].getName());
         _operationClient.getOptions().setAction("changeCourseBatchUid");
@@ -11280,9 +11280,9 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
                         java.lang.Object object = fromOM(resultEnv.getBody()
                                                                   .getFirstElement(),
-                                com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeCourseBatchUidResponse.class,
+                                com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeCourseBatchUidResponse.class,
                                 getEnvelopeNamespaces(resultEnv));
-                        callback.receiveResultchangeCourseBatchUid((com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeCourseBatchUidResponse) object);
+                        callback.receiveResultchangeCourseBatchUid((com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeCourseBatchUidResponse) object);
                     } catch (org.apache.axis2.AxisFault e) {
                         callback.receiveErrorchangeCourseBatchUid(e);
                     }
@@ -11372,11 +11372,11 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#deleteTerm
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#deleteTerm
      * @param deleteTerm92
      */
-    public com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteTermResponse deleteTerm(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteTerm deleteTerm92)
+    public com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteTermResponse deleteTerm(
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteTerm deleteTerm92)
         throws java.rmi.RemoteException {
         try {
             org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[46].getName());
@@ -11416,12 +11416,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
             java.lang.Object object = fromOM(_returnEnv.getBody()
                                                        .getFirstElement(),
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteTermResponse.class,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteTermResponse.class,
                     getEnvelopeNamespaces(_returnEnv));
             _messageContext.getTransportOut().getSender()
                            .cleanup(_messageContext);
 
-            return (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteTermResponse) object;
+            return (com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteTermResponse) object;
         } catch (org.apache.axis2.AxisFault f) {
             org.apache.axiom.om.OMElement faultElt = f.getDetail();
 
@@ -11473,12 +11473,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature for Asynchronous Invocations
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#startdeleteTerm
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#startdeleteTerm
      * @param deleteTerm92
      */
     public void startdeleteTerm(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteTerm deleteTerm92,
-        final com.blackboard.bbdn.bbcoursews.generated.CourseWSCallbackHandler callback)
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteTerm deleteTerm92,
+        final com.blackboard.bbdn.bbws.generated.CourseWSCallbackHandler callback)
         throws java.rmi.RemoteException {
         org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[46].getName());
         _operationClient.getOptions().setAction("deleteTerm");
@@ -11516,9 +11516,9 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
                         java.lang.Object object = fromOM(resultEnv.getBody()
                                                                   .getFirstElement(),
-                                com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteTermResponse.class,
+                                com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteTermResponse.class,
                                 getEnvelopeNamespaces(resultEnv));
-                        callback.receiveResultdeleteTerm((com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteTermResponse) object);
+                        callback.receiveResultdeleteTerm((com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteTermResponse) object);
                     } catch (org.apache.axis2.AxisFault e) {
                         callback.receiveErrordeleteTerm(e);
                     }
@@ -11608,11 +11608,11 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#changeCourseDataSourceId
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#changeCourseDataSourceId
      * @param changeCourseDataSourceId94
      */
-    public com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeCourseDataSourceIdResponse changeCourseDataSourceId(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeCourseDataSourceId changeCourseDataSourceId94)
+    public com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeCourseDataSourceIdResponse changeCourseDataSourceId(
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeCourseDataSourceId changeCourseDataSourceId94)
         throws java.rmi.RemoteException {
         try {
             org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[47].getName());
@@ -11653,12 +11653,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
             java.lang.Object object = fromOM(_returnEnv.getBody()
                                                        .getFirstElement(),
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeCourseDataSourceIdResponse.class,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeCourseDataSourceIdResponse.class,
                     getEnvelopeNamespaces(_returnEnv));
             _messageContext.getTransportOut().getSender()
                            .cleanup(_messageContext);
 
-            return (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeCourseDataSourceIdResponse) object;
+            return (com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeCourseDataSourceIdResponse) object;
         } catch (org.apache.axis2.AxisFault f) {
             org.apache.axiom.om.OMElement faultElt = f.getDetail();
 
@@ -11710,12 +11710,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature for Asynchronous Invocations
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#startchangeCourseDataSourceId
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#startchangeCourseDataSourceId
      * @param changeCourseDataSourceId94
      */
     public void startchangeCourseDataSourceId(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeCourseDataSourceId changeCourseDataSourceId94,
-        final com.blackboard.bbdn.bbcoursews.generated.CourseWSCallbackHandler callback)
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeCourseDataSourceId changeCourseDataSourceId94,
+        final com.blackboard.bbdn.bbws.generated.CourseWSCallbackHandler callback)
         throws java.rmi.RemoteException {
         org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[47].getName());
         _operationClient.getOptions().setAction("changeCourseDataSourceId");
@@ -11754,9 +11754,9 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
                         java.lang.Object object = fromOM(resultEnv.getBody()
                                                                   .getFirstElement(),
-                                com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeCourseDataSourceIdResponse.class,
+                                com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeCourseDataSourceIdResponse.class,
                                 getEnvelopeNamespaces(resultEnv));
-                        callback.receiveResultchangeCourseDataSourceId((com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeCourseDataSourceIdResponse) object);
+                        callback.receiveResultchangeCourseDataSourceId((com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeCourseDataSourceIdResponse) object);
                     } catch (org.apache.axis2.AxisFault e) {
                         callback.receiveErrorchangeCourseDataSourceId(e);
                     }
@@ -11846,11 +11846,11 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#loadTerms
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#loadTerms
      * @param loadTerms96
      */
-    public com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadTermsResponse loadTerms(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadTerms loadTerms96)
+    public com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadTermsResponse loadTerms(
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadTerms loadTerms96)
         throws java.rmi.RemoteException {
         try {
             org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[48].getName());
@@ -11890,12 +11890,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
             java.lang.Object object = fromOM(_returnEnv.getBody()
                                                        .getFirstElement(),
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadTermsResponse.class,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadTermsResponse.class,
                     getEnvelopeNamespaces(_returnEnv));
             _messageContext.getTransportOut().getSender()
                            .cleanup(_messageContext);
 
-            return (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadTermsResponse) object;
+            return (com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadTermsResponse) object;
         } catch (org.apache.axis2.AxisFault f) {
             org.apache.axiom.om.OMElement faultElt = f.getDetail();
 
@@ -11947,12 +11947,12 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     /**
      * Auto generated method signature for Asynchronous Invocations
-     * @see com.blackboard.bbdn.bbcoursews.generated.CourseWS#startloadTerms
+     * @see com.blackboard.bbdn.bbws.generated.CourseWS#startloadTerms
      * @param loadTerms96
      */
     public void startloadTerms(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadTerms loadTerms96,
-        final com.blackboard.bbdn.bbcoursews.generated.CourseWSCallbackHandler callback)
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadTerms loadTerms96,
+        final com.blackboard.bbdn.bbws.generated.CourseWSCallbackHandler callback)
         throws java.rmi.RemoteException {
         org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[48].getName());
         _operationClient.getOptions().setAction("loadTerms");
@@ -11990,9 +11990,9 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
                         java.lang.Object object = fromOM(resultEnv.getBody()
                                                                   .getFirstElement(),
-                                com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadTermsResponse.class,
+                                com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadTermsResponse.class,
                                 getEnvelopeNamespaces(resultEnv));
-                        callback.receiveResultloadTerms((com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadTermsResponse) object);
+                        callback.receiveResultloadTerms((com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadTermsResponse) object);
                     } catch (org.apache.axis2.AxisFault e) {
                         callback.receiveErrorloadTerms(e);
                     }
@@ -12111,10 +12111,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SetCourseBannerImage param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.SetCourseBannerImage param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SetCourseBannerImage.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.SetCourseBannerImage.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -12122,10 +12122,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SetCourseBannerImageResponse param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.SetCourseBannerImageResponse param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SetCourseBannerImageResponse.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.SetCourseBannerImageResponse.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -12133,10 +12133,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeCourseCategoryBatchUid param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeCourseCategoryBatchUid param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeCourseCategoryBatchUid.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeCourseCategoryBatchUid.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -12144,10 +12144,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeCourseCategoryBatchUidResponse param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeCourseCategoryBatchUidResponse param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeCourseCategoryBatchUidResponse.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeCourseCategoryBatchUidResponse.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -12155,10 +12155,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteOrgCategory param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteOrgCategory param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteOrgCategory.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteOrgCategory.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -12166,10 +12166,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteOrgCategoryResponse param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteOrgCategoryResponse param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteOrgCategoryResponse.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteOrgCategoryResponse.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -12177,10 +12177,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetCartridge param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.GetCartridge param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetCartridge.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.GetCartridge.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -12188,10 +12188,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetCartridgeResponse param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.GetCartridgeResponse param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetCartridgeResponse.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.GetCartridgeResponse.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -12199,10 +12199,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetOrg param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.GetOrg param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetOrg.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.GetOrg.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -12210,10 +12210,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetOrgResponse param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.GetOrgResponse param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetOrgResponse.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.GetOrgResponse.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -12221,10 +12221,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetOrgCategoryMembership param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.GetOrgCategoryMembership param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetOrgCategoryMembership.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.GetOrgCategoryMembership.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -12232,10 +12232,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetOrgCategoryMembershipResponse param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.GetOrgCategoryMembershipResponse param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetOrgCategoryMembershipResponse.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.GetOrgCategoryMembershipResponse.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -12243,10 +12243,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.UpdateOrg param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.UpdateOrg param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.UpdateOrg.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.UpdateOrg.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -12254,10 +12254,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.UpdateOrgResponse param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.UpdateOrgResponse param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.UpdateOrgResponse.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.UpdateOrgResponse.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -12265,10 +12265,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetClassifications param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.GetClassifications param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetClassifications.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.GetClassifications.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -12276,10 +12276,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetClassificationsResponse param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.GetClassificationsResponse param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetClassificationsResponse.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.GetClassificationsResponse.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -12287,10 +12287,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteOrgCategoryMembership param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteOrgCategoryMembership param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteOrgCategoryMembership.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteOrgCategoryMembership.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -12298,10 +12298,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteOrgCategoryMembershipResponse param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteOrgCategoryMembershipResponse param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteOrgCategoryMembershipResponse.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteOrgCategoryMembershipResponse.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -12309,10 +12309,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeOrgCategoryBatchUid param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeOrgCategoryBatchUid param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeOrgCategoryBatchUid.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeOrgCategoryBatchUid.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -12320,10 +12320,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeOrgCategoryBatchUidResponse param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeOrgCategoryBatchUidResponse param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeOrgCategoryBatchUidResponse.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeOrgCategoryBatchUidResponse.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -12331,10 +12331,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.CreateOrg param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.CreateOrg param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.CreateOrg.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.CreateOrg.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -12342,10 +12342,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.CreateOrgResponse param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.CreateOrgResponse param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.CreateOrgResponse.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.CreateOrgResponse.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -12353,10 +12353,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteCourse param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteCourse param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteCourse.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteCourse.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -12364,10 +12364,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteCourseResponse param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteCourseResponse param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteCourseResponse.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteCourseResponse.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -12375,10 +12375,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeOrgDataSourceId param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeOrgDataSourceId param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeOrgDataSourceId.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeOrgDataSourceId.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -12386,10 +12386,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeOrgDataSourceIdResponse param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeOrgDataSourceIdResponse param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeOrgDataSourceIdResponse.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeOrgDataSourceIdResponse.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -12397,10 +12397,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteCourseCategory param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteCourseCategory param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteCourseCategory.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteCourseCategory.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -12408,10 +12408,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteCourseCategoryResponse param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteCourseCategoryResponse param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteCourseCategoryResponse.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteCourseCategoryResponse.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -12419,10 +12419,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadTerm param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadTerm param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadTerm.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadTerm.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -12430,10 +12430,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadTermResponse param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadTermResponse param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadTermResponse.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadTermResponse.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -12441,10 +12441,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveGroup param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveGroup param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveGroup.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveGroup.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -12452,10 +12452,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveGroupResponse param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveGroupResponse param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveGroupResponse.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveGroupResponse.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -12463,10 +12463,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.RemoveCourseFromTerm param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.RemoveCourseFromTerm param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.RemoveCourseFromTerm.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.RemoveCourseFromTerm.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -12474,10 +12474,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.RemoveCourseFromTermResponse param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.RemoveCourseFromTermResponse param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.RemoveCourseFromTermResponse.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.RemoveCourseFromTermResponse.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -12485,10 +12485,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadTermsByName param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadTermsByName param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadTermsByName.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadTermsByName.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -12496,10 +12496,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadTermsByNameResponse param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadTermsByNameResponse param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadTermsByNameResponse.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadTermsByNameResponse.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -12507,10 +12507,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveCourseCategory param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveCourseCategory param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveCourseCategory.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveCourseCategory.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -12518,10 +12518,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveCourseCategoryResponse param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveCourseCategoryResponse param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveCourseCategoryResponse.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveCourseCategoryResponse.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -12529,10 +12529,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.CreateCourse param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.CreateCourse param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.CreateCourse.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.CreateCourse.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -12540,10 +12540,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.CreateCourseResponse param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.CreateCourseResponse param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.CreateCourseResponse.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.CreateCourseResponse.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -12551,10 +12551,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeOrgBatchUid param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeOrgBatchUid param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeOrgBatchUid.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeOrgBatchUid.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -12562,10 +12562,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeOrgBatchUidResponse param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeOrgBatchUidResponse param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeOrgBatchUidResponse.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeOrgBatchUidResponse.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -12573,10 +12573,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteOrg param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteOrg param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteOrg.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteOrg.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -12584,10 +12584,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteOrgResponse param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteOrgResponse param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteOrgResponse.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteOrgResponse.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -12595,10 +12595,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetCourse param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.GetCourse param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetCourse.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.GetCourse.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -12606,10 +12606,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetCourseResponse param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.GetCourseResponse param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetCourseResponse.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.GetCourseResponse.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -12617,10 +12617,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetCategories param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.GetCategories param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetCategories.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.GetCategories.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -12628,10 +12628,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetCategoriesResponse param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.GetCategoriesResponse param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetCategoriesResponse.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.GetCategoriesResponse.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -12639,10 +12639,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadCoursesInTerm param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadCoursesInTerm param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadCoursesInTerm.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadCoursesInTerm.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -12650,10 +12650,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadCoursesInTermResponse param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadCoursesInTermResponse param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadCoursesInTermResponse.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadCoursesInTermResponse.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -12661,10 +12661,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteCourseCategoryMembership param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteCourseCategoryMembership param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteCourseCategoryMembership.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteCourseCategoryMembership.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -12672,10 +12672,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteCourseCategoryMembershipResponse param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteCourseCategoryMembershipResponse param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteCourseCategoryMembershipResponse.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteCourseCategoryMembershipResponse.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -12683,10 +12683,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveTerm param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveTerm param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveTerm.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveTerm.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -12694,10 +12694,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveTermResponse param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveTermResponse param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveTermResponse.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveTermResponse.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -12705,10 +12705,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetGroup param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.GetGroup param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetGroup.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.GetGroup.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -12716,10 +12716,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetGroupResponse param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.GetGroupResponse param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetGroupResponse.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.GetGroupResponse.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -12727,10 +12727,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeCourseBatchUid param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeCourseBatchUid param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeCourseBatchUid.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeCourseBatchUid.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -12738,10 +12738,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeCourseBatchUidResponse param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeCourseBatchUidResponse param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeCourseBatchUidResponse.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeCourseBatchUidResponse.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -12749,10 +12749,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveCourseCategoryMembership param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveCourseCategoryMembership param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveCourseCategoryMembership.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveCourseCategoryMembership.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -12760,10 +12760,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveCourseCategoryMembershipResponse param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveCourseCategoryMembershipResponse param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveCourseCategoryMembershipResponse.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveCourseCategoryMembershipResponse.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -12771,10 +12771,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetStaffInfo param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.GetStaffInfo param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetStaffInfo.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.GetStaffInfo.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -12782,10 +12782,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetStaffInfoResponse param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.GetStaffInfoResponse param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetStaffInfoResponse.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.GetStaffInfoResponse.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -12793,10 +12793,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveOrgCategoryMembership param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveOrgCategoryMembership param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveOrgCategoryMembership.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveOrgCategoryMembership.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -12804,10 +12804,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveOrgCategoryMembershipResponse param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveOrgCategoryMembershipResponse param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveOrgCategoryMembershipResponse.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveOrgCategoryMembershipResponse.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -12815,10 +12815,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadTerms param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadTerms param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadTerms.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadTerms.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -12826,10 +12826,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadTermsResponse param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadTermsResponse param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadTermsResponse.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadTermsResponse.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -12837,10 +12837,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeCourseDataSourceId param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeCourseDataSourceId param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeCourseDataSourceId.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeCourseDataSourceId.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -12848,10 +12848,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeCourseDataSourceIdResponse param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeCourseDataSourceIdResponse param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeCourseDataSourceIdResponse.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeCourseDataSourceIdResponse.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -12859,10 +12859,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteTerm param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteTerm param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteTerm.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteTerm.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -12870,10 +12870,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteTermResponse param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteTermResponse param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteTermResponse.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteTermResponse.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -12881,10 +12881,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.UpdateCourse param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.UpdateCourse param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.UpdateCourse.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.UpdateCourse.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -12892,10 +12892,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.UpdateCourseResponse param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.UpdateCourseResponse param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.UpdateCourseResponse.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.UpdateCourseResponse.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -12903,10 +12903,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadTermByCourseId param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadTermByCourseId param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadTermByCourseId.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadTermByCourseId.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -12914,10 +12914,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadTermByCourseIdResponse param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadTermByCourseIdResponse param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadTermByCourseIdResponse.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadTermByCourseIdResponse.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -12925,10 +12925,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetCourseCategoryMembership param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.GetCourseCategoryMembership param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetCourseCategoryMembership.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.GetCourseCategoryMembership.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -12936,10 +12936,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetCourseCategoryMembershipResponse param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.GetCourseCategoryMembershipResponse param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetCourseCategoryMembershipResponse.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.GetCourseCategoryMembershipResponse.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -12947,10 +12947,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.InitializeCourseWS param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.InitializeCourseWS param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.InitializeCourseWS.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.InitializeCourseWS.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -12958,10 +12958,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.InitializeCourseWSResponse param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.InitializeCourseWSResponse param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.InitializeCourseWSResponse.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.InitializeCourseWSResponse.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -12969,10 +12969,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveCartridge param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveCartridge param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveCartridge.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveCartridge.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -12980,10 +12980,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveCartridgeResponse param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveCartridgeResponse param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveCartridgeResponse.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveCartridgeResponse.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -12991,10 +12991,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveCourse param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveCourse param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveCourse.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveCourse.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -13002,10 +13002,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveCourseResponse param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveCourseResponse param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveCourseResponse.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveCourseResponse.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -13013,10 +13013,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetServerVersion param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.GetServerVersion param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetServerVersion.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.GetServerVersion.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -13024,10 +13024,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetServerVersionResponse param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.GetServerVersionResponse param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetServerVersionResponse.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.GetServerVersionResponse.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -13035,10 +13035,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteGroup param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteGroup param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteGroup.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteGroup.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -13046,10 +13046,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteGroupResponse param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteGroupResponse param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteGroupResponse.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteGroupResponse.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -13057,10 +13057,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveStaffInfo param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveStaffInfo param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveStaffInfo.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveStaffInfo.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -13068,10 +13068,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveStaffInfoResponse param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveStaffInfoResponse param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveStaffInfoResponse.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveStaffInfoResponse.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -13079,10 +13079,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveOrgCategory param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveOrgCategory param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveOrgCategory.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveOrgCategory.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -13090,10 +13090,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveOrgCategoryResponse param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveOrgCategoryResponse param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveOrgCategoryResponse.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveOrgCategoryResponse.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -13101,10 +13101,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetAvailableGroupTools param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.GetAvailableGroupTools param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetAvailableGroupTools.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.GetAvailableGroupTools.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -13112,10 +13112,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetAvailableGroupToolsResponse param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.GetAvailableGroupToolsResponse param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetAvailableGroupToolsResponse.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.GetAvailableGroupToolsResponse.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -13123,10 +13123,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteCartridge param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteCartridge param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteCartridge.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteCartridge.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -13134,10 +13134,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteCartridgeResponse param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteCartridgeResponse param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteCartridgeResponse.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteCartridgeResponse.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -13145,10 +13145,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteStaffInfo param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteStaffInfo param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteStaffInfo.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteStaffInfo.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -13156,10 +13156,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteStaffInfoResponse param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteStaffInfoResponse param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteStaffInfoResponse.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteStaffInfoResponse.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -13167,10 +13167,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.AddCourseToTerm param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.AddCourseToTerm param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.AddCourseToTerm.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.AddCourseToTerm.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -13178,10 +13178,10 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     }
 
     private org.apache.axiom.om.OMElement toOM(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.AddCourseToTermResponse param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.AddCourseToTermResponse param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
-            return param.getOMElement(com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.AddCourseToTermResponse.MY_QNAME,
+            return param.getOMElement(com.blackboard.bbdn.bbws.generated.CourseWSStub.AddCourseToTermResponse.MY_QNAME,
                 org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -13190,13 +13190,13 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
 
     private org.apache.axiom.soap.SOAPEnvelope toEnvelope(
         org.apache.axiom.soap.SOAPFactory factory,
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SetCourseBannerImage param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.SetCourseBannerImage param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
             org.apache.axiom.soap.SOAPEnvelope emptyEnvelope = factory.getDefaultEnvelope();
             emptyEnvelope.getBody()
                          .addChild(param.getOMElement(
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SetCourseBannerImage.MY_QNAME,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.SetCourseBannerImage.MY_QNAME,
                     factory));
 
             return emptyEnvelope;
@@ -13208,13 +13208,13 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     /* methods to provide back word compatibility */
     private org.apache.axiom.soap.SOAPEnvelope toEnvelope(
         org.apache.axiom.soap.SOAPFactory factory,
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeCourseCategoryBatchUid param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeCourseCategoryBatchUid param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
             org.apache.axiom.soap.SOAPEnvelope emptyEnvelope = factory.getDefaultEnvelope();
             emptyEnvelope.getBody()
                          .addChild(param.getOMElement(
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeCourseCategoryBatchUid.MY_QNAME,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeCourseCategoryBatchUid.MY_QNAME,
                     factory));
 
             return emptyEnvelope;
@@ -13226,13 +13226,13 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     /* methods to provide back word compatibility */
     private org.apache.axiom.soap.SOAPEnvelope toEnvelope(
         org.apache.axiom.soap.SOAPFactory factory,
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteOrgCategory param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteOrgCategory param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
             org.apache.axiom.soap.SOAPEnvelope emptyEnvelope = factory.getDefaultEnvelope();
             emptyEnvelope.getBody()
                          .addChild(param.getOMElement(
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteOrgCategory.MY_QNAME,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteOrgCategory.MY_QNAME,
                     factory));
 
             return emptyEnvelope;
@@ -13244,13 +13244,13 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     /* methods to provide back word compatibility */
     private org.apache.axiom.soap.SOAPEnvelope toEnvelope(
         org.apache.axiom.soap.SOAPFactory factory,
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetCartridge param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.GetCartridge param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
             org.apache.axiom.soap.SOAPEnvelope emptyEnvelope = factory.getDefaultEnvelope();
             emptyEnvelope.getBody()
                          .addChild(param.getOMElement(
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetCartridge.MY_QNAME,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.GetCartridge.MY_QNAME,
                     factory));
 
             return emptyEnvelope;
@@ -13262,13 +13262,13 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     /* methods to provide back word compatibility */
     private org.apache.axiom.soap.SOAPEnvelope toEnvelope(
         org.apache.axiom.soap.SOAPFactory factory,
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetOrg param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.GetOrg param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
             org.apache.axiom.soap.SOAPEnvelope emptyEnvelope = factory.getDefaultEnvelope();
             emptyEnvelope.getBody()
                          .addChild(param.getOMElement(
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetOrg.MY_QNAME,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.GetOrg.MY_QNAME,
                     factory));
 
             return emptyEnvelope;
@@ -13280,13 +13280,13 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     /* methods to provide back word compatibility */
     private org.apache.axiom.soap.SOAPEnvelope toEnvelope(
         org.apache.axiom.soap.SOAPFactory factory,
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetOrgCategoryMembership param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.GetOrgCategoryMembership param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
             org.apache.axiom.soap.SOAPEnvelope emptyEnvelope = factory.getDefaultEnvelope();
             emptyEnvelope.getBody()
                          .addChild(param.getOMElement(
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetOrgCategoryMembership.MY_QNAME,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.GetOrgCategoryMembership.MY_QNAME,
                     factory));
 
             return emptyEnvelope;
@@ -13298,13 +13298,13 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     /* methods to provide back word compatibility */
     private org.apache.axiom.soap.SOAPEnvelope toEnvelope(
         org.apache.axiom.soap.SOAPFactory factory,
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.UpdateOrg param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.UpdateOrg param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
             org.apache.axiom.soap.SOAPEnvelope emptyEnvelope = factory.getDefaultEnvelope();
             emptyEnvelope.getBody()
                          .addChild(param.getOMElement(
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.UpdateOrg.MY_QNAME,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.UpdateOrg.MY_QNAME,
                     factory));
 
             return emptyEnvelope;
@@ -13316,13 +13316,13 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     /* methods to provide back word compatibility */
     private org.apache.axiom.soap.SOAPEnvelope toEnvelope(
         org.apache.axiom.soap.SOAPFactory factory,
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetClassifications param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.GetClassifications param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
             org.apache.axiom.soap.SOAPEnvelope emptyEnvelope = factory.getDefaultEnvelope();
             emptyEnvelope.getBody()
                          .addChild(param.getOMElement(
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetClassifications.MY_QNAME,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.GetClassifications.MY_QNAME,
                     factory));
 
             return emptyEnvelope;
@@ -13334,13 +13334,13 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     /* methods to provide back word compatibility */
     private org.apache.axiom.soap.SOAPEnvelope toEnvelope(
         org.apache.axiom.soap.SOAPFactory factory,
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteOrgCategoryMembership param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteOrgCategoryMembership param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
             org.apache.axiom.soap.SOAPEnvelope emptyEnvelope = factory.getDefaultEnvelope();
             emptyEnvelope.getBody()
                          .addChild(param.getOMElement(
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteOrgCategoryMembership.MY_QNAME,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteOrgCategoryMembership.MY_QNAME,
                     factory));
 
             return emptyEnvelope;
@@ -13352,13 +13352,13 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     /* methods to provide back word compatibility */
     private org.apache.axiom.soap.SOAPEnvelope toEnvelope(
         org.apache.axiom.soap.SOAPFactory factory,
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeOrgCategoryBatchUid param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeOrgCategoryBatchUid param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
             org.apache.axiom.soap.SOAPEnvelope emptyEnvelope = factory.getDefaultEnvelope();
             emptyEnvelope.getBody()
                          .addChild(param.getOMElement(
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeOrgCategoryBatchUid.MY_QNAME,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeOrgCategoryBatchUid.MY_QNAME,
                     factory));
 
             return emptyEnvelope;
@@ -13370,13 +13370,13 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     /* methods to provide back word compatibility */
     private org.apache.axiom.soap.SOAPEnvelope toEnvelope(
         org.apache.axiom.soap.SOAPFactory factory,
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.CreateOrg param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.CreateOrg param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
             org.apache.axiom.soap.SOAPEnvelope emptyEnvelope = factory.getDefaultEnvelope();
             emptyEnvelope.getBody()
                          .addChild(param.getOMElement(
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.CreateOrg.MY_QNAME,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.CreateOrg.MY_QNAME,
                     factory));
 
             return emptyEnvelope;
@@ -13388,13 +13388,13 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     /* methods to provide back word compatibility */
     private org.apache.axiom.soap.SOAPEnvelope toEnvelope(
         org.apache.axiom.soap.SOAPFactory factory,
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteCourse param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteCourse param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
             org.apache.axiom.soap.SOAPEnvelope emptyEnvelope = factory.getDefaultEnvelope();
             emptyEnvelope.getBody()
                          .addChild(param.getOMElement(
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteCourse.MY_QNAME,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteCourse.MY_QNAME,
                     factory));
 
             return emptyEnvelope;
@@ -13406,13 +13406,13 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     /* methods to provide back word compatibility */
     private org.apache.axiom.soap.SOAPEnvelope toEnvelope(
         org.apache.axiom.soap.SOAPFactory factory,
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeOrgDataSourceId param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeOrgDataSourceId param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
             org.apache.axiom.soap.SOAPEnvelope emptyEnvelope = factory.getDefaultEnvelope();
             emptyEnvelope.getBody()
                          .addChild(param.getOMElement(
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeOrgDataSourceId.MY_QNAME,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeOrgDataSourceId.MY_QNAME,
                     factory));
 
             return emptyEnvelope;
@@ -13424,13 +13424,13 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     /* methods to provide back word compatibility */
     private org.apache.axiom.soap.SOAPEnvelope toEnvelope(
         org.apache.axiom.soap.SOAPFactory factory,
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteCourseCategory param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteCourseCategory param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
             org.apache.axiom.soap.SOAPEnvelope emptyEnvelope = factory.getDefaultEnvelope();
             emptyEnvelope.getBody()
                          .addChild(param.getOMElement(
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteCourseCategory.MY_QNAME,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteCourseCategory.MY_QNAME,
                     factory));
 
             return emptyEnvelope;
@@ -13442,13 +13442,13 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     /* methods to provide back word compatibility */
     private org.apache.axiom.soap.SOAPEnvelope toEnvelope(
         org.apache.axiom.soap.SOAPFactory factory,
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadTerm param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadTerm param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
             org.apache.axiom.soap.SOAPEnvelope emptyEnvelope = factory.getDefaultEnvelope();
             emptyEnvelope.getBody()
                          .addChild(param.getOMElement(
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadTerm.MY_QNAME,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadTerm.MY_QNAME,
                     factory));
 
             return emptyEnvelope;
@@ -13460,13 +13460,13 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     /* methods to provide back word compatibility */
     private org.apache.axiom.soap.SOAPEnvelope toEnvelope(
         org.apache.axiom.soap.SOAPFactory factory,
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveGroup param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveGroup param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
             org.apache.axiom.soap.SOAPEnvelope emptyEnvelope = factory.getDefaultEnvelope();
             emptyEnvelope.getBody()
                          .addChild(param.getOMElement(
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveGroup.MY_QNAME,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveGroup.MY_QNAME,
                     factory));
 
             return emptyEnvelope;
@@ -13478,13 +13478,13 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     /* methods to provide back word compatibility */
     private org.apache.axiom.soap.SOAPEnvelope toEnvelope(
         org.apache.axiom.soap.SOAPFactory factory,
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.RemoveCourseFromTerm param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.RemoveCourseFromTerm param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
             org.apache.axiom.soap.SOAPEnvelope emptyEnvelope = factory.getDefaultEnvelope();
             emptyEnvelope.getBody()
                          .addChild(param.getOMElement(
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.RemoveCourseFromTerm.MY_QNAME,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.RemoveCourseFromTerm.MY_QNAME,
                     factory));
 
             return emptyEnvelope;
@@ -13496,13 +13496,13 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     /* methods to provide back word compatibility */
     private org.apache.axiom.soap.SOAPEnvelope toEnvelope(
         org.apache.axiom.soap.SOAPFactory factory,
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadTermsByName param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadTermsByName param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
             org.apache.axiom.soap.SOAPEnvelope emptyEnvelope = factory.getDefaultEnvelope();
             emptyEnvelope.getBody()
                          .addChild(param.getOMElement(
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadTermsByName.MY_QNAME,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadTermsByName.MY_QNAME,
                     factory));
 
             return emptyEnvelope;
@@ -13514,13 +13514,13 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     /* methods to provide back word compatibility */
     private org.apache.axiom.soap.SOAPEnvelope toEnvelope(
         org.apache.axiom.soap.SOAPFactory factory,
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveCourseCategory param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveCourseCategory param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
             org.apache.axiom.soap.SOAPEnvelope emptyEnvelope = factory.getDefaultEnvelope();
             emptyEnvelope.getBody()
                          .addChild(param.getOMElement(
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveCourseCategory.MY_QNAME,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveCourseCategory.MY_QNAME,
                     factory));
 
             return emptyEnvelope;
@@ -13532,13 +13532,13 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     /* methods to provide back word compatibility */
     private org.apache.axiom.soap.SOAPEnvelope toEnvelope(
         org.apache.axiom.soap.SOAPFactory factory,
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.CreateCourse param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.CreateCourse param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
             org.apache.axiom.soap.SOAPEnvelope emptyEnvelope = factory.getDefaultEnvelope();
             emptyEnvelope.getBody()
                          .addChild(param.getOMElement(
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.CreateCourse.MY_QNAME,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.CreateCourse.MY_QNAME,
                     factory));
 
             return emptyEnvelope;
@@ -13550,13 +13550,13 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     /* methods to provide back word compatibility */
     private org.apache.axiom.soap.SOAPEnvelope toEnvelope(
         org.apache.axiom.soap.SOAPFactory factory,
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeOrgBatchUid param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeOrgBatchUid param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
             org.apache.axiom.soap.SOAPEnvelope emptyEnvelope = factory.getDefaultEnvelope();
             emptyEnvelope.getBody()
                          .addChild(param.getOMElement(
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeOrgBatchUid.MY_QNAME,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeOrgBatchUid.MY_QNAME,
                     factory));
 
             return emptyEnvelope;
@@ -13568,13 +13568,13 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     /* methods to provide back word compatibility */
     private org.apache.axiom.soap.SOAPEnvelope toEnvelope(
         org.apache.axiom.soap.SOAPFactory factory,
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteOrg param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteOrg param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
             org.apache.axiom.soap.SOAPEnvelope emptyEnvelope = factory.getDefaultEnvelope();
             emptyEnvelope.getBody()
                          .addChild(param.getOMElement(
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteOrg.MY_QNAME,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteOrg.MY_QNAME,
                     factory));
 
             return emptyEnvelope;
@@ -13586,13 +13586,13 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     /* methods to provide back word compatibility */
     private org.apache.axiom.soap.SOAPEnvelope toEnvelope(
         org.apache.axiom.soap.SOAPFactory factory,
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetCourse param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.GetCourse param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
             org.apache.axiom.soap.SOAPEnvelope emptyEnvelope = factory.getDefaultEnvelope();
             emptyEnvelope.getBody()
                          .addChild(param.getOMElement(
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetCourse.MY_QNAME,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.GetCourse.MY_QNAME,
                     factory));
 
             return emptyEnvelope;
@@ -13604,13 +13604,13 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     /* methods to provide back word compatibility */
     private org.apache.axiom.soap.SOAPEnvelope toEnvelope(
         org.apache.axiom.soap.SOAPFactory factory,
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetCategories param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.GetCategories param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
             org.apache.axiom.soap.SOAPEnvelope emptyEnvelope = factory.getDefaultEnvelope();
             emptyEnvelope.getBody()
                          .addChild(param.getOMElement(
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetCategories.MY_QNAME,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.GetCategories.MY_QNAME,
                     factory));
 
             return emptyEnvelope;
@@ -13622,13 +13622,13 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     /* methods to provide back word compatibility */
     private org.apache.axiom.soap.SOAPEnvelope toEnvelope(
         org.apache.axiom.soap.SOAPFactory factory,
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadCoursesInTerm param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadCoursesInTerm param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
             org.apache.axiom.soap.SOAPEnvelope emptyEnvelope = factory.getDefaultEnvelope();
             emptyEnvelope.getBody()
                          .addChild(param.getOMElement(
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadCoursesInTerm.MY_QNAME,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadCoursesInTerm.MY_QNAME,
                     factory));
 
             return emptyEnvelope;
@@ -13640,13 +13640,13 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     /* methods to provide back word compatibility */
     private org.apache.axiom.soap.SOAPEnvelope toEnvelope(
         org.apache.axiom.soap.SOAPFactory factory,
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteCourseCategoryMembership param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteCourseCategoryMembership param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
             org.apache.axiom.soap.SOAPEnvelope emptyEnvelope = factory.getDefaultEnvelope();
             emptyEnvelope.getBody()
                          .addChild(param.getOMElement(
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteCourseCategoryMembership.MY_QNAME,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteCourseCategoryMembership.MY_QNAME,
                     factory));
 
             return emptyEnvelope;
@@ -13658,13 +13658,13 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     /* methods to provide back word compatibility */
     private org.apache.axiom.soap.SOAPEnvelope toEnvelope(
         org.apache.axiom.soap.SOAPFactory factory,
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveTerm param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveTerm param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
             org.apache.axiom.soap.SOAPEnvelope emptyEnvelope = factory.getDefaultEnvelope();
             emptyEnvelope.getBody()
                          .addChild(param.getOMElement(
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveTerm.MY_QNAME,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveTerm.MY_QNAME,
                     factory));
 
             return emptyEnvelope;
@@ -13676,13 +13676,13 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     /* methods to provide back word compatibility */
     private org.apache.axiom.soap.SOAPEnvelope toEnvelope(
         org.apache.axiom.soap.SOAPFactory factory,
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetGroup param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.GetGroup param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
             org.apache.axiom.soap.SOAPEnvelope emptyEnvelope = factory.getDefaultEnvelope();
             emptyEnvelope.getBody()
                          .addChild(param.getOMElement(
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetGroup.MY_QNAME,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.GetGroup.MY_QNAME,
                     factory));
 
             return emptyEnvelope;
@@ -13694,13 +13694,13 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     /* methods to provide back word compatibility */
     private org.apache.axiom.soap.SOAPEnvelope toEnvelope(
         org.apache.axiom.soap.SOAPFactory factory,
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeCourseBatchUid param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeCourseBatchUid param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
             org.apache.axiom.soap.SOAPEnvelope emptyEnvelope = factory.getDefaultEnvelope();
             emptyEnvelope.getBody()
                          .addChild(param.getOMElement(
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeCourseBatchUid.MY_QNAME,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeCourseBatchUid.MY_QNAME,
                     factory));
 
             return emptyEnvelope;
@@ -13712,13 +13712,13 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     /* methods to provide back word compatibility */
     private org.apache.axiom.soap.SOAPEnvelope toEnvelope(
         org.apache.axiom.soap.SOAPFactory factory,
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveCourseCategoryMembership param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveCourseCategoryMembership param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
             org.apache.axiom.soap.SOAPEnvelope emptyEnvelope = factory.getDefaultEnvelope();
             emptyEnvelope.getBody()
                          .addChild(param.getOMElement(
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveCourseCategoryMembership.MY_QNAME,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveCourseCategoryMembership.MY_QNAME,
                     factory));
 
             return emptyEnvelope;
@@ -13730,13 +13730,13 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     /* methods to provide back word compatibility */
     private org.apache.axiom.soap.SOAPEnvelope toEnvelope(
         org.apache.axiom.soap.SOAPFactory factory,
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetStaffInfo param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.GetStaffInfo param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
             org.apache.axiom.soap.SOAPEnvelope emptyEnvelope = factory.getDefaultEnvelope();
             emptyEnvelope.getBody()
                          .addChild(param.getOMElement(
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetStaffInfo.MY_QNAME,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.GetStaffInfo.MY_QNAME,
                     factory));
 
             return emptyEnvelope;
@@ -13748,13 +13748,13 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     /* methods to provide back word compatibility */
     private org.apache.axiom.soap.SOAPEnvelope toEnvelope(
         org.apache.axiom.soap.SOAPFactory factory,
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveOrgCategoryMembership param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveOrgCategoryMembership param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
             org.apache.axiom.soap.SOAPEnvelope emptyEnvelope = factory.getDefaultEnvelope();
             emptyEnvelope.getBody()
                          .addChild(param.getOMElement(
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveOrgCategoryMembership.MY_QNAME,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveOrgCategoryMembership.MY_QNAME,
                     factory));
 
             return emptyEnvelope;
@@ -13766,13 +13766,13 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     /* methods to provide back word compatibility */
     private org.apache.axiom.soap.SOAPEnvelope toEnvelope(
         org.apache.axiom.soap.SOAPFactory factory,
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadTerms param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadTerms param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
             org.apache.axiom.soap.SOAPEnvelope emptyEnvelope = factory.getDefaultEnvelope();
             emptyEnvelope.getBody()
                          .addChild(param.getOMElement(
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadTerms.MY_QNAME,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadTerms.MY_QNAME,
                     factory));
 
             return emptyEnvelope;
@@ -13784,13 +13784,13 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     /* methods to provide back word compatibility */
     private org.apache.axiom.soap.SOAPEnvelope toEnvelope(
         org.apache.axiom.soap.SOAPFactory factory,
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeCourseDataSourceId param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeCourseDataSourceId param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
             org.apache.axiom.soap.SOAPEnvelope emptyEnvelope = factory.getDefaultEnvelope();
             emptyEnvelope.getBody()
                          .addChild(param.getOMElement(
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeCourseDataSourceId.MY_QNAME,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeCourseDataSourceId.MY_QNAME,
                     factory));
 
             return emptyEnvelope;
@@ -13802,13 +13802,13 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     /* methods to provide back word compatibility */
     private org.apache.axiom.soap.SOAPEnvelope toEnvelope(
         org.apache.axiom.soap.SOAPFactory factory,
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteTerm param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteTerm param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
             org.apache.axiom.soap.SOAPEnvelope emptyEnvelope = factory.getDefaultEnvelope();
             emptyEnvelope.getBody()
                          .addChild(param.getOMElement(
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteTerm.MY_QNAME,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteTerm.MY_QNAME,
                     factory));
 
             return emptyEnvelope;
@@ -13820,13 +13820,13 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     /* methods to provide back word compatibility */
     private org.apache.axiom.soap.SOAPEnvelope toEnvelope(
         org.apache.axiom.soap.SOAPFactory factory,
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.UpdateCourse param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.UpdateCourse param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
             org.apache.axiom.soap.SOAPEnvelope emptyEnvelope = factory.getDefaultEnvelope();
             emptyEnvelope.getBody()
                          .addChild(param.getOMElement(
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.UpdateCourse.MY_QNAME,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.UpdateCourse.MY_QNAME,
                     factory));
 
             return emptyEnvelope;
@@ -13838,13 +13838,13 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     /* methods to provide back word compatibility */
     private org.apache.axiom.soap.SOAPEnvelope toEnvelope(
         org.apache.axiom.soap.SOAPFactory factory,
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadTermByCourseId param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadTermByCourseId param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
             org.apache.axiom.soap.SOAPEnvelope emptyEnvelope = factory.getDefaultEnvelope();
             emptyEnvelope.getBody()
                          .addChild(param.getOMElement(
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadTermByCourseId.MY_QNAME,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadTermByCourseId.MY_QNAME,
                     factory));
 
             return emptyEnvelope;
@@ -13856,13 +13856,13 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     /* methods to provide back word compatibility */
     private org.apache.axiom.soap.SOAPEnvelope toEnvelope(
         org.apache.axiom.soap.SOAPFactory factory,
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetCourseCategoryMembership param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.GetCourseCategoryMembership param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
             org.apache.axiom.soap.SOAPEnvelope emptyEnvelope = factory.getDefaultEnvelope();
             emptyEnvelope.getBody()
                          .addChild(param.getOMElement(
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetCourseCategoryMembership.MY_QNAME,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.GetCourseCategoryMembership.MY_QNAME,
                     factory));
 
             return emptyEnvelope;
@@ -13874,13 +13874,13 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     /* methods to provide back word compatibility */
     private org.apache.axiom.soap.SOAPEnvelope toEnvelope(
         org.apache.axiom.soap.SOAPFactory factory,
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.InitializeCourseWS param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.InitializeCourseWS param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
             org.apache.axiom.soap.SOAPEnvelope emptyEnvelope = factory.getDefaultEnvelope();
             emptyEnvelope.getBody()
                          .addChild(param.getOMElement(
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.InitializeCourseWS.MY_QNAME,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.InitializeCourseWS.MY_QNAME,
                     factory));
 
             return emptyEnvelope;
@@ -13892,13 +13892,13 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     /* methods to provide back word compatibility */
     private org.apache.axiom.soap.SOAPEnvelope toEnvelope(
         org.apache.axiom.soap.SOAPFactory factory,
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveCartridge param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveCartridge param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
             org.apache.axiom.soap.SOAPEnvelope emptyEnvelope = factory.getDefaultEnvelope();
             emptyEnvelope.getBody()
                          .addChild(param.getOMElement(
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveCartridge.MY_QNAME,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveCartridge.MY_QNAME,
                     factory));
 
             return emptyEnvelope;
@@ -13910,13 +13910,13 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     /* methods to provide back word compatibility */
     private org.apache.axiom.soap.SOAPEnvelope toEnvelope(
         org.apache.axiom.soap.SOAPFactory factory,
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveCourse param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveCourse param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
             org.apache.axiom.soap.SOAPEnvelope emptyEnvelope = factory.getDefaultEnvelope();
             emptyEnvelope.getBody()
                          .addChild(param.getOMElement(
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveCourse.MY_QNAME,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveCourse.MY_QNAME,
                     factory));
 
             return emptyEnvelope;
@@ -13928,13 +13928,13 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     /* methods to provide back word compatibility */
     private org.apache.axiom.soap.SOAPEnvelope toEnvelope(
         org.apache.axiom.soap.SOAPFactory factory,
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetServerVersion param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.GetServerVersion param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
             org.apache.axiom.soap.SOAPEnvelope emptyEnvelope = factory.getDefaultEnvelope();
             emptyEnvelope.getBody()
                          .addChild(param.getOMElement(
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetServerVersion.MY_QNAME,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.GetServerVersion.MY_QNAME,
                     factory));
 
             return emptyEnvelope;
@@ -13946,13 +13946,13 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     /* methods to provide back word compatibility */
     private org.apache.axiom.soap.SOAPEnvelope toEnvelope(
         org.apache.axiom.soap.SOAPFactory factory,
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteGroup param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteGroup param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
             org.apache.axiom.soap.SOAPEnvelope emptyEnvelope = factory.getDefaultEnvelope();
             emptyEnvelope.getBody()
                          .addChild(param.getOMElement(
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteGroup.MY_QNAME,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteGroup.MY_QNAME,
                     factory));
 
             return emptyEnvelope;
@@ -13964,13 +13964,13 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     /* methods to provide back word compatibility */
     private org.apache.axiom.soap.SOAPEnvelope toEnvelope(
         org.apache.axiom.soap.SOAPFactory factory,
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveStaffInfo param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveStaffInfo param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
             org.apache.axiom.soap.SOAPEnvelope emptyEnvelope = factory.getDefaultEnvelope();
             emptyEnvelope.getBody()
                          .addChild(param.getOMElement(
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveStaffInfo.MY_QNAME,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveStaffInfo.MY_QNAME,
                     factory));
 
             return emptyEnvelope;
@@ -13982,13 +13982,13 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     /* methods to provide back word compatibility */
     private org.apache.axiom.soap.SOAPEnvelope toEnvelope(
         org.apache.axiom.soap.SOAPFactory factory,
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveOrgCategory param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveOrgCategory param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
             org.apache.axiom.soap.SOAPEnvelope emptyEnvelope = factory.getDefaultEnvelope();
             emptyEnvelope.getBody()
                          .addChild(param.getOMElement(
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveOrgCategory.MY_QNAME,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveOrgCategory.MY_QNAME,
                     factory));
 
             return emptyEnvelope;
@@ -14000,13 +14000,13 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     /* methods to provide back word compatibility */
     private org.apache.axiom.soap.SOAPEnvelope toEnvelope(
         org.apache.axiom.soap.SOAPFactory factory,
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetAvailableGroupTools param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.GetAvailableGroupTools param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
             org.apache.axiom.soap.SOAPEnvelope emptyEnvelope = factory.getDefaultEnvelope();
             emptyEnvelope.getBody()
                          .addChild(param.getOMElement(
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetAvailableGroupTools.MY_QNAME,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.GetAvailableGroupTools.MY_QNAME,
                     factory));
 
             return emptyEnvelope;
@@ -14018,13 +14018,13 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     /* methods to provide back word compatibility */
     private org.apache.axiom.soap.SOAPEnvelope toEnvelope(
         org.apache.axiom.soap.SOAPFactory factory,
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteCartridge param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteCartridge param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
             org.apache.axiom.soap.SOAPEnvelope emptyEnvelope = factory.getDefaultEnvelope();
             emptyEnvelope.getBody()
                          .addChild(param.getOMElement(
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteCartridge.MY_QNAME,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteCartridge.MY_QNAME,
                     factory));
 
             return emptyEnvelope;
@@ -14036,13 +14036,13 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     /* methods to provide back word compatibility */
     private org.apache.axiom.soap.SOAPEnvelope toEnvelope(
         org.apache.axiom.soap.SOAPFactory factory,
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteStaffInfo param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteStaffInfo param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
             org.apache.axiom.soap.SOAPEnvelope emptyEnvelope = factory.getDefaultEnvelope();
             emptyEnvelope.getBody()
                          .addChild(param.getOMElement(
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteStaffInfo.MY_QNAME,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteStaffInfo.MY_QNAME,
                     factory));
 
             return emptyEnvelope;
@@ -14054,13 +14054,13 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
     /* methods to provide back word compatibility */
     private org.apache.axiom.soap.SOAPEnvelope toEnvelope(
         org.apache.axiom.soap.SOAPFactory factory,
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.AddCourseToTerm param,
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.AddCourseToTerm param,
         boolean optimizeContent) throws org.apache.axis2.AxisFault {
         try {
             org.apache.axiom.soap.SOAPEnvelope emptyEnvelope = factory.getDefaultEnvelope();
             emptyEnvelope.getBody()
                          .addChild(param.getOMElement(
-                    com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.AddCourseToTerm.MY_QNAME,
+                    com.blackboard.bbdn.bbws.generated.CourseWSStub.AddCourseToTerm.MY_QNAME,
                     factory));
 
             return emptyEnvelope;
@@ -14083,494 +14083,494 @@ public class CourseWSStub extends org.apache.axis2.client.Stub {
         java.lang.Class type, java.util.Map extraNamespaces)
         throws org.apache.axis2.AxisFault {
         try {
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SetCourseBannerImage.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.SetCourseBannerImage.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SetCourseBannerImage.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.SetCourseBannerImage.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SetCourseBannerImageResponse.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.SetCourseBannerImageResponse.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SetCourseBannerImageResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.SetCourseBannerImageResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeCourseCategoryBatchUid.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeCourseCategoryBatchUid.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeCourseCategoryBatchUid.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeCourseCategoryBatchUid.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeCourseCategoryBatchUidResponse.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeCourseCategoryBatchUidResponse.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeCourseCategoryBatchUidResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeCourseCategoryBatchUidResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteOrgCategory.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteOrgCategory.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteOrgCategory.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteOrgCategory.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteOrgCategoryResponse.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteOrgCategoryResponse.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteOrgCategoryResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteOrgCategoryResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetCartridge.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.GetCartridge.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetCartridge.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.GetCartridge.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetCartridgeResponse.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.GetCartridgeResponse.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetCartridgeResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.GetCartridgeResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetOrg.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.GetOrg.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetOrg.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.GetOrg.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetOrgResponse.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.GetOrgResponse.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetOrgResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.GetOrgResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetOrgCategoryMembership.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.GetOrgCategoryMembership.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetOrgCategoryMembership.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.GetOrgCategoryMembership.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetOrgCategoryMembershipResponse.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.GetOrgCategoryMembershipResponse.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetOrgCategoryMembershipResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.GetOrgCategoryMembershipResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.UpdateOrg.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.UpdateOrg.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.UpdateOrg.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.UpdateOrg.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.UpdateOrgResponse.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.UpdateOrgResponse.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.UpdateOrgResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.UpdateOrgResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetClassifications.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.GetClassifications.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetClassifications.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.GetClassifications.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetClassificationsResponse.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.GetClassificationsResponse.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetClassificationsResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.GetClassificationsResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteOrgCategoryMembership.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteOrgCategoryMembership.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteOrgCategoryMembership.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteOrgCategoryMembership.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteOrgCategoryMembershipResponse.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteOrgCategoryMembershipResponse.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteOrgCategoryMembershipResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteOrgCategoryMembershipResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeOrgCategoryBatchUid.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeOrgCategoryBatchUid.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeOrgCategoryBatchUid.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeOrgCategoryBatchUid.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeOrgCategoryBatchUidResponse.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeOrgCategoryBatchUidResponse.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeOrgCategoryBatchUidResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeOrgCategoryBatchUidResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.CreateOrg.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.CreateOrg.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.CreateOrg.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.CreateOrg.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.CreateOrgResponse.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.CreateOrgResponse.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.CreateOrgResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.CreateOrgResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteCourse.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteCourse.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteCourse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteCourse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteCourseResponse.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteCourseResponse.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteCourseResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteCourseResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeOrgDataSourceId.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeOrgDataSourceId.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeOrgDataSourceId.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeOrgDataSourceId.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeOrgDataSourceIdResponse.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeOrgDataSourceIdResponse.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeOrgDataSourceIdResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeOrgDataSourceIdResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteCourseCategory.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteCourseCategory.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteCourseCategory.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteCourseCategory.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteCourseCategoryResponse.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteCourseCategoryResponse.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteCourseCategoryResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteCourseCategoryResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadTerm.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadTerm.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadTerm.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadTerm.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadTermResponse.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadTermResponse.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadTermResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadTermResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveGroup.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveGroup.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveGroup.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveGroup.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveGroupResponse.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveGroupResponse.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveGroupResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveGroupResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.RemoveCourseFromTerm.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.RemoveCourseFromTerm.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.RemoveCourseFromTerm.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.RemoveCourseFromTerm.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.RemoveCourseFromTermResponse.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.RemoveCourseFromTermResponse.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.RemoveCourseFromTermResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.RemoveCourseFromTermResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadTermsByName.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadTermsByName.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadTermsByName.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadTermsByName.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadTermsByNameResponse.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadTermsByNameResponse.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadTermsByNameResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadTermsByNameResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveCourseCategory.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveCourseCategory.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveCourseCategory.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveCourseCategory.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveCourseCategoryResponse.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveCourseCategoryResponse.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveCourseCategoryResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveCourseCategoryResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.CreateCourse.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.CreateCourse.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.CreateCourse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.CreateCourse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.CreateCourseResponse.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.CreateCourseResponse.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.CreateCourseResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.CreateCourseResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeOrgBatchUid.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeOrgBatchUid.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeOrgBatchUid.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeOrgBatchUid.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeOrgBatchUidResponse.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeOrgBatchUidResponse.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeOrgBatchUidResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeOrgBatchUidResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteOrg.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteOrg.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteOrg.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteOrg.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteOrgResponse.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteOrgResponse.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteOrgResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteOrgResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetCourse.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.GetCourse.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetCourse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.GetCourse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetCourseResponse.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.GetCourseResponse.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetCourseResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.GetCourseResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetCategories.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.GetCategories.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetCategories.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.GetCategories.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetCategoriesResponse.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.GetCategoriesResponse.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetCategoriesResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.GetCategoriesResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadCoursesInTerm.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadCoursesInTerm.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadCoursesInTerm.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadCoursesInTerm.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadCoursesInTermResponse.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadCoursesInTermResponse.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadCoursesInTermResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadCoursesInTermResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteCourseCategoryMembership.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteCourseCategoryMembership.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteCourseCategoryMembership.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteCourseCategoryMembership.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteCourseCategoryMembershipResponse.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteCourseCategoryMembershipResponse.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteCourseCategoryMembershipResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteCourseCategoryMembershipResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveTerm.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveTerm.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveTerm.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveTerm.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveTermResponse.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveTermResponse.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveTermResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveTermResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetGroup.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.GetGroup.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetGroup.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.GetGroup.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetGroupResponse.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.GetGroupResponse.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetGroupResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.GetGroupResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeCourseBatchUid.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeCourseBatchUid.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeCourseBatchUid.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeCourseBatchUid.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeCourseBatchUidResponse.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeCourseBatchUidResponse.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeCourseBatchUidResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeCourseBatchUidResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveCourseCategoryMembership.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveCourseCategoryMembership.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveCourseCategoryMembership.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveCourseCategoryMembership.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveCourseCategoryMembershipResponse.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveCourseCategoryMembershipResponse.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveCourseCategoryMembershipResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveCourseCategoryMembershipResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetStaffInfo.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.GetStaffInfo.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetStaffInfo.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.GetStaffInfo.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetStaffInfoResponse.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.GetStaffInfoResponse.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetStaffInfoResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.GetStaffInfoResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveOrgCategoryMembership.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveOrgCategoryMembership.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveOrgCategoryMembership.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveOrgCategoryMembership.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveOrgCategoryMembershipResponse.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveOrgCategoryMembershipResponse.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveOrgCategoryMembershipResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveOrgCategoryMembershipResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadTerms.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadTerms.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadTerms.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadTerms.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadTermsResponse.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadTermsResponse.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadTermsResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadTermsResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeCourseDataSourceId.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeCourseDataSourceId.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeCourseDataSourceId.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeCourseDataSourceId.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeCourseDataSourceIdResponse.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeCourseDataSourceIdResponse.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeCourseDataSourceIdResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeCourseDataSourceIdResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteTerm.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteTerm.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteTerm.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteTerm.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteTermResponse.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteTermResponse.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteTermResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteTermResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.UpdateCourse.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.UpdateCourse.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.UpdateCourse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.UpdateCourse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.UpdateCourseResponse.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.UpdateCourseResponse.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.UpdateCourseResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.UpdateCourseResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadTermByCourseId.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadTermByCourseId.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadTermByCourseId.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadTermByCourseId.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadTermByCourseIdResponse.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadTermByCourseIdResponse.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadTermByCourseIdResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadTermByCourseIdResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetCourseCategoryMembership.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.GetCourseCategoryMembership.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetCourseCategoryMembership.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.GetCourseCategoryMembership.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetCourseCategoryMembershipResponse.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.GetCourseCategoryMembershipResponse.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetCourseCategoryMembershipResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.GetCourseCategoryMembershipResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.InitializeCourseWS.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.InitializeCourseWS.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.InitializeCourseWS.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.InitializeCourseWS.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.InitializeCourseWSResponse.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.InitializeCourseWSResponse.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.InitializeCourseWSResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.InitializeCourseWSResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveCartridge.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveCartridge.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveCartridge.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveCartridge.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveCartridgeResponse.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveCartridgeResponse.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveCartridgeResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveCartridgeResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveCourse.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveCourse.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveCourse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveCourse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveCourseResponse.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveCourseResponse.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveCourseResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveCourseResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetServerVersion.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.GetServerVersion.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetServerVersion.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.GetServerVersion.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetServerVersionResponse.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.GetServerVersionResponse.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetServerVersionResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.GetServerVersionResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteGroup.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteGroup.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteGroup.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteGroup.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteGroupResponse.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteGroupResponse.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteGroupResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteGroupResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveStaffInfo.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveStaffInfo.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveStaffInfo.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveStaffInfo.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveStaffInfoResponse.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveStaffInfoResponse.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveStaffInfoResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveStaffInfoResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveOrgCategory.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveOrgCategory.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveOrgCategory.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveOrgCategory.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveOrgCategoryResponse.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveOrgCategoryResponse.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveOrgCategoryResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveOrgCategoryResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetAvailableGroupTools.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.GetAvailableGroupTools.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetAvailableGroupTools.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.GetAvailableGroupTools.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetAvailableGroupToolsResponse.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.GetAvailableGroupToolsResponse.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetAvailableGroupToolsResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.GetAvailableGroupToolsResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteCartridge.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteCartridge.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteCartridge.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteCartridge.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteCartridgeResponse.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteCartridgeResponse.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteCartridgeResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteCartridgeResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteStaffInfo.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteStaffInfo.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteStaffInfo.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteStaffInfo.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteStaffInfoResponse.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteStaffInfoResponse.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteStaffInfoResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteStaffInfoResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.AddCourseToTerm.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.AddCourseToTerm.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.AddCourseToTerm.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.AddCourseToTerm.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
 
-            if (com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.AddCourseToTermResponse.class.equals(
+            if (com.blackboard.bbdn.bbws.generated.CourseWSStub.AddCourseToTermResponse.class.equals(
                         type)) {
-                return com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.AddCourseToTermResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return com.blackboard.bbdn.bbws.generated.CourseWSStub.AddCourseToTermResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
             }
         } catch (java.lang.Exception e) {
             throw org.apache.axis2.AxisFault.makeFault(e);

@@ -4,7 +4,7 @@
  * This file was auto-generated from WSDL
  * by the Apache Axis2 version: 1.3  Built on : Aug 10, 2007 (04:45:47 LKT)
  */
-package com.blackboard.bbdn.bbcoursews.generated;
+package com.blackboard.bbdn.bbws.generated;
 
 
 /**
@@ -43,7 +43,7 @@ public abstract class CourseWSCallbackHandler {
      * override this method for handling normal response from getCategories operation
      */
     public void receiveResultgetCategories(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetCategoriesResponse result) {
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.GetCategoriesResponse result) {
     }
 
     /**
@@ -58,7 +58,7 @@ public abstract class CourseWSCallbackHandler {
      * override this method for handling normal response from getCourse operation
      */
     public void receiveResultgetCourse(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetCourseResponse result) {
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.GetCourseResponse result) {
     }
 
     /**
@@ -73,7 +73,7 @@ public abstract class CourseWSCallbackHandler {
      * override this method for handling normal response from createCourse operation
      */
     public void receiveResultcreateCourse(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.CreateCourseResponse result) {
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.CreateCourseResponse result) {
     }
 
     /**
@@ -88,7 +88,7 @@ public abstract class CourseWSCallbackHandler {
      * override this method for handling normal response from changeOrgBatchUid operation
      */
     public void receiveResultchangeOrgBatchUid(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeOrgBatchUidResponse result) {
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeOrgBatchUidResponse result) {
     }
 
     /**
@@ -103,7 +103,7 @@ public abstract class CourseWSCallbackHandler {
      * override this method for handling normal response from deleteOrg operation
      */
     public void receiveResultdeleteOrg(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteOrgResponse result) {
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteOrgResponse result) {
     }
 
     /**
@@ -118,7 +118,7 @@ public abstract class CourseWSCallbackHandler {
      * override this method for handling normal response from saveCourseCategory operation
      */
     public void receiveResultsaveCourseCategory(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveCourseCategoryResponse result) {
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveCourseCategoryResponse result) {
     }
 
     /**
@@ -133,7 +133,7 @@ public abstract class CourseWSCallbackHandler {
      * override this method for handling normal response from saveGroup operation
      */
     public void receiveResultsaveGroup(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveGroupResponse result) {
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveGroupResponse result) {
     }
 
     /**
@@ -148,7 +148,7 @@ public abstract class CourseWSCallbackHandler {
      * override this method for handling normal response from removeCourseFromTerm operation
      */
     public void receiveResultremoveCourseFromTerm(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.RemoveCourseFromTermResponse result) {
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.RemoveCourseFromTermResponse result) {
     }
 
     /**
@@ -163,7 +163,7 @@ public abstract class CourseWSCallbackHandler {
      * override this method for handling normal response from loadTermsByName operation
      */
     public void receiveResultloadTermsByName(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadTermsByNameResponse result) {
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadTermsByNameResponse result) {
     }
 
     /**
@@ -178,7 +178,7 @@ public abstract class CourseWSCallbackHandler {
      * override this method for handling normal response from getGroup operation
      */
     public void receiveResultgetGroup(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetGroupResponse result) {
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.GetGroupResponse result) {
     }
 
     /**
@@ -193,7 +193,7 @@ public abstract class CourseWSCallbackHandler {
      * override this method for handling normal response from deleteCourseCategoryMembership operation
      */
     public void receiveResultdeleteCourseCategoryMembership(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteCourseCategoryMembershipResponse result) {
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteCourseCategoryMembershipResponse result) {
     }
 
     /**
@@ -209,7 +209,7 @@ public abstract class CourseWSCallbackHandler {
      * override this method for handling normal response from saveTerm operation
      */
     public void receiveResultsaveTerm(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveTermResponse result) {
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveTermResponse result) {
     }
 
     /**
@@ -224,7 +224,7 @@ public abstract class CourseWSCallbackHandler {
      * override this method for handling normal response from loadCoursesInTerm operation
      */
     public void receiveResultloadCoursesInTerm(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadCoursesInTermResponse result) {
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadCoursesInTermResponse result) {
     }
 
     /**
@@ -239,7 +239,7 @@ public abstract class CourseWSCallbackHandler {
      * override this method for handling normal response from deleteCourse operation
      */
     public void receiveResultdeleteCourse(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteCourseResponse result) {
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteCourseResponse result) {
     }
 
     /**
@@ -254,7 +254,7 @@ public abstract class CourseWSCallbackHandler {
      * override this method for handling normal response from createOrg operation
      */
     public void receiveResultcreateOrg(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.CreateOrgResponse result) {
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.CreateOrgResponse result) {
     }
 
     /**
@@ -269,7 +269,7 @@ public abstract class CourseWSCallbackHandler {
      * override this method for handling normal response from changeOrgCategoryBatchUid operation
      */
     public void receiveResultchangeOrgCategoryBatchUid(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeOrgCategoryBatchUidResponse result) {
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeOrgCategoryBatchUidResponse result) {
     }
 
     /**
@@ -284,7 +284,7 @@ public abstract class CourseWSCallbackHandler {
      * override this method for handling normal response from deleteOrgCategoryMembership operation
      */
     public void receiveResultdeleteOrgCategoryMembership(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteOrgCategoryMembershipResponse result) {
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteOrgCategoryMembershipResponse result) {
     }
 
     /**
@@ -299,7 +299,7 @@ public abstract class CourseWSCallbackHandler {
      * override this method for handling normal response from getClassifications operation
      */
     public void receiveResultgetClassifications(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetClassificationsResponse result) {
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.GetClassificationsResponse result) {
     }
 
     /**
@@ -314,7 +314,7 @@ public abstract class CourseWSCallbackHandler {
      * override this method for handling normal response from getOrg operation
      */
     public void receiveResultgetOrg(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetOrgResponse result) {
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.GetOrgResponse result) {
     }
 
     /**
@@ -329,7 +329,7 @@ public abstract class CourseWSCallbackHandler {
      * override this method for handling normal response from updateOrg operation
      */
     public void receiveResultupdateOrg(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.UpdateOrgResponse result) {
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.UpdateOrgResponse result) {
     }
 
     /**
@@ -344,7 +344,7 @@ public abstract class CourseWSCallbackHandler {
      * override this method for handling normal response from getOrgCategoryMembership operation
      */
     public void receiveResultgetOrgCategoryMembership(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetOrgCategoryMembershipResponse result) {
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.GetOrgCategoryMembershipResponse result) {
     }
 
     /**
@@ -359,7 +359,7 @@ public abstract class CourseWSCallbackHandler {
      * override this method for handling normal response from deleteOrgCategory operation
      */
     public void receiveResultdeleteOrgCategory(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteOrgCategoryResponse result) {
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteOrgCategoryResponse result) {
     }
 
     /**
@@ -374,7 +374,7 @@ public abstract class CourseWSCallbackHandler {
      * override this method for handling normal response from changeCourseCategoryBatchUid operation
      */
     public void receiveResultchangeCourseCategoryBatchUid(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeCourseCategoryBatchUidResponse result) {
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeCourseCategoryBatchUidResponse result) {
     }
 
     /**
@@ -389,7 +389,7 @@ public abstract class CourseWSCallbackHandler {
      * override this method for handling normal response from setCourseBannerImage operation
      */
     public void receiveResultsetCourseBannerImage(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SetCourseBannerImageResponse result) {
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.SetCourseBannerImageResponse result) {
     }
 
     /**
@@ -404,7 +404,7 @@ public abstract class CourseWSCallbackHandler {
      * override this method for handling normal response from getCartridge operation
      */
     public void receiveResultgetCartridge(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetCartridgeResponse result) {
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.GetCartridgeResponse result) {
     }
 
     /**
@@ -419,7 +419,7 @@ public abstract class CourseWSCallbackHandler {
      * override this method for handling normal response from loadTerm operation
      */
     public void receiveResultloadTerm(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadTermResponse result) {
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadTermResponse result) {
     }
 
     /**
@@ -434,7 +434,7 @@ public abstract class CourseWSCallbackHandler {
      * override this method for handling normal response from changeOrgDataSourceId operation
      */
     public void receiveResultchangeOrgDataSourceId(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeOrgDataSourceIdResponse result) {
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeOrgDataSourceIdResponse result) {
     }
 
     /**
@@ -449,7 +449,7 @@ public abstract class CourseWSCallbackHandler {
      * override this method for handling normal response from deleteCourseCategory operation
      */
     public void receiveResultdeleteCourseCategory(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteCourseCategoryResponse result) {
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteCourseCategoryResponse result) {
     }
 
     /**
@@ -464,7 +464,7 @@ public abstract class CourseWSCallbackHandler {
      * override this method for handling normal response from initializeCourseWS operation
      */
     public void receiveResultinitializeCourseWS(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.InitializeCourseWSResponse result) {
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.InitializeCourseWSResponse result) {
     }
 
     /**
@@ -479,7 +479,7 @@ public abstract class CourseWSCallbackHandler {
      * override this method for handling normal response from getCourseCategoryMembership operation
      */
     public void receiveResultgetCourseCategoryMembership(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetCourseCategoryMembershipResponse result) {
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.GetCourseCategoryMembershipResponse result) {
     }
 
     /**
@@ -494,7 +494,7 @@ public abstract class CourseWSCallbackHandler {
      * override this method for handling normal response from updateCourse operation
      */
     public void receiveResultupdateCourse(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.UpdateCourseResponse result) {
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.UpdateCourseResponse result) {
     }
 
     /**
@@ -509,7 +509,7 @@ public abstract class CourseWSCallbackHandler {
      * override this method for handling normal response from loadTermByCourseId operation
      */
     public void receiveResultloadTermByCourseId(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadTermByCourseIdResponse result) {
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadTermByCourseIdResponse result) {
     }
 
     /**
@@ -524,7 +524,7 @@ public abstract class CourseWSCallbackHandler {
      * override this method for handling normal response from addCourseToTerm operation
      */
     public void receiveResultaddCourseToTerm(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.AddCourseToTermResponse result) {
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.AddCourseToTermResponse result) {
     }
 
     /**
@@ -539,7 +539,7 @@ public abstract class CourseWSCallbackHandler {
      * override this method for handling normal response from getAvailableGroupTools operation
      */
     public void receiveResultgetAvailableGroupTools(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetAvailableGroupToolsResponse result) {
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.GetAvailableGroupToolsResponse result) {
     }
 
     /**
@@ -554,7 +554,7 @@ public abstract class CourseWSCallbackHandler {
      * override this method for handling normal response from deleteCartridge operation
      */
     public void receiveResultdeleteCartridge(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteCartridgeResponse result) {
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteCartridgeResponse result) {
     }
 
     /**
@@ -569,7 +569,7 @@ public abstract class CourseWSCallbackHandler {
      * override this method for handling normal response from deleteStaffInfo operation
      */
     public void receiveResultdeleteStaffInfo(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteStaffInfoResponse result) {
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteStaffInfoResponse result) {
     }
 
     /**
@@ -584,7 +584,7 @@ public abstract class CourseWSCallbackHandler {
      * override this method for handling normal response from saveStaffInfo operation
      */
     public void receiveResultsaveStaffInfo(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveStaffInfoResponse result) {
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveStaffInfoResponse result) {
     }
 
     /**
@@ -599,7 +599,7 @@ public abstract class CourseWSCallbackHandler {
      * override this method for handling normal response from saveOrgCategory operation
      */
     public void receiveResultsaveOrgCategory(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveOrgCategoryResponse result) {
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveOrgCategoryResponse result) {
     }
 
     /**
@@ -614,7 +614,7 @@ public abstract class CourseWSCallbackHandler {
      * override this method for handling normal response from deleteGroup operation
      */
     public void receiveResultdeleteGroup(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteGroupResponse result) {
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteGroupResponse result) {
     }
 
     /**
@@ -629,7 +629,7 @@ public abstract class CourseWSCallbackHandler {
      * override this method for handling normal response from getServerVersion operation
      */
     public void receiveResultgetServerVersion(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetServerVersionResponse result) {
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.GetServerVersionResponse result) {
     }
 
     /**
@@ -644,7 +644,7 @@ public abstract class CourseWSCallbackHandler {
      * override this method for handling normal response from saveCourse operation
      */
     public void receiveResultsaveCourse(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveCourseResponse result) {
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveCourseResponse result) {
     }
 
     /**
@@ -659,7 +659,7 @@ public abstract class CourseWSCallbackHandler {
      * override this method for handling normal response from saveCartridge operation
      */
     public void receiveResultsaveCartridge(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveCartridgeResponse result) {
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveCartridgeResponse result) {
     }
 
     /**
@@ -674,7 +674,7 @@ public abstract class CourseWSCallbackHandler {
      * override this method for handling normal response from saveOrgCategoryMembership operation
      */
     public void receiveResultsaveOrgCategoryMembership(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveOrgCategoryMembershipResponse result) {
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveOrgCategoryMembershipResponse result) {
     }
 
     /**
@@ -689,7 +689,7 @@ public abstract class CourseWSCallbackHandler {
      * override this method for handling normal response from getStaffInfo operation
      */
     public void receiveResultgetStaffInfo(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.GetStaffInfoResponse result) {
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.GetStaffInfoResponse result) {
     }
 
     /**
@@ -704,7 +704,7 @@ public abstract class CourseWSCallbackHandler {
      * override this method for handling normal response from saveCourseCategoryMembership operation
      */
     public void receiveResultsaveCourseCategoryMembership(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.SaveCourseCategoryMembershipResponse result) {
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.SaveCourseCategoryMembershipResponse result) {
     }
 
     /**
@@ -719,7 +719,7 @@ public abstract class CourseWSCallbackHandler {
      * override this method for handling normal response from changeCourseBatchUid operation
      */
     public void receiveResultchangeCourseBatchUid(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeCourseBatchUidResponse result) {
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeCourseBatchUidResponse result) {
     }
 
     /**
@@ -734,7 +734,7 @@ public abstract class CourseWSCallbackHandler {
      * override this method for handling normal response from deleteTerm operation
      */
     public void receiveResultdeleteTerm(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.DeleteTermResponse result) {
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.DeleteTermResponse result) {
     }
 
     /**
@@ -749,7 +749,7 @@ public abstract class CourseWSCallbackHandler {
      * override this method for handling normal response from changeCourseDataSourceId operation
      */
     public void receiveResultchangeCourseDataSourceId(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.ChangeCourseDataSourceIdResponse result) {
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.ChangeCourseDataSourceIdResponse result) {
     }
 
     /**
@@ -764,7 +764,7 @@ public abstract class CourseWSCallbackHandler {
      * override this method for handling normal response from loadTerms operation
      */
     public void receiveResultloadTerms(
-        com.blackboard.bbdn.bbcoursews.generated.CourseWSStub.LoadTermsResponse result) {
+        com.blackboard.bbdn.bbws.generated.CourseWSStub.LoadTermsResponse result) {
     }
 
     /**
