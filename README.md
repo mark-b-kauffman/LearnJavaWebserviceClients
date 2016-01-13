@@ -10,4 +10,4 @@ ganymede:Learn.WSDL.Files mbk$ wsdl2java.sh
  Using JAVA_HOME:       /Library/Java/JavaVirtualMachines/jdk1.7.0_55.jdk/Contents/Home
 Usage: WSDL2Java [options] -uri <url or path> : A url or path to a WSDL
 
-Author: Mark Bykerk Kauffman, Blackboard Inc., standing on the shoulders of giants. My part in this was to pull the Learn WSDL files and then run the Apache Axis2 wsdl2java.sh on each. Much credit to Bruce Philip's Tutorials at http://www.brucephillips.name/blog/index.cfm/2011/6/8/Blackboard-Learn-91-Web-Services-Tutorials-and-Documentation
+Author: Mark Bykerk Kauffman, Blackboard Inc., standing on the shoulders of giants. My part in this was to pull the Learn WSDL files and then run the Apache Axis2 wsdl2java.sh on each. Much credit to Bruce Philips' Tutorials at http://www.brucephillips.name/blog/index.cfm/2011/6/8/Blackboard-Learn-91-Web-Services-Tutorials-and-Documentation
